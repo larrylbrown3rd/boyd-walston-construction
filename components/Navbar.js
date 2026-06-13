@@ -5,43 +5,56 @@ export default function Navbar({ companyName }) {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  const linkClass = "font-inter font-medium text-xs tracking-[0.15em] uppercase text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300"
+
   return (
-    <header className="bg-white border-b border-gray-200 px-8 py-4">
+    <header className="bg-white border-b border-[#E8E8E8] px-8 py-4">
       <nav className="flex items-center justify-between max-w-6xl mx-auto">
 
-        <a href="/" className="text-gray-900 font-semibold text-lg tracking-wide">
-        {companyName}
+        <a href="/" className="font-playfair font-bold text-[#111111] text-lg">
+          {companyName}
         </a>
 
-        <ul className="flex items-center gap-8 list-none">
-          <li><a href="/services" className="text-gray-600 text-sm hover:text-gray-900 transition-colors">Services</a></li>
-          <li><a href="/projects" className="text-gray-600 text-sm hover:text-gray-900 transition-colors">Projects</a></li>
-          <li><a href="/about" className="text-gray-600 text-sm hover:text-gray-900 transition-colors">About</a></li>
-          <li><a href="/contact" className="text-gray-600 text-sm hover:text-gray-900 transition-colors">Contact</a></li>
+        <ul className="hidden md:flex items-center gap-8 list-none">
+          <li><a href="/services" className={linkClass}>Services</a></li>
+          <li><a href="/projects" className={linkClass}>Projects</a></li>
+          <li><a href="/about" className={linkClass}>About</a></li>
+          <li><a href="/contact" className={linkClass}>Contact</a></li>
         </ul>
 
         <div className="flex items-center gap-4">
-          <a href="/quote" className="bg-gray-900 text-white text-sm px-6 py-2 hover:bg-gray-700 transition-colors">
-          Get A Quote
-        </a>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-900 text-2xl"
-        >
-          {isOpen ? 'x' :  "="}
-        </button>
-      </div>
+          <a
+            href="/quote"
+            className="bg-[#111111] text-white font-inter text-xs tracking-[0.15em] uppercase px-6 py-2.5 hover:bg-[#2C2C2C] transition-colors"
+          >
+            Get A Quote
+          </a>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden font-inter text-[#111111] text-2xl"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? '×' : '≡'}
+          </button>
+        </div>
       </nav>
 
       {isOpen && (
-        <ul className="md:hidden flex flex-col gap-4 pb-2 list-none">
-          <li><a href="/services" className="text-gray-600 text-sm">Services</a></li>
-          <li><a href="/projects" className="text-gray-600 text-sm">Projects</a></li>
-          <li><a href="/about" className="text-gray-600 text-sm">About</a></li>
-          <li><a href="/contact" className="text-gray-600 text-sm">Contact</a></li>
-          <li><a href="/quote" className="text-gray-900 text-sm font-semibold">Get A Quote</a></li>
+        <ul className="md:hidden flex flex-col gap-4 pt-4 pb-2 list-none max-w-6xl mx-auto">
+          <li><a href="/services" className={linkClass}>Services</a></li>
+          <li><a href="/projects" className={linkClass}>Projects</a></li>
+          <li><a href="/about" className={linkClass}>About</a></li>
+          <li><a href="/contact" className={linkClass}>Contact</a></li>
+          <li>
+            <a
+              href="/quote"
+              className="inline-block bg-[#111111] text-white font-inter text-xs tracking-[0.15em] uppercase px-6 py-2.5 hover:bg-[#2C2C2C] transition-colors"
+            >
+              Get A Quote
+            </a>
+          </li>
         </ul>
       )}
-  </header>
+    </header>
   )
 }

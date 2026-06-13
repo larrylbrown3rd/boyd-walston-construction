@@ -4,6 +4,9 @@ import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const labelClass = "block font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-2"
+const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+
 export default function Quote() {
 
   const [formData, setFormData] = useState({
@@ -33,15 +36,15 @@ export default function Quote() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-gray-900 text-white py-24 px-8">
+      <section className="bg-[#111111] text-white py-24 px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="text-sm tracking-widest text-gray-400 uppercase mb-4">
+          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             Free Consultation
           </p>
-          <h1 className="text-5xl font-bold text-white mb-6">
+          <h1 className="font-playfair text-5xl font-bold text-white mb-6">
             Get A Quote
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl">
+          <p className="font-inter text-[#9B9B9B] text-lg max-w-2xl">
             Tell us about your project and we will get back to you
             within one business day with a free estimate.
           </p>
@@ -52,11 +55,11 @@ export default function Quote() {
         <div className="max-w-3xl mx-auto">
 
           {submitted ? (
-            <div className="border border-gray-200 p-12 text-center">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <div className="border border-[#E8E8E8] p-12 text-center">
+              <h2 className="font-playfair text-2xl text-[#111111] mb-4">
                 Quote Request Received
               </h2>
-              <p className="text-gray-600">
+              <p className="font-inter text-[#9B9B9B]">
                 Thank you for reaching out. We will review your project
                 details and follow up within one business day.
               </p>
@@ -66,7 +69,7 @@ export default function Quote() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Full Name
                   </label>
                   <input
@@ -74,13 +77,13 @@ export default function Quote() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                     placeholder="Your full name"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Email Address
                   </label>
                   <input
@@ -88,7 +91,7 @@ export default function Quote() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                     placeholder="your@email.com"
                   />
                 </div>
@@ -96,7 +99,7 @@ export default function Quote() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Phone Number
                   </label>
                   <input
@@ -104,20 +107,20 @@ export default function Quote() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                     placeholder="(555) 000-0000"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Project Type
                   </label>
                   <select
                     name="projectType"
                     value={formData.projectType}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                   >
                     <option value="">Select a project type</option>
                     <option value="residential">Residential Construction</option>
@@ -131,14 +134,14 @@ export default function Quote() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Estimated Budget
                   </label>
                   <select
                     name="budget"
                     value={formData.budget}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                   >
                     <option value="">Select a budget range</option>
                     <option value="under-50k">Under $50,000</option>
@@ -150,14 +153,14 @@ export default function Quote() {
                 </div>
 
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Desired Timeline
                   </label>
                   <select
                     name="timeline"
                     value={formData.timeline}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                   >
                     <option value="">Select a timeline</option>
                     <option value="asap">As soon as possible</option>
@@ -170,7 +173,7 @@ export default function Quote() {
               </div>
 
               <div>
-                <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                <label className={labelClass}>
                   Project Description
                 </label>
                 <textarea
@@ -178,14 +181,14 @@ export default function Quote() {
                   value={formData.description}
                   onChange={handleChange}
                   rows={6}
-                  className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                  className={inputClass}
                   placeholder="Describe your project in as much detail as possible..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="bg-gray-900 text-white px-8 py-4 text-sm font-semibold hover:bg-gray-700 transition-colors w-full"
+                className="bg-[#111111] text-white font-inter text-xs tracking-[0.2em] uppercase py-4 w-full hover:bg-[#2C2C2C] transition-colors"
               >
                 Submit Quote Request
               </button>

@@ -4,6 +4,9 @@ import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const labelClass = "block font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-2"
+const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+
 export default function Contact() {
 
   const [formData, setFormData] = useState({
@@ -30,15 +33,15 @@ export default function Contact() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-gray-900 text-white py-24 px-8">
+      <section className="bg-[#111111] text-white py-24 px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="text-sm tracking-widest text-gray-400 uppercase mb-4">
+          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             Get In Touch
           </p>
-          <h1 className="text-5xl font-bold text-white mb-6">
+          <h1 className="font-playfair text-5xl font-bold text-white mb-6">
             Contact Us
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl">
+          <p className="font-inter text-[#9B9B9B] text-lg max-w-2xl">
             Ready to start your project? We would love to hear from you.
           </p>
         </div>
@@ -48,16 +51,16 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="font-playfair text-2xl text-[#111111] mb-8">
               Send Us a Message
             </h2>
 
             {submitted ? (
-              <div className="border border-gray-200 p-8">
-                <p className="text-gray-900 font-semibold mb-2">
+              <div className="border border-[#E8E8E8] p-8">
+                <p className="font-playfair text-[#111111] mb-2">
                   Message Received
                 </p>
-                <p className="text-gray-600 text-sm">
+                <p className="font-inter text-sm text-[#9B9B9B]">
                   Thank you for reaching out. We will be in touch
                   within one business day.
                 </p>
@@ -66,7 +69,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
 
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Full Name
                   </label>
                   <input
@@ -74,13 +77,13 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                     placeholder="Your full name"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Email Address
                   </label>
                   <input
@@ -88,13 +91,13 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                     placeholder="your@email.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Phone Number
                   </label>
                   <input
@@ -102,13 +105,13 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                     placeholder="(555) 000-0000"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs tracking-widest text-gray-600 uppercase mb-2">
+                  <label className={labelClass}>
                     Message
                   </label>
                   <textarea
@@ -116,14 +119,14 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-gray-900 focus:outline-none"
+                    className={inputClass}
                     placeholder="Tell us about your project..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="bg-gray-900 text-white px-8 py-4 text-sm font-semibold hover:bg-gray-700 transition-colors w-full"
+                  className="bg-[#111111] text-white font-inter text-xs tracking-[0.2em] uppercase py-4 w-full hover:bg-[#2C2C2C] transition-colors"
                 >
                   Send Message
                 </button>
@@ -133,25 +136,25 @@ export default function Contact() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="font-playfair text-2xl text-[#111111] mb-8">
               Contact Information
             </h2>
             <ul className="space-y-6 list-none">
               <li>
-                <p className="text-xs tracking-widest text-gray-400 uppercase mb-1">Location</p>
-                <p className="text-gray-900">Pike Road, Alabama</p>
+                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Location</p>
+                <p className="font-inter text-sm text-[#111111]">Pike Road, Alabama</p>
               </li>
               <li>
-                <p className="text-xs tracking-widest text-gray-400 uppercase mb-1">Phone</p>
-                <p className="text-gray-900">(555) 000-0000</p>
+                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Phone</p>
+                <p className="font-inter text-sm text-[#111111]">(555) 000-0000</p>
               </li>
               <li>
-                <p className="text-xs tracking-widest text-gray-400 uppercase mb-1">Email</p>
-                <p className="text-gray-900">info@boydwalston.com</p>
+                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Email</p>
+                <p className="font-inter text-sm text-[#111111]">info@boydwalston.com</p>
               </li>
               <li>
-                <p className="text-xs tracking-widest text-gray-400 uppercase mb-1">Hours</p>
-                <p className="text-gray-900">Monday – Friday · 7am – 5pm</p>
+                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Hours</p>
+                <p className="font-inter text-sm text-[#111111]">Monday – Friday · 7am – 5pm</p>
               </li>
             </ul>
           </div>
