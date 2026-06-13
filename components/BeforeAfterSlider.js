@@ -39,7 +39,7 @@ export default function BeforeAfterSlider({
     >
       {/* After image — full width background */}
       <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-        <span className="text-gray-500 font-inter text-sm">
+        <span className="text-gray-500 font-sans text-sm">
           After Photo
         </span>
       </div>
@@ -49,7 +49,7 @@ export default function BeforeAfterSlider({
         className="absolute inset-0 bg-gray-400 flex items-center justify-center overflow-hidden"
         style={{ width: `${sliderPos}%` }}
       >
-        <span className="text-gray-600 font-inter text-sm absolute left-4">
+        <span className="text-gray-600 font-sans text-sm absolute left-4">
           Before Photo
         </span>
       </div>
@@ -70,10 +70,10 @@ export default function BeforeAfterSlider({
       </div>
 
       {/* Labels */}
-      <div className="absolute top-4 left-4 bg-[#111111] text-white font-inter text-xs px-3 py-1 rounded-full">
+      <div className="absolute top-4 left-4 bg-[#111111] text-white font-sans text-xs px-3 py-1 rounded-full">
         {beforeLabel}
       </div>
-      <div className="absolute top-4 right-4 bg-[#111111] text-white font-inter text-xs px-3 py-1 rounded-full">
+      <div className="absolute top-4 right-4 bg-[#111111] text-white font-sans text-xs px-3 py-1 rounded-full">
         {afterLabel}
       </div>
     </div>

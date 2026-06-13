@@ -47,7 +47,7 @@ export default function ProjectCarousel({ projects = defaultProjects }) {
 
   if (projects.length === 0) {
     return (
-      <p className="font-inter text-sm text-[#9B9B9B] text-center py-16">
+      <p className="font-sans text-sm text-[#9B9B9B] text-center py-16">
         No projects found in this category.
       </p>
     )
@@ -82,24 +82,24 @@ export default function ProjectCarousel({ projects = defaultProjects }) {
           className="border border-[#E8E8E8] overflow-hidden"
         >
           <div className="bg-[#F0EFED] h-96 w-full flex items-center justify-center">
-            <span className="font-inter text-sm text-[#9B9B9B] tracking-widest uppercase">
+            <span className="font-sans text-sm text-[#9B9B9B] tracking-widest uppercase">
               Project Photo
             </span>
           </div>
 
           <div className="p-10 flex items-center justify-between">
             <div>
-              <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-2">
+              <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-2">
                 {project.category.toUpperCase()}
               </p>
-              <h3 className="font-playfair text-2xl text-[#111111] mb-1">
+              <h3 className="font-serif text-2xl text-[#111111] mb-1">
                 {project.title}
               </h3>
-              <p className="font-inter text-sm text-[#9B9B9B]">
+              <p className="font-sans text-sm text-[#9B9B9B]">
                 {project.location}
               </p>
             </div>
-            <p className="font-playfair text-6xl text-[#F0EFED]">
+            <p className="font-serif text-6xl text-[#F0EFED]">
               {String(safeActive + 1).padStart(2, '0')}
             </p>
           </div>
@@ -127,13 +127,13 @@ export default function ProjectCarousel({ projects = defaultProjects }) {
         <div className="flex gap-4">
           <button
             onClick={prev}
-            className="w-12 h-12 border border-[#E8E8E8] rounded-full flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+            className="w-12 h-12 border border-[#E8E8E8] rounded-full flex items-center justify-center font-sans text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
           >
             ←
           </button>
           <button
             onClick={next}
-            className="w-12 h-12 border border-[#E8E8E8] rounded-full flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+            className="w-12 h-12 border border-[#E8E8E8] rounded-full flex items-center justify-center font-sans text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
           >
             →
           </button>

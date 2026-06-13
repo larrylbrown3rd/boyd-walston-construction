@@ -38,16 +38,16 @@ export default function Hero() {
         }}
       >
 
-        <p className="font-inter text-xs tracking-[0.3em] uppercase text-[#C4A882] mb-6">
+        <p className="font-sans text-xs tracking-[0.3em] uppercase text-[#C4A882] mb-6">
           Pike Road, Alabama
         </p>
 
-        <h1 className="font-playfair text-6xl md:text-7xl font-bold text-white leading-tight mb-8">
+        <h1 className="font-serif text-6xl md:text-7xl font-bold text-white leading-tight mb-8">
           Building What<br />
           Matters Most
         </h1>
 
-        <p className="font-inter font-light text-lg text-[#9B9B9B] max-w-xl mb-12">
+        <p className="font-sans font-light text-lg text-[#9B9B9B] max-w-xl mb-12">
           Quality residential and commercial construction
           delivered on time and built to last.
         </p>
@@ -55,13 +55,13 @@ export default function Hero() {
         <div className="flex gap-4">
           <a
             href="/quote"
-            className="bg-white text-[#111111] font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-[#F0EFED] transition-colors duration-300"
+            className="bg-white text-[#111111] font-sans font-semibold text-sm px-10 py-4 rounded-full hover:bg-[#F0EFED] transition-colors duration-300"
           >
             Get A Quote
           </a>
           <a
             href="/projects"
-            className="border-2 border-white text-white font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-white hover:text-[#111111] transition-colors duration-300"
+            className="border-2 border-white text-white font-sans font-semibold text-sm px-10 py-4 rounded-full hover:bg-white hover:text-[#111111] transition-colors duration-300"
           >
             View Projects
           </a>

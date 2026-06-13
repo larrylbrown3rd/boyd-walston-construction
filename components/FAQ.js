@@ -38,10 +38,10 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto">
 
         <div className="text-center mb-16">
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             Common Questions
           </p>
-          <h2 className="font-playfair text-4xl text-[#111111]">
+          <h2 className="font-serif text-4xl text-[#111111]">
             Frequently Asked Questions
           </h2>
           <div className="w-12 h-px bg-[#C4A882] mx-auto mt-6" />
@@ -54,10 +54,10 @@ export default function FAQ() {
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between py-6 text-left"
               >
-                <span className="font-inter font-medium text-sm text-[#111111] pr-8">
+                <span className="font-sans font-medium text-sm text-[#111111] pr-8">
                   {faq.q}
                 </span>
-                <span className={`font-inter text-lg text-[#9B9B9B] flex-shrink-0 transition-transform duration-300 ${open === i ? 'rotate-45' : ''}`}>
+                <span className={`font-sans text-lg text-[#9B9B9B] flex-shrink-0 transition-transform duration-300 ${open === i ? 'rotate-45' : ''}`}>
                   +
                 </span>
               </button>
@@ -71,7 +71,7 @@ export default function FAQ() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="font-inter text-sm text-[#9B9B9B] leading-relaxed pb-6">
+                    <p className="font-sans text-sm text-[#9B9B9B] leading-relaxed pb-6">
                       {faq.a}
                     </p>
                   </motion.div>

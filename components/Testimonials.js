@@ -35,10 +35,10 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto">
 
         <div className="text-center mb-16">
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             What Clients Say
           </p>
-          <h2 className="font-playfair text-4xl text-[#111111]">
+          <h2 className="font-serif text-4xl text-[#111111]">
             Real Results. Real People.
           </h2>
           <div className="w-12 h-px bg-[#C4A882] mx-auto mt-6" />
@@ -61,14 +61,14 @@ export default function Testimonials() {
               ))}
             </div>
 
-            <p className="font-playfair text-2xl text-[#111111] leading-relaxed mb-8 italic">
+            <p className="font-serif text-2xl text-[#111111] leading-relaxed mb-8 italic">
               &ldquo;{testimonials[active].text}&rdquo;
             </p>
 
-            <p className="font-inter font-semibold text-sm text-[#111111] mb-1">
+            <p className="font-sans font-semibold text-sm text-[#111111] mb-1">
               {testimonials[active].name}
             </p>
-            <p className="font-inter text-xs text-[#9B9B9B]">
+            <p className="font-sans text-xs text-[#9B9B9B]">
               {testimonials[active].location} · {testimonials[active].project}
             </p>
           </motion.div>

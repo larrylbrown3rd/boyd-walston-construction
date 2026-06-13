@@ -12,8 +12,8 @@ const ParticleTunnel = dynamic(
   { ssr: false }
 )
 
-const labelClass = "block font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-2"
-const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+const labelClass = "block font-sans text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-2"
+const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-sans text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
 
 export default function Quote() {
 
@@ -48,13 +48,13 @@ export default function Quote() {
         <ParticleTunnel />
         <div className="absolute inset-0 bg-[#111111]/70" style={{ zIndex: 1 }} />
         <div className="relative max-w-6xl mx-auto" style={{ zIndex: 2 }}>
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             Free Consultation
           </p>
-          <h1 className="font-playfair text-5xl font-bold text-white mb-6">
+          <h1 className="font-serif text-5xl font-bold text-white mb-6">
             Get A Quote
           </h1>
-          <p className="font-inter text-[#9B9B9B] text-lg max-w-2xl">
+          <p className="font-sans text-[#9B9B9B] text-lg max-w-2xl">
             Tell us about your project and we will get back to you
             within one business day with a free estimate.
           </p>
@@ -69,10 +69,10 @@ export default function Quote() {
 
           {submitted ? (
             <div className="border border-[#E8E8E8] p-12 text-center">
-              <h2 className="font-playfair text-2xl text-[#111111] mb-4">
+              <h2 className="font-serif text-2xl text-[#111111] mb-4">
                 Quote Request Received
               </h2>
-              <p className="font-inter text-[#9B9B9B]">
+              <p className="font-sans text-[#9B9B9B]">
                 Thank you for reaching out. We will review your project
                 details and follow up within one business day.
               </p>
@@ -203,7 +203,7 @@ export default function Quote() {
 
               <button
                 type="submit"
-                className="bg-[#111111] text-white font-inter font-medium text-sm py-4 w-full rounded-full hover:bg-[#2C2C2C] transition-colors duration-300"
+                className="bg-[#111111] text-white font-sans font-medium text-sm py-4 w-full rounded-full hover:bg-[#2C2C2C] transition-colors duration-300"
               >
                 Submit Quote Request
               </button>

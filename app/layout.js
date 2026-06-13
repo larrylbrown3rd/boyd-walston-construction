@@ -1,19 +1,19 @@
-import { Inter, Playfair_Display } from "next/font/google";
+import { DM_Serif_Display, DM_Sans } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const dmSerif = DM_Serif_Display({
+  weight: ["400"],
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  variable: "--font-dm-serif",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const dmSans = DM_Sans({
+  weight: ["300", "400", "500", "600"],
   subsets: ["latin"],
-  weight: ["400", "700"],
+  variable: "--font-dm-sans",
 });
 
 export const metadata = {
@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${dmSerif.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className={`${inter.variable} ${playfair.variable} font-inter min-h-full flex flex-col bg-white text-[#111111]`}>
+      <body className={`${dmSerif.variable} ${dmSans.variable} font-sans min-h-full flex flex-col bg-white text-[#111111]`}>
         <CustomCursor />
         <PageTransition>{children}</PageTransition>
         <StickyCTA />
