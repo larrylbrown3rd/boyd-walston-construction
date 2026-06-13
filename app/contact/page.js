@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ResponsePromise from '@/components/ResponsePromise'
 
 const labelClass = "block font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-2"
 const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
@@ -66,6 +67,8 @@ export default function Contact() {
                 </p>
               </div>
             ) : (
+              <>
+              <ResponsePromise />
               <form onSubmit={handleSubmit} className="space-y-6">
 
                 <div>
@@ -126,12 +129,13 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="bg-[#111111] text-white font-inter text-xs tracking-[0.2em] uppercase py-4 w-full hover:bg-[#2C2C2C] transition-colors"
+                  className="bg-[#111111] text-white font-inter font-medium text-sm py-4 w-full rounded-full hover:bg-[#2C2C2C] transition-colors duration-300"
                 >
                   Send Message
                 </button>
 
               </form>
+              </>
             )}
           </div>
 

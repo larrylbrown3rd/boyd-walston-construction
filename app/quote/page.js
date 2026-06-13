@@ -1,8 +1,16 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import TrustBadges from '@/components/TrustBadges'
+import ResponsePromise from '@/components/ResponsePromise'
+
+const ParticleTunnel = dynamic(
+  () => import('@/components/ParticleTunnel'),
+  { ssr: false }
+)
 
 const labelClass = "block font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-2"
 const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
@@ -36,8 +44,10 @@ export default function Quote() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-8">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-8">
+        <ParticleTunnel />
+        <div className="absolute inset-0 bg-[#111111]/70" style={{ zIndex: 1 }} />
+        <div className="relative max-w-6xl mx-auto" style={{ zIndex: 2 }}>
           <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             Free Consultation
           </p>
@@ -51,8 +61,11 @@ export default function Quote() {
         </div>
       </section>
 
+      <TrustBadges />
+
       <section className="py-24 px-8">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl mx-auto">
 
           {submitted ? (
             <div className="border border-[#E8E8E8] p-12 text-center">
@@ -65,6 +78,8 @@ export default function Quote() {
               </p>
             </div>
           ) : (
+            <>
+            <ResponsePromise />
             <form onSubmit={handleSubmit} className="space-y-8">
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -188,13 +203,15 @@ export default function Quote() {
 
               <button
                 type="submit"
-                className="bg-[#111111] text-white font-inter text-xs tracking-[0.2em] uppercase py-4 w-full hover:bg-[#2C2C2C] transition-colors"
+                className="bg-[#111111] text-white font-inter font-medium text-sm py-4 w-full rounded-full hover:bg-[#2C2C2C] transition-colors duration-300"
               >
                 Submit Quote Request
               </button>
 
             </form>
+            </>
           )}
+          </div>
         </div>
       </section>
 

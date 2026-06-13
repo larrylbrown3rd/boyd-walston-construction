@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+@theme {
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-playfair: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
 :root {
   --white: #FFFFFF;
   --off-white: #F8F7F5;
@@ -11,10 +16,22 @@
   --accent: #C4A882;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    cursor: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair), serif;
+  }
 }
 
 html {
@@ -22,9 +39,9 @@ html {
 }
 
 body {
-  font-family: var(--font-inter), sans-serif;
   background-color: #FFFFFF;
   color: #111111;
+  font-family: var(--font-inter), sans-serif;
 }
 
 ::selection {
