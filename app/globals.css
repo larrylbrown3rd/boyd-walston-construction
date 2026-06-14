@@ -2,8 +2,8 @@
 @config "../tailwind.config.js";
 
 @theme {
-  --font-serif: var(--font-dm-serif), ui-serif, Georgia, serif;
-  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-bebas: var(--font-bebas), ui-sans-serif, system-ui, sans-serif;
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -28,7 +28,8 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-dm-serif), serif;
+    font-family: var(--font-bebas), sans-serif;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -37,7 +38,7 @@ html {
 }
 
 body {
-  font-family: var(--font-dm-sans), sans-serif;
+  font-family: var(--font-inter), sans-serif;
   background-color: #FFFFFF;
   color: #111111;
 }

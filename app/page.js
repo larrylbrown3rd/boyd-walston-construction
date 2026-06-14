@@ -22,12 +22,12 @@ export default function Home() {
       <section className="bg-[#F8F7F5] py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <h2 className="font-serif text-4xl text-[#111111] mb-3">
+            <h2 className="font-bebas text-5xl md:text-6xl text-[#111111] mb-4">
               Our Services
             </h2>
           </ScrollReveal>
           <div className="w-12 h-px bg-[#C4A882] mb-6" />
-          <p className="font-sans text-[#9B9B9B] text-sm tracking-wide mb-16">
+          <p className="font-inter text-[#9B9B9B] text-sm tracking-wide mb-16">
             From custom homes to commercial build-outs
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -58,26 +58,26 @@ export default function Home() {
         <WebGLGradient />
         <div className="absolute inset-0 bg-[#111111]/60" style={{ zIndex: 1 }} />
         <div className="relative max-w-3xl mx-auto" style={{ zIndex: 2 }}>
-          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             Get Started Today
           </p>
-          <h2 className="font-serif text-4xl font-bold text-white mb-6">
+          <h2 className="font-bebas text-5xl md:text-6xl text-white mb-6">
             Know Your Budget Before You Build
           </h2>
-          <p className="font-sans text-[#9B9B9B] mb-10 text-lg">
+          <p className="font-inter text-[#9B9B9B] mb-10 text-lg">
             Answer 5 quick questions and get a ballpark
             estimate sent to your inbox within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/estimate"
-              className="bg-white text-[#111111] font-sans font-semibold text-sm px-10 py-4 rounded-full hover:bg-[#F0EFED] transition-colors"
+              className="bg-white text-[#111111] font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-[#F0EFED] transition-colors"
             >
               Get Free Estimate
             </a>
             <a
               href="/book"
-              className="border border-white text-white font-sans font-semibold text-sm px-10 py-4 rounded-full hover:bg-white hover:text-[#111111] transition-colors"
+              className="border border-white text-white font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-white hover:text-[#111111] transition-colors"
             >
               Book A Walkthrough
             </a>

@@ -94,13 +94,13 @@ export default function Estimate() {
         <ParticleTunnel />
         <div className="absolute inset-0 bg-[#111111]/70" style={{ zIndex: 1 }} />
         <div className="relative max-w-6xl mx-auto" style={{ zIndex: 2 }}>
-          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
             Free Estimate
           </p>
-          <h1 className="font-serif text-5xl font-bold text-white mb-6">
+          <h1 className="font-bebas text-6xl md:text-7xl text-white leading-none mb-6">
             Get Your Estimate
           </h1>
-          <p className="font-sans text-lg text-[#9B9B9B] max-w-2xl">
+          <p className="font-inter text-lg text-[#9B9B9B] max-w-2xl">
             Answer 5 quick questions and we will send you
             a ballpark estimate within one business day.
           </p>
@@ -115,10 +115,10 @@ export default function Estimate() {
               <div className="w-16 h-16 bg-[#F8F7F5] rounded-full flex items-center justify-center mx-auto mb-8">
                 <span className="text-2xl">✓</span>
               </div>
-              <h2 className="font-serif text-3xl text-[#111111] mb-4">
+              <h2 className="font-bebas text-5xl text-[#111111] mb-4">
                 We Got Your Request
               </h2>
-              <p className="font-sans text-[#9B9B9B]">
+              <p className="font-inter text-[#9B9B9B]">
                 Thank you {contact.name}. We will review
                 your project details and send a ballpark
                 estimate within one business day.
@@ -128,7 +128,7 @@ export default function Estimate() {
             <>
               {/* Progress bar */}
               <div className="mb-12">
-                <div className="flex justify-between font-sans text-xs text-[#9B9B9B] mb-3">
+                <div className="flex justify-between font-inter text-xs text-[#9B9B9B] mb-3">
                   <span>Step {currentStep + 1} of {steps.length}</span>
                   <span>{Math.round(progress)}% complete</span>
                 </div>
@@ -141,7 +141,7 @@ export default function Estimate() {
               </div>
 
               {/* Question */}
-              <h2 className="font-serif text-3xl text-[#111111] mb-10">
+              <h2 className="font-bebas text-5xl text-[#111111] mb-10">
                 {step.question}
               </h2>
 
@@ -152,7 +152,7 @@ export default function Estimate() {
                     <button
                       key={option.value}
                       onClick={() => handleOption(option.value)}
-                      className="w-full text-left border border-[#E8E8E8] px-6 py-4 font-sans text-sm text-[#111111] rounded-full hover:border-[#111111] hover:bg-[#F8F7F5] transition-all duration-200 flex items-center justify-between"
+                      className="w-full text-left border border-[#E8E8E8] px-6 py-4 font-inter text-sm text-[#111111] rounded-full hover:border-[#111111] hover:bg-[#F8F7F5] transition-all duration-200 flex items-center justify-between"
                     >
                       {option.label}
                       <span className="text-[#9B9B9B]">→</span>
@@ -167,7 +167,7 @@ export default function Estimate() {
                   <input
                     type="text"
                     placeholder={step.placeholder}
-                    className="w-full border border-[#E8E8E8] px-4 py-4 font-sans text-sm text-[#111111] focus:border-[#111111] focus:outline-none mb-6"
+                    className="w-full border border-[#E8E8E8] px-4 py-4 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none mb-6"
                     onChange={(e) => setAnswers({
                       ...answers,
                       [step.field]: e.target.value,
@@ -175,7 +175,7 @@ export default function Estimate() {
                   />
                   <button
                     onClick={() => setCurrentStep(currentStep + 1)}
-                    className="bg-[#111111] text-white font-sans text-sm px-10 py-4 rounded-full hover:bg-[#2C2C2C] transition-colors"
+                    className="bg-[#111111] text-white font-inter text-sm px-10 py-4 rounded-full hover:bg-[#2C2C2C] transition-colors"
                   >
                     Continue →
                   </button>
@@ -188,7 +188,7 @@ export default function Estimate() {
                   <input
                     type="text"
                     placeholder="Your full name"
-                    className="w-full border border-[#E8E8E8] px-4 py-4 font-sans text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+                    className="w-full border border-[#E8E8E8] px-4 py-4 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
                     onChange={(e) => setContact({
                       ...contact, name: e.target.value,
                     })}
@@ -196,7 +196,7 @@ export default function Estimate() {
                   <input
                     type="email"
                     placeholder="your@email.com"
-                    className="w-full border border-[#E8E8E8] px-4 py-4 font-sans text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+                    className="w-full border border-[#E8E8E8] px-4 py-4 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
                     onChange={(e) => setContact({
                       ...contact, email: e.target.value,
                     })}
@@ -204,14 +204,14 @@ export default function Estimate() {
                   <input
                     type="tel"
                     placeholder="(555) 000-0000"
-                    className="w-full border border-[#E8E8E8] px-4 py-4 font-sans text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+                    className="w-full border border-[#E8E8E8] px-4 py-4 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
                     onChange={(e) => setContact({
                       ...contact, phone: e.target.value,
                     })}
                   />
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-[#111111] text-white font-sans text-sm py-4 rounded-full hover:bg-[#2C2C2C] transition-colors"
+                    className="w-full bg-[#111111] text-white font-inter text-sm py-4 rounded-full hover:bg-[#2C2C2C] transition-colors"
                   >
                     Send My Estimate Request
                   </button>
@@ -222,7 +222,7 @@ export default function Estimate() {
               {currentStep > 0 && (
                 <button
                   onClick={() => setCurrentStep(currentStep - 1)}
-                  className="mt-8 font-sans text-xs text-[#9B9B9B] hover:text-[#111111] transition-colors"
+                  className="mt-8 font-inter text-xs text-[#9B9B9B] hover:text-[#111111] transition-colors"
                 >
                   ← Back
                 </button>

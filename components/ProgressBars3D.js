@@ -94,10 +94,10 @@ export default function ProgressBars3D() {
       <div className="grid grid-cols-4 gap-4 mt-4">
         {stats.map((stat, i) => (
           <div key={i} className="text-center">
-            <p className="font-serif text-2xl text-[#111111] font-bold">
+            <p className="font-bebas text-6xl md:text-7xl text-[#111111]">
               {stat.value}{stat.label.includes('Years') ? '+' : stat.label.includes('Projects') ? '+' : '%'}
             </p>
-            <p className="font-sans text-xs text-[#9B9B9B] mt-1">
+            <p className="font-inter text-xs text-[#9B9B9B] mt-1">
               {stat.label}
             </p>
           </div>

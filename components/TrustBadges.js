@@ -36,10 +36,10 @@ export default function TrustBadges() {
               <span className="text-2xl mb-2">
                 {badge.icon}
               </span>
-              <p className="font-sans font-semibold text-xs text-[#111111] mb-1">
+              <p className="font-inter font-semibold text-xs text-[#111111] mb-1">
                 {badge.title}
               </p>
-              <p className="font-sans text-xs text-[#9B9B9B]">
+              <p className="font-inter text-xs text-[#9B9B9B]">
                 {badge.subtitle}
               </p>
             </div>

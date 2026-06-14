@@ -1,19 +1,19 @@
-import { DM_Serif_Display, DM_Sans } from "next/font/google";
+import { Bebas_Neue, Inter } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
 import "./globals.css";
 
-const dmSerif = DM_Serif_Display({
+const bebasNeue = Bebas_Neue({
   weight: ["400"],
   subsets: ["latin"],
-  variable: "--font-dm-serif",
+  variable: "--font-bebas",
 });
 
-const dmSans = DM_Sans({
+const inter = Inter({
   weight: ["300", "400", "500", "600"],
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${dmSerif.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className={`${dmSerif.variable} ${dmSans.variable} font-sans min-h-full flex flex-col bg-white text-[#111111]`}>
+      <body className={`${bebasNeue.variable} ${inter.variable} font-inter min-h-full flex flex-col bg-white text-[#111111]`}>
         <CustomCursor />
         <PageTransition>{children}</PageTransition>
         <StickyCTA />

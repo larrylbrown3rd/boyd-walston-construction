@@ -7,7 +7,10 @@ export default function Navbar({ companyName }) {
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false)
 
   const linkClass =
-    'font-sans font-medium text-xs tracking-[0.15em] uppercase text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300'
+    'font-inter text-xs tracking-[0.15em] uppercase text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300'
+
+  const projectsLinkClass =
+    'font-inter text-xs tracking-[0.15em] uppercase text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300 flex items-center gap-1'
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -23,14 +26,17 @@ export default function Navbar({ companyName }) {
   ]
 
   const dropdownLinkClass =
-    'block px-5 py-3 font-sans text-xs tracking-wide text-[#9B9B9B] uppercase hover:text-[#111111] hover:bg-[#F8F7F5] transition-colors border-b border-[#E8E8E8] last:border-b-0'
+    'block px-5 py-3 font-inter text-xs tracking-[0.15em] uppercase text-[#9B9B9B] hover:text-[#111111] hover:bg-[#F8F7F5] transition-colors border-b border-[#E8E8E8] last:border-b-0'
+
+  const quoteButtonClass =
+    'font-inter font-medium text-xs tracking-wide bg-[#111111] text-white px-6 py-2.5 rounded-full hover:bg-[#2C2C2C] transition-colors'
 
   return (
     <header className="bg-white border-b border-[#E8E8E8] px-10 py-5">
       <nav className="max-w-6xl mx-auto grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center gap-4">
         <a
           href="/"
-          className="font-serif font-bold text-[#111111] text-lg justify-self-start"
+          className="font-bebas text-xl tracking-wider text-[#111111] justify-self-start"
         >
           {companyName}
         </a>
@@ -47,12 +53,9 @@ export default function Navbar({ companyName }) {
             </a>
           </li>
           <li className="relative group">
-            <a
-              href="/projects"
-              className="font-sans text-xs tracking-[0.15em] uppercase text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300 flex items-center gap-1"
-            >
+            <a href="/projects" className={projectsLinkClass}>
               Projects
-              <span className="text-[#9B9B9B] text-xs">▾</span>
+              <span className="text-xs">▾</span>
             </a>
 
             <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-[#E8E8E8] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -75,13 +78,13 @@ export default function Navbar({ companyName }) {
         <div className="flex items-center justify-end gap-4 justify-self-end">
           <a
             href="/quote"
-            className="hidden md:inline-block bg-[#111111] text-white rounded-full px-6 py-2.5 font-sans text-sm hover:bg-[#2C2C2C] transition-colors"
+            className={`hidden md:inline-block ${quoteButtonClass}`}
           >
             Get A Quote
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden font-sans text-[#111111] text-2xl leading-none"
+            className="md:hidden font-inter text-[#111111] text-2xl leading-none"
             aria-label="Toggle menu"
           >
             {isOpen ? '×' : '≡'}
@@ -105,10 +108,10 @@ export default function Navbar({ companyName }) {
             <button
               type="button"
               onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
-              className={`${linkClass} flex items-center gap-1.5 bg-transparent border-0 cursor-pointer p-0`}
+              className={`${projectsLinkClass} bg-transparent border-0 cursor-pointer p-0`}
             >
               Projects
-              <span className="text-[10px] opacity-60">
+              <span className="text-xs">
                 {mobileProjectsOpen ? '▴' : '▾'}
               </span>
             </button>
@@ -132,10 +135,7 @@ export default function Navbar({ companyName }) {
             </li>
           ))}
           <li>
-            <a
-              href="/quote"
-              className="inline-block bg-[#111111] text-white rounded-full px-6 py-2.5 font-sans text-sm hover:bg-[#2C2C2C] transition-colors"
-            >
+            <a href="/quote" className={`inline-block ${quoteButtonClass}`}>
               Get A Quote
             </a>
           </li>

@@ -1,10 +1,10 @@
 export default function ServiceCard({ title, description }) {
   return (
     <div className="bg-white border border-[#E8E8E8] p-10 hover:border-[#111111] hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
-      <h3 className="font-serif text-xl text-[#111111] mb-4">
+      <h3 className="font-bebas text-2xl md:text-3xl text-[#111111] mb-4">
         {title}
       </h3>
-      <p className="font-sans text-sm text-[#9B9B9B] leading-relaxed">
+      <p className="font-inter text-sm text-[#9B9B9B] leading-relaxed">
         {description}
       </p>
     </div>
