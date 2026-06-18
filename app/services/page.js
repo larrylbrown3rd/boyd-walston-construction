@@ -135,24 +135,20 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-24 px-6 md:px-10 bg-[#111111]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <p className="text-eyebrow text-sm mb-4">Precision Planning</p>
-              <h2 className="text-display text-5xl md:text-6xl text-white mb-6">
-                Every Detail<br />Planned to Perfection
-              </h2>
-              <p className="font-lato font-normal text-base text-white/80 leading-relaxed mb-8">
-                Before we break ground we plan every square foot of your project.
-                Our detailed planning process ensures zero surprises and zero cost overruns.
-              </p>
-              <Button href="/estimate" variant="primary">
-                Start Planning
-              </Button>
-            </div>
-            <FloorPlan />
-          </div>
+      <section className="relative overflow-hidden py-32 px-6 md:px-10" style={{ background: 'linear-gradient(135deg, #0a1628 0%, #0f2240 50%, #0a1628 100%)' }}>
+        <FloorPlan fullBackground />
+        <div className="relative max-w-3xl mx-auto text-center" style={{ zIndex: 1 }}>
+          <p className="text-eyebrow text-sm mb-4">Precision Planning</p>
+          <h2 className="text-display text-5xl md:text-6xl text-white mb-6">
+            Every Detail<br />Planned to Perfection
+          </h2>
+          <p className="font-lato font-normal text-lg text-white/80 leading-relaxed mb-8 max-w-xl mx-auto">
+            Before we break ground we plan every square foot of your project.
+            Our detailed planning process ensures zero surprises and zero cost overruns.
+          </p>
+          <Button href="/estimate" variant="primary">
+            Start Planning
+          </Button>
         </div>
       </section>
 
