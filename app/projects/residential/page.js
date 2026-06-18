@@ -45,10 +45,10 @@ export default function ResidentialProjects() {
             <div className="w-12 h-px bg-[#D4D4D4] mb-12" />
           </ScrollReveal>
           <BeforeAfterSlider
-            beforeSrc="/frame-construction.jpg"
-            afterSrc="/closet-finished.jpg"
-            beforeLabel="During Construction"
-            afterLabel="After Completion"
+            beforeSrc="/kitchen-before.png"
+            afterSrc="/kitchen-after.png"
+            beforeLabel="Before"
+            afterLabel="After"
           />
         </div>
       </section>

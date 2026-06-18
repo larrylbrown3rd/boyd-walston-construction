@@ -100,10 +100,10 @@ export default function Projects() {
             See The Difference
           </h2>
           <BeforeAfterSlider
-            beforeSrc="/aerial.jpg"
-            afterSrc="/luxury-building-drone.jpg"
-            beforeLabel="During Construction"
-            afterLabel="After Completion"
+            beforeSrc="/kitchen-before.png"
+            afterSrc="/kitchen-after.png"
+            beforeLabel="Before"
+            afterLabel="After"
           />
         </div>
       </section>
