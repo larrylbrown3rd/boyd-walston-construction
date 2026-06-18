@@ -149,20 +149,22 @@ function CommercialBuilding({ started }) {
   ]
 
   return (
-    <group ref={groupRef} position={[0, -1.5, 0]}>
-      {Array.from({ length: FLOORS }).map((_, i) => (
-        <FloorSlab key={`slab-${i}`} index={i} buildProgress={buildProgress} />
-      ))}
-      {corners.map((pos, i) => (
-        <Column
-          key={`col-${i}`}
-          position={pos}
-          height={FLOORS * FLOOR_HEIGHT}
-          index={i}
-          buildProgress={buildProgress}
-        />
-      ))}
-      <TopCap buildProgress={buildProgress} />
+    <group ref={groupRef}>
+      <group position={[0, -1.5, 0]}>
+        {Array.from({ length: FLOORS }).map((_, i) => (
+          <FloorSlab key={`slab-${i}`} index={i} buildProgress={buildProgress} />
+        ))}
+        {corners.map((pos, i) => (
+          <Column
+            key={`col-${i}`}
+            position={pos}
+            height={FLOORS * FLOOR_HEIGHT}
+            index={i}
+            buildProgress={buildProgress}
+          />
+        ))}
+        <TopCap buildProgress={buildProgress} />
+      </group>
     </group>
   )
 }
@@ -194,7 +196,7 @@ export default function CommercialBuildout3D({ className = '', backgroundImage }
       )}
       {!backgroundImage && <div className="absolute inset-0 bg-[#111111]" />}
       <Canvas
-        camera={{ position: [5, 2, 7], fov: 45 }}
+        camera={{ position: [5, 1, 7], fov: 45 }}
         style={{ position: 'relative', width: '100%', height: '100%', zIndex: 1 }}
         gl={{ alpha: true }}
       >

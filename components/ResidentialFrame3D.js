@@ -114,16 +114,18 @@ function HouseFrame({ started }) {
   })
 
   return (
-    <group ref={groupRef} scale={0.85} position={[0, -1.9, 0]}>
-      {geometries.map((geo, i) => (
-        <FrameBeam
-          key={i}
-          geometry={geo}
-          index={i}
-          total={geometries.length}
-          buildProgress={buildProgress}
-        />
-      ))}
+    <group ref={groupRef} scale={0.85}>
+      <group position={[0, -1.9, 0]}>
+        {geometries.map((geo, i) => (
+          <FrameBeam
+            key={i}
+            geometry={geo}
+            index={i}
+            total={geometries.length}
+            buildProgress={buildProgress}
+          />
+        ))}
+      </group>
     </group>
   )
 }
@@ -155,7 +157,7 @@ export default function ResidentialFrame3D({ className = '', backgroundImage }) 
       )}
       {!backgroundImage && <div className="absolute inset-0 bg-[#111111]" />}
       <Canvas
-        camera={{ position: [6, 2, 8], fov: 45 }}
+        camera={{ position: [6, 1, 8], fov: 45 }}
         style={{ position: 'relative', width: '100%', height: '100%', zIndex: 1 }}
         gl={{ alpha: true }}
       >

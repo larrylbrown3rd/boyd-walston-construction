@@ -112,34 +112,36 @@ function RoomOutline({ started }) {
   })
 
   return (
-    <group ref={groupRef} position={[0, -0.55, 0]}>
-      {LAYERS.map((layer, i) => (
-        <WallLayer key={i} {...layer} index={i} buildProgress={buildProgress} />
-      ))}
-      <StructuralPiece
-        position={[0, 1.1, 0]}
-        size={[2.8, 0.08, 2.2]}
-        color="#D4D4D4"
-        opacity={0.4}
-        pieceIndex={5}
-        buildProgress={buildProgress}
-      />
-      <StructuralPiece
-        position={[-1.2, 0.55, 0]}
-        size={[0.08, 1.1, 2.2]}
-        color="#9B9B9B"
-        opacity={0.35}
-        pieceIndex={6}
-        buildProgress={buildProgress}
-      />
-      <StructuralPiece
-        position={[1.2, 0.55, 0]}
-        size={[0.08, 1.1, 2.2]}
-        color="#9B9B9B"
-        opacity={0.35}
-        pieceIndex={7}
-        buildProgress={buildProgress}
-      />
+    <group ref={groupRef}>
+      <group position={[0, -0.55, 0]}>
+        {LAYERS.map((layer, i) => (
+          <WallLayer key={i} {...layer} index={i} buildProgress={buildProgress} />
+        ))}
+        <StructuralPiece
+          position={[0, 1.1, 0]}
+          size={[2.8, 0.08, 2.2]}
+          color="#D4D4D4"
+          opacity={0.4}
+          pieceIndex={5}
+          buildProgress={buildProgress}
+        />
+        <StructuralPiece
+          position={[-1.2, 0.55, 0]}
+          size={[0.08, 1.1, 2.2]}
+          color="#9B9B9B"
+          opacity={0.35}
+          pieceIndex={6}
+          buildProgress={buildProgress}
+        />
+        <StructuralPiece
+          position={[1.2, 0.55, 0]}
+          size={[0.08, 1.1, 2.2]}
+          color="#9B9B9B"
+          opacity={0.35}
+          pieceIndex={7}
+          buildProgress={buildProgress}
+        />
+      </group>
     </group>
   )
 }
@@ -171,7 +173,7 @@ export default function RenovationLayers3D({ className = '', backgroundImage }) 
       )}
       {!backgroundImage && <div className="absolute inset-0 bg-[#111111]" />}
       <Canvas
-        camera={{ position: [5, 1.5, 6], fov: 45 }}
+        camera={{ position: [5, 0.5, 6], fov: 45 }}
         style={{ position: 'relative', width: '100%', height: '100%', zIndex: 1 }}
         gl={{ alpha: true }}
       >
