@@ -32,7 +32,7 @@ export default function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[32rem] md:h-[38rem] overflow-hidden cursor-ew-resize select-none"
+      className="relative w-full h-[36rem] md:h-[42rem] overflow-hidden cursor-ew-resize select-none"
       onMouseMove={handleMouseMove}
       onMouseUp={() => { isDragging.current = false }}
       onMouseLeave={() => { isDragging.current = false }}
@@ -42,8 +42,7 @@ export default function BeforeAfterSlider({
         src={afterSrc}
         alt={afterLabel}
         fill
-        className="object-cover"
-        style={{ objectPosition: '50% 5%' }}
+        className="object-cover object-top"
         quality={100}
       />
 
@@ -59,8 +58,7 @@ export default function BeforeAfterSlider({
             src={beforeSrc}
             alt={beforeLabel}
             fill
-            className="object-cover"
-            style={{ objectPosition: '50% 5%' }}
+            className="object-cover object-top"
             quality={100}
           />
         </div>
