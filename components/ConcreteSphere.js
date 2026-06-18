@@ -13,7 +13,7 @@ function Sphere() {
       uniforms: {
         time: { value: 0 },
         color1: { value: new THREE.Color('#2C2C2C') },
-        color2: { value: new THREE.Color('#C4A882') },
+        color2: { value: new THREE.Color('#D4D4D4') },
       },
       vertexShader: `
         varying vec2 vUv;
@@ -70,7 +70,7 @@ function Sphere() {
       <mesh ref={wireRef}>
         <sphereGeometry args={[2.02, 16, 16]} />
         <meshBasicMaterial
-          color="#C4A882"
+          color="#D4D4D4"
           wireframe
           transparent
           opacity={0.08}

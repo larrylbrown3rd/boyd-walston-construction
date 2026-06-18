@@ -1,4 +1,9 @@
-import { Bebas_Neue, Inter } from "next/font/google";
+import {
+  Bebas_Neue,
+  Inter,
+  Barlow_Condensed,
+  Lato,
+} from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
@@ -16,18 +21,32 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const barlowCondensed = Barlow_Condensed({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-barlow",
+});
+
+const lato = Lato({
+  weight: ["100", "300", "400"],
+  subsets: ["latin"],
+  variable: "--font-lato",
+});
+
 export const metadata = {
   title: "Boyd Walston Construction",
-  description: "Quality residential and commercial construction in Pike Road, Alabama.",
+  description: "Quality residential and commercial construction throughout The River Region, Alabama.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${bebasNeue.variable} ${inter.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} h-full antialiased`}
     >
-      <body className={`${bebasNeue.variable} ${inter.variable} font-inter min-h-full flex flex-col bg-white text-[#111111]`}>
+      <body
+        className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} font-lato min-h-full flex flex-col bg-white text-[#111111]`}
+      >
         <CustomCursor />
         <PageTransition>{children}</PageTransition>
         <StickyCTA />

@@ -5,10 +5,10 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { useInView } from 'framer-motion'
 
 const stats = [
-  { label: 'Projects Completed', value: 200, max: 200, color: '#C4A882' },
+  { label: 'Projects Completed', value: 200, max: 200, color: '#D4D4D4' },
   { label: 'Client Satisfaction', value: 98, max: 100, color: '#FFFFFF' },
   { label: 'On Time Delivery', value: 95, max: 100, color: '#9B9B9B' },
-  { label: 'Years Experience', value: 10, max: 10, color: '#C4A882' },
+  { label: 'Years Experience', value: 10, max: 10, color: '#D4D4D4' },
 ]
 
 function Bar({ index, targetHeight, color, started }) {
@@ -53,7 +53,7 @@ function Bars({ started }) {
       <pointLight
         position={[-5, 5, -5]}
         intensity={0.5}
-        color="#C4A882"
+        color="#D4D4D4"
       />
       {stats.map((stat, i) => (
         <Bar
@@ -94,10 +94,10 @@ export default function ProgressBars3D() {
       <div className="grid grid-cols-4 gap-4 mt-4">
         {stats.map((stat, i) => (
           <div key={i} className="text-center">
-            <p className="font-bebas text-6xl md:text-7xl text-[#111111]">
+            <p className="text-display text-6xl md:text-7xl text-[#111111]">
               {stat.value}{stat.label.includes('Years') ? '+' : stat.label.includes('Projects') ? '+' : '%'}
             </p>
-            <p className="font-inter text-xs text-[#9B9B9B] mt-1">
+            <p className="font-lato font-light text-xs text-[#9B9B9B] mt-1">
               {stat.label}
             </p>
           </div>

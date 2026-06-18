@@ -1,13 +1,25 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import FAQ from '@/components/FAQ'
+import Button from '@/components/Button'
 
-const WireframeGeometry = dynamic(
-  () => import('@/components/WireframeGeometry'),
+const ResidentialFrame3D = dynamic(
+  () => import('@/components/ResidentialFrame3D'),
+  { ssr: false }
+)
+
+const CommercialBuildout3D = dynamic(
+  () => import('@/components/CommercialBuildout3D'),
+  { ssr: false }
+)
+
+const RenovationLayers3D = dynamic(
+  () => import('@/components/RenovationLayers3D'),
   { ssr: false }
 )
 
@@ -21,113 +33,123 @@ const WebGLGradient = dynamic(
   { ssr: false }
 )
 
+const services = [
+  {
+    title: 'Residential Construction',
+    description:
+      'Custom home builds designed around your vision and budget. From foundation to finish we handle every detail of your new home construction.',
+    items: ['Custom home builds', 'Home additions', 'Full renovations', 'Kitchen and bath remodels'],
+    Visual: ResidentialFrame3D,
+    visualFirst: true,
+    backgroundImage: '/concrete-finished.jpg',
+  },
+  {
+    title: 'Commercial Build-Out',
+    description:
+      'Professional commercial spaces built on time and on budget. We work with business owners to deliver functional and impressive commercial environments.',
+    items: ['Office build-outs', 'Retail spaces', 'Warehouse construction', 'Restaurant build-outs'],
+    Visual: CommercialBuildout3D,
+    visualFirst: false,
+    backgroundImage: '/luxury-building.jpg',
+  },
+]
+
 export default function Services() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-8">
-        <WireframeGeometry />
-        <div className="absolute inset-0 bg-[#111111]/80" style={{ zIndex: 1 }} />
-        <div className="relative max-w-6xl mx-auto" style={{ zIndex: 2 }}>
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
-            What We Do
-          </p>
-          <h1 className="font-bebas text-6xl md:text-7xl text-white leading-none mb-6">
+      <section className="relative overflow-hidden text-white py-24 px-6 md:px-10 min-h-[50vh] flex items-center">
+        <Image
+          src="/frame-construction.jpg"
+          alt="Boyd Walston Construction services River Region Alabama"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#111111]/75" />
+        <div className="relative max-w-6xl mx-auto z-10">
+          <p className="text-eyebrow text-sm mb-4">What We Do</p>
+          <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Our Services
           </h1>
-          <p className="font-inter text-[#9B9B9B] text-lg max-w-2xl">
-            From custom homes to commercial build-outs — we handle
+          <p className="font-lato text-lg font-normal text-white/80 max-w-2xl leading-relaxed">
+            From custom homes to commercial build-outs and renovations — we handle
             every phase of construction with precision and care.
           </p>
         </div>
       </section>
 
-      <section className="py-24 px-8">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-24 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto space-y-20">
+          {services.map((service, index) => {
+            const Visual = service.Visual
 
-          <ScrollReveal delay={0}>
-            <div className="bg-white border border-[#E8E8E8] p-10 hover:border-[#111111] hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
-              <h2 className="font-bebas text-2xl md:text-3xl text-[#111111] mb-4">
-                Residential Construction
-              </h2>
-              <p className="font-inter text-sm text-[#9B9B9B] leading-relaxed mb-6">
-                Custom home builds designed around your vision and
-                budget. From foundation to finish we handle every
-                detail of your new home construction.
-              </p>
-              <ul className="font-inter text-sm text-[#9B9B9B] space-y-2 list-none">
-                <li>— Custom home builds</li>
-                <li>— Home additions</li>
-                <li>— Full renovations</li>
-                <li>— Kitchen and bath remodels</li>
-              </ul>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.15}>
-            <div className="bg-white border border-[#E8E8E8] p-10 hover:border-[#111111] hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
-              <h2 className="font-bebas text-2xl md:text-3xl text-[#111111] mb-4">
-                Commercial Build-Out
-              </h2>
-              <p className="font-inter text-sm text-[#9B9B9B] leading-relaxed mb-6">
-                Professional commercial spaces built on time and on
-                budget. We work with business owners to deliver
-                functional and impressive commercial environments.
-              </p>
-              <ul className="font-inter text-sm text-[#9B9B9B] space-y-2 list-none">
-                <li>— Office build-outs</li>
-                <li>— Retail spaces</li>
-                <li>— Warehouse construction</li>
-                <li>— Restaurant build-outs</li>
-              </ul>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.3}>
-            <div className="bg-white border border-[#E8E8E8] p-10 hover:border-[#111111] hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
-              <h2 className="font-bebas text-2xl md:text-3xl text-[#111111] mb-4">
-                Construction Management
-              </h2>
-              <p className="font-inter text-sm text-[#9B9B9B] leading-relaxed mb-6">
-                Full project oversight from planning through
-                completion. We coordinate subcontractors, manage
-                timelines, and keep your project on budget.
-              </p>
-              <ul className="font-inter text-sm text-[#9B9B9B] space-y-2 list-none">
-                <li>— Project planning</li>
-                <li>— Subcontractor coordination</li>
-                <li>— Budget management</li>
-                <li>— Timeline oversight</li>
-              </ul>
-            </div>
-          </ScrollReveal>
-
+            return (
+              <ScrollReveal key={service.title} delay={index * 0.05}>
+                <div
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-0 border border-[#E8E8E8] overflow-hidden ${
+                    service.visualFirst ? '' : 'lg:[&>*:first-child]:order-2'
+                  }`}
+                >
+                  <Visual className="h-64 md:h-80 lg:h-full min-h-[16rem]" backgroundImage={service.backgroundImage} />
+                  <div className="p-8 md:p-10 lg:p-12 flex flex-col justify-center bg-white">
+                    <h2 className="text-display text-3xl md:text-4xl text-[#111111] mb-4">
+                      {service.title}
+                    </h2>
+                    <p className="font-lato text-base font-normal text-[#4A4A4A] leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+                    <ul className="font-lato text-sm text-[#4A4A4A] space-y-2 list-none">
+                      {service.items.map((item) => (
+                        <li key={item}>— {item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </ScrollReveal>
+            )
+          })}
         </div>
       </section>
 
-      <section className="py-24 px-8 bg-[#111111]">
+      <section className="py-24 px-6 md:px-10 bg-[#F8F7F5] border-y border-[#E8E8E8]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 border border-[#E8E8E8] overflow-hidden">
+          <RenovationLayers3D className="h-72 md:h-96 lg:h-full min-h-[18rem]" backgroundImage="/closet-finished.jpg" />
+          <div className="p-8 md:p-10 lg:p-12 flex flex-col justify-center bg-white">
+            <p className="text-eyebrow text-sm mb-4">Renovations</p>
+            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-4">
+              Transform What You Already Have
+            </h2>
+            <p className="font-lato text-base font-normal text-[#4A4A4A] leading-relaxed mb-6">
+              Kitchens, bathrooms, additions, and full interior renovations —
+              we rebuild layer by layer with minimal disruption and maximum craft.
+            </p>
+            <ul className="font-lato text-sm text-[#4A4A4A] space-y-2 list-none">
+              <li>— Kitchen and bath remodels</li>
+              <li>— Room additions and layout changes</li>
+              <li>— Finish upgrades and custom built-ins</li>
+              <li>— Structural updates and code compliance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 md:px-10 bg-[#111111]">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
-                Precision Planning
-              </p>
-              <h2 className="font-bebas text-5xl md:text-6xl text-white mb-6">
+              <p className="text-eyebrow text-sm mb-4">Precision Planning</p>
+              <h2 className="text-display text-5xl md:text-6xl text-white mb-6">
                 Every Detail<br />Planned to Perfection
               </h2>
-              <p className="font-inter text-[#9B9B9B] leading-relaxed mb-8">
-                Before we break ground we plan every
-                square foot of your project. Our detailed
-                planning process ensures zero surprises
-                and zero cost overruns.
+              <p className="font-lato font-normal text-base text-white/80 leading-relaxed mb-8">
+                Before we break ground we plan every square foot of your project.
+                Our detailed planning process ensures zero surprises and zero cost overruns.
               </p>
-              <a
-                href="/estimate"
-                className="inline-block bg-white text-[#111111] font-inter font-semibold text-xs px-8 py-4 rounded-full hover:bg-[#F0EFED] transition-colors"
-              >
-                Start Planning →
-              </a>
+              <Button href="/estimate" variant="primary">
+                Start Planning
+              </Button>
             </div>
             <FloorPlan />
           </div>
@@ -136,22 +158,19 @@ export default function Services() {
 
       <FAQ />
 
-      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-8 text-center">
+      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-6 md:px-10">
         <WebGLGradient />
         <div className="absolute inset-0 bg-[#111111]/60" style={{ zIndex: 1 }} />
-        <div className="relative max-w-2xl mx-auto" style={{ zIndex: 2 }}>
-          <h2 className="font-bebas text-5xl md:text-6xl text-white mb-4">
+        <div className="relative max-w-2xl mx-auto text-center" style={{ zIndex: 2 }}>
+          <h2 className="text-display text-5xl md:text-6xl text-white mb-4">
             Ready to Start Your Project?
           </h2>
-          <p className="font-inter text-[#9B9B9B] mb-8">
+          <p className="font-lato font-normal text-base text-white/80 mb-8 leading-relaxed">
             Contact us today for a free consultation and quote.
           </p>
-          <a
-            href="/quote"
-            className="inline-block bg-white text-[#111111] font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-[#F0EFED] transition-colors duration-300"
-          >
+          <Button href="/quote" variant="primary">
             Get A Free Quote
-          </a>
+          </Button>
         </div>
       </section>
 

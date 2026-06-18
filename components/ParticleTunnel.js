@@ -50,7 +50,7 @@ function Tunnel() {
         />
       </bufferGeometry>
       <pointsMaterial
-        color="#C4A882"
+        color="#D4D4D4"
         size={0.05}
         transparent
         opacity={0.6}

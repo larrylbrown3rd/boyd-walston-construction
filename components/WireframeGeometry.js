@@ -26,7 +26,7 @@ function RotatingShapes() {
       <mesh ref={cubeRef} position={[-4, 2, -2]}>
         <boxGeometry args={[2, 2, 2]} />
         <meshBasicMaterial
-          color="#C4A882"
+          color="#D4D4D4"
           wireframe
           transparent
           opacity={0.15}
@@ -36,7 +36,7 @@ function RotatingShapes() {
       <mesh ref={octaRef} position={[4, -1, -3]}>
         <octahedronGeometry args={[1.5]} />
         <meshBasicMaterial
-          color="#C4A882"
+          color="#D4D4D4"
           wireframe
           transparent
           opacity={0.15}
@@ -46,7 +46,7 @@ function RotatingShapes() {
       <mesh ref={torusRef} position={[0, -3, -2]}>
         <torusGeometry args={[1.5, 0.3, 8, 16]} />
         <meshBasicMaterial
-          color="#C4A882"
+          color="#D4D4D4"
           wireframe
           transparent
           opacity={0.15}

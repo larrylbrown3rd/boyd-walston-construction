@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useCallback } from 'react'
+import Image from 'next/image'
 
 export default function BeforeAfterSlider({
   beforeSrc = '/before.jpg',
@@ -16,7 +17,7 @@ export default function BeforeAfterSlider({
     if (!containerRef.current) return
     const rect = containerRef.current.getBoundingClientRect()
     const pos = ((clientX - rect.left) / rect.width) * 100
-    setSliderPos(Math.min(Math.max(pos, 0), 100))
+    setSliderPos(Math.min(Math.max(pos, 1), 99))
   }, [])
 
   const handleMouseMove = (e) => {
@@ -37,31 +38,38 @@ export default function BeforeAfterSlider({
       onMouseLeave={() => { isDragging.current = false }}
       onTouchMove={handleTouchMove}
     >
-      {/* After image — full width background */}
-      <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-        <span className="text-gray-500 font-inter text-sm">
-          After Photo
-        </span>
-      </div>
+      <Image
+        src={afterSrc}
+        alt={afterLabel}
+        fill
+        className="object-cover"
+        quality={100}
+      />
 
-      {/* Before image — clipped to slider position */}
       <div
-        className="absolute inset-0 bg-gray-400 flex items-center justify-center overflow-hidden"
+        className="absolute inset-y-0 left-0 overflow-hidden"
         style={{ width: `${sliderPos}%` }}
       >
-        <span className="text-gray-600 font-inter text-sm absolute left-4">
-          Before Photo
-        </span>
+        <div
+          className="relative h-full"
+          style={{ width: `${10000 / sliderPos}%` }}
+        >
+          <Image
+            src={beforeSrc}
+            alt={beforeLabel}
+            fill
+            className="object-cover"
+            quality={100}
+          />
+        </div>
       </div>
 
-      {/* Slider handle */}
       <div
-        className="absolute top-0 bottom-0 w-0.5 bg-white cursor-ew-resize"
+        className="absolute top-0 bottom-0 w-0.5 bg-white cursor-ew-resize z-10"
         style={{ left: `${sliderPos}%` }}
         onMouseDown={() => { isDragging.current = true }}
         onTouchStart={() => { isDragging.current = true }}
       >
-        {/* Handle circle */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
           <span className="text-[#111111] text-xs font-bold select-none">
             ⟷
@@ -69,11 +77,10 @@ export default function BeforeAfterSlider({
         </div>
       </div>
 
-      {/* Labels */}
-      <div className="absolute top-4 left-4 bg-[#111111] text-white font-inter text-xs px-3 py-1 rounded-full">
+      <div className="absolute top-4 left-4 bg-[#111111] text-white font-inter text-xs px-3 py-1 rounded-full z-10">
         {beforeLabel}
       </div>
-      <div className="absolute top-4 right-4 bg-[#111111] text-white font-inter text-xs px-3 py-1 rounded-full">
+      <div className="absolute top-4 right-4 bg-[#111111] text-white font-inter text-xs px-3 py-1 rounded-full z-10">
         {afterLabel}
       </div>
     </div>

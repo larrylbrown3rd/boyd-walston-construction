@@ -10,7 +10,7 @@ function GradientPlane() {
       time: { value: 0 },
       color1: { value: new THREE.Color('#111111') },
       color2: { value: new THREE.Color('#1a1a2e') },
-      color3: { value: new THREE.Color('#C4A882') },
+      color3: { value: new THREE.Color('#D4D4D4') },
     },
     vertexShader: `
       varying vec2 vUv;

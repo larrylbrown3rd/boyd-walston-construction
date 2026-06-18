@@ -3,11 +3,11 @@
 import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import ServiceCard from '@/components/ServiceCard'
+import FeaturedProjects from '@/components/FeaturedProjects'
 import Footer from '@/components/Footer'
-import ScrollReveal from '@/components/ScrollReveal'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
+import Button from '@/components/Button'
 
 const WebGLGradient = dynamic(
   () => import('@/components/WebGLGradient'),
@@ -19,71 +19,42 @@ export default function Home() {
     <main className="min-h-screen bg-white flex flex-col">
       <Navbar companyName="Boyd Walston Construction" />
       <Hero />
-      <section className="bg-[#F8F7F5] py-24 px-8">
-        <div className="max-w-6xl mx-auto">
-          <ScrollReveal>
-            <h2 className="font-bebas text-5xl md:text-6xl text-[#111111] mb-4">
-              Our Services
-            </h2>
-          </ScrollReveal>
-          <div className="w-12 h-px bg-[#C4A882] mb-6" />
-          <p className="font-inter text-[#9B9B9B] text-sm tracking-wide mb-16">
-            From custom homes to commercial build-outs
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ScrollReveal delay={0}>
-              <ServiceCard
-                title="Residential Construction"
-                description="Custom home builds and renovations tailored to your vision"
-              />
-            </ScrollReveal>
-            <ScrollReveal delay={0.15}>
-              <ServiceCard
-                title="Commercial Build-Out"
-                description="Professional commercial spaces built on time and on budget."
-              />
-            </ScrollReveal>
-            <ScrollReveal delay={0.3}>
-              <ServiceCard
-                title="Construction Management"
-                description="Full project oversight from planning through completion."
-              />
-            </ScrollReveal>
-          </div>
+      <FeaturedProjects compact />
+
+      <section className="py-24 px-6 md:px-10 bg-[#F8F7F5] border-y border-[#E8E8E8]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+          <Testimonials embedded />
+          <FAQ embedded />
         </div>
       </section>
-      <Testimonials />
-      <FAQ />
-      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-8 text-center">
+
+      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-6 md:px-10">
         <WebGLGradient />
         <div className="absolute inset-0 bg-[#111111]/60" style={{ zIndex: 1 }} />
-        <div className="relative max-w-3xl mx-auto" style={{ zIndex: 2 }}>
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
-            Get Started Today
-          </p>
-          <h2 className="font-bebas text-5xl md:text-6xl text-white mb-6">
-            Know Your Budget Before You Build
-          </h2>
-          <p className="font-inter text-[#9B9B9B] mb-10 text-lg">
-            Answer 5 quick questions and get a ballpark
-            estimate sent to your inbox within 24 hours.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/estimate"
-              className="bg-white text-[#111111] font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-[#F0EFED] transition-colors"
-            >
+        <div
+          className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 items-center"
+          style={{ zIndex: 2 }}
+        >
+          <div>
+            <p className="text-eyebrow text-sm mb-4">Get Started</p>
+            <h2 className="text-display text-5xl md:text-6xl text-white mb-6">
+              Know Your Budget Before You Build
+            </h2>
+            <p className="font-lato text-base font-normal text-white/80 leading-relaxed">
+              Get a free ballpark estimate sent to your inbox within 24 hours.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row md:flex-col gap-4 md:justify-self-end md:w-full md:max-w-sm">
+            <Button href="/estimate" variant="primary" className="w-full">
               Get Free Estimate
-            </a>
-            <a
-              href="/book"
-              className="border border-white text-white font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-white hover:text-[#111111] transition-colors"
-            >
+            </Button>
+            <Button href="/book" variant="outline" className="w-full">
               Book A Walkthrough
-            </a>
+            </Button>
           </div>
         </div>
       </section>
+
       <Footer />
     </main>
   )

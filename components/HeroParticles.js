@@ -62,7 +62,7 @@ function ReactiveParticles({ mouse, scrollY }) {
   return (
     <Points ref={ref} positions={positions} stride={3}>
       <PointMaterial
-        color="#C4A882"
+        color="#D4D4D4"
         size={0.015}
         transparent
         opacity={0.6}

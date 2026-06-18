@@ -46,7 +46,7 @@ export default function CustomCursor() {
           width: isHovering ? 50 : 40,
           height: isHovering ? 50 : 40,
           borderRadius: '50%',
-          border: '1px solid #C4A882',
+          border: '1px solid #D4D4D4',
           pointerEvents: 'none',
           zIndex: 9999,
           transition: 'all 0.15s ease-out',
@@ -61,7 +61,7 @@ export default function CustomCursor() {
           width: 6,
           height: 6,
           borderRadius: '50%',
-          backgroundColor: '#C4A882',
+          backgroundColor: '#D4D4D4',
           pointerEvents: 'none',
           zIndex: 9999,
         }}

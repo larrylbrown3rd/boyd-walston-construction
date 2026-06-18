@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const faqs = [
   {
     q: 'How much does a custom home build cost?',
-    a: 'Custom home builds vary widely based on size, materials, and finishes. Most projects in the Pike Road area range from $150,000 to $500,000+. We provide free detailed estimates after an initial site visit.',
+    a: 'Custom home builds vary widely based on size, materials, and finishes. Most projects in The River Region area range from $150,000 to $500,000+. We provide free detailed estimates after an initial site visit.',
   },
   {
     q: 'How long does a typical project take?',
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'What areas do you serve?',
-    a: 'We primarily serve Pike Road and the Montgomery, Alabama metro area. We also take on select projects throughout central Alabama. Contact us to confirm your location.',
+    a: 'We primarily serve The River Region and surrounding Alabama communities. We also take on select projects throughout central Alabama. Contact us to confirm your location.',
   },
   {
     q: 'How do I get started?',
@@ -30,31 +30,29 @@ const faqs = [
   },
 ]
 
-export default function FAQ() {
+export default function FAQ({ sectionClassName = 'bg-white', embedded = false }) {
   const [open, setOpen] = useState(null)
 
-  return (
-    <section className="py-24 px-8 bg-white">
-      <div className="max-w-3xl mx-auto">
+  const content = (
+    <>
+      <div className={embedded ? 'mb-8' : 'text-center mb-16'}>
+        <p className="text-eyebrow text-sm mb-4">
+          Common Questions
+        </p>
+        <h2 className={`text-display text-4xl md:text-5xl text-[#111111] ${embedded ? '' : 'md:text-6xl'}`}>
+          {embedded ? 'FAQ' : 'Frequently Asked Questions'}
+        </h2>
+        {!embedded && <div className="w-12 h-px bg-[#D4D4D4] mx-auto mt-6" />}
+      </div>
 
-        <div className="text-center mb-16">
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
-            Common Questions
-          </p>
-          <h2 className="font-bebas text-5xl md:text-6xl text-[#111111]">
-            Frequently Asked Questions
-          </h2>
-          <div className="w-12 h-px bg-[#C4A882] mx-auto mt-6" />
-        </div>
-
-        <div className="space-y-0">
+      <div className="space-y-0">
           {faqs.map((faq, i) => (
             <div key={i} className="border-b border-[#E8E8E8]">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between py-6 text-left"
               >
-                <span className="font-inter font-medium text-sm text-[#111111] pr-8">
+                <span className="font-lato font-light text-sm text-[#111111] pr-8">
                   {faq.q}
                 </span>
                 <span className={`font-inter text-lg text-[#9B9B9B] flex-shrink-0 transition-transform duration-300 ${open === i ? 'rotate-45' : ''}`}>
@@ -71,7 +69,7 @@ export default function FAQ() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="font-inter text-sm text-[#9B9B9B] leading-relaxed pb-6">
+                    <p className="font-lato font-light text-sm text-[#9B9B9B] leading-relaxed pb-6">
                       {faq.a}
                     </p>
                   </motion.div>
@@ -80,7 +78,17 @@ export default function FAQ() {
             </div>
           ))}
         </div>
+    </>
+  )
 
+  if (embedded) {
+    return <div className="w-full">{content}</div>
+  }
+
+  return (
+    <section className={`py-24 px-6 md:px-10 ${sectionClassName}`}>
+      <div className="max-w-3xl mx-auto">
+        {content}
       </div>
     </section>
   )

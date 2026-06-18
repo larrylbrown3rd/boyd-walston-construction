@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const defaultProjects = [
@@ -8,31 +9,36 @@ const defaultProjects = [
     id: 1,
     category: 'Residential',
     title: 'Custom Home Build',
-    location: 'Pike Road, AL — 2024',
+    location: 'The River Region, AL — 2024',
+    image: '/aerial.jpg',
   },
   {
     id: 2,
     category: 'Commercial',
-    title: 'Office Build-Out',
-    location: 'Montgomery, AL — 2024',
+    title: 'Luxury Building Exterior',
+    location: 'The River Region, AL — 2024',
+    image: '/luxury-building.jpg',
   },
   {
     id: 3,
-    category: 'Renovation',
-    title: 'Full Home Renovation',
-    location: 'Pike Road, AL — 2023',
+    category: 'Residential',
+    title: 'Bathroom Renovation',
+    location: 'The River Region, AL — 2023',
+    image: '/shower-after.jpg',
   },
   {
     id: 4,
     category: 'Commercial',
-    title: 'Warehouse Construction',
-    location: 'Montgomery, AL — 2023',
+    title: 'Commercial Outdoor Space',
+    location: 'The River Region, AL — 2023',
+    image: '/commercial-patio-3.jpg',
   },
   {
     id: 5,
     category: 'Residential',
-    title: 'Home Addition',
-    location: 'Pike Road, AL — 2023',
+    title: 'Concrete Driveway',
+    location: 'The River Region, AL — 2023',
+    image: '/concrete-finished.jpg',
   },
 ]
 
@@ -47,7 +53,7 @@ export default function ProjectCarousel({ projects = defaultProjects }) {
 
   if (projects.length === 0) {
     return (
-      <p className="font-inter text-sm text-[#9B9B9B] text-center py-16">
+      <p className="font-lato font-light text-sm text-[#9B9B9B] text-center py-16">
         No projects found in this category.
       </p>
     )
@@ -81,25 +87,37 @@ export default function ProjectCarousel({ projects = defaultProjects }) {
           transition={{ duration: 0.4, ease: 'easeInOut' }}
           className="border border-[#E8E8E8] overflow-hidden"
         >
-          <div className="bg-[#F0EFED] h-96 w-full flex items-center justify-center">
-            <span className="font-inter text-sm text-[#9B9B9B] tracking-widest uppercase">
-              Project Photo
-            </span>
+          <div className="relative bg-[#F0EFED] h-96 w-full overflow-hidden">
+            {project.image ? (
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                quality={100}
+                className="object-cover"
+              />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="font-lato font-light text-sm text-[#9B9B9B] tracking-widest uppercase">
+                  Project Photo
+                </span>
+              </div>
+            )}
           </div>
 
           <div className="p-10 flex items-center justify-between">
             <div>
-              <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-2">
+              <p className="text-eyebrow text-sm mb-2">
                 {project.category.toUpperCase()}
               </p>
-              <h3 className="font-bebas text-2xl md:text-3xl text-[#111111] mb-1">
+              <h3 className="text-display text-2xl md:text-3xl text-[#111111] mb-1">
                 {project.title}
               </h3>
-              <p className="font-inter text-sm text-[#9B9B9B]">
+              <p className="font-lato font-light text-sm text-[#9B9B9B]">
                 {project.location}
               </p>
             </div>
-            <p className="font-bebas text-6xl md:text-7xl text-[#F0EFED]">
+            <p className="text-display text-6xl md:text-7xl text-[#F0EFED]">
               {String(safeActive + 1).padStart(2, '0')}
             </p>
           </div>
@@ -127,13 +145,13 @@ export default function ProjectCarousel({ projects = defaultProjects }) {
         <div className="flex gap-4">
           <button
             onClick={prev}
-            className="w-12 h-12 border border-[#E8E8E8] rounded-full flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+            className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
           >
             ←
           </button>
           <button
             onClick={next}
-            className="w-12 h-12 border border-[#E8E8E8] rounded-full flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+            className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
           >
             →
           </button>

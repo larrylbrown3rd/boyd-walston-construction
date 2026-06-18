@@ -5,8 +5,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ResponsePromise from '@/components/ResponsePromise'
 
-const labelClass = "block font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-2"
-const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-inter text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+const labelClass = "block text-eyebrow-muted text-sm mb-2"
+const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-lato font-light text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
 
 export default function Contact() {
 
@@ -36,13 +36,13 @@ export default function Contact() {
 
       <section className="bg-[#111111] text-white py-24 px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+          <p className="text-eyebrow text-sm mb-4">
             Get In Touch
           </p>
-          <h1 className="font-bebas text-6xl md:text-7xl text-white leading-none mb-6">
+          <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Contact Us
           </h1>
-          <p className="font-inter text-[#9B9B9B] text-lg max-w-2xl">
+          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
             Ready to start your project? We would love to hear from you.
           </p>
         </div>
@@ -52,16 +52,16 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 
           <div>
-            <h2 className="font-bebas text-5xl text-[#111111] mb-8">
+            <h2 className="text-display text-5xl text-[#111111] mb-8">
               Send Us a Message
             </h2>
 
             {submitted ? (
               <div className="border border-[#E8E8E8] p-8">
-                <p className="font-bebas text-[#111111] mb-2">
+                <p className="text-display text-[#111111] mb-2">
                   Message Received
                 </p>
-                <p className="font-inter text-sm text-[#9B9B9B]">
+                <p className="font-lato font-light text-sm text-[#9B9B9B]">
                   Thank you for reaching out. We will be in touch
                   within one business day.
                 </p>
@@ -129,7 +129,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="bg-[#111111] text-white font-inter font-medium text-sm py-4 w-full rounded-full hover:bg-[#2C2C2C] transition-colors duration-300"
+                  className="font-inter font-medium text-white text-sm py-4 w-full rounded-lg hover:bg-[#2C2C2C] transition-colors duration-300"
                 >
                   Send Message
                 </button>
@@ -140,25 +140,25 @@ export default function Contact() {
           </div>
 
           <div>
-            <h2 className="font-bebas text-5xl text-[#111111] mb-8">
+            <h2 className="text-display text-5xl text-[#111111] mb-8">
               Contact Information
             </h2>
             <ul className="space-y-6 list-none">
               <li>
-                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Location</p>
-                <p className="font-inter text-sm text-[#111111]">Pike Road, Alabama</p>
+                <p className="text-eyebrow-muted text-xs mb-1">Location</p>
+                <p className="font-lato text-sm text-[#111111]">The River Region, Alabama</p>
               </li>
               <li>
-                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Phone</p>
-                <p className="font-inter text-sm text-[#111111]">(555) 000-0000</p>
+                <p className="text-eyebrow-muted text-xs mb-1">Phone</p>
+                <p className="font-lato text-sm text-[#111111]">(555) 000-0000</p>
               </li>
               <li>
-                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Email</p>
-                <p className="font-inter text-sm text-[#111111]">info@boydwalston.com</p>
+                <p className="text-eyebrow-muted text-xs mb-1">Email</p>
+                <p className="font-lato text-sm text-[#111111]">info@boydwalston.com</p>
               </li>
               <li>
-                <p className="font-inter text-xs tracking-[0.2em] uppercase text-[#9B9B9B] mb-1">Hours</p>
-                <p className="font-inter text-sm text-[#111111]">Monday – Friday · 7am – 5pm</p>
+                <p className="text-eyebrow-muted text-xs mb-1">Hours</p>
+                <p className="font-lato text-sm text-[#111111]">Monday – Friday · 7am – 5pm</p>
               </li>
             </ul>
           </div>

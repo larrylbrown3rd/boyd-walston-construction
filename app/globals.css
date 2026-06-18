@@ -4,6 +4,8 @@
 @theme {
   --font-bebas: var(--font-bebas), ui-sans-serif, system-ui, sans-serif;
   --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-barlow: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  --font-lato: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -13,7 +15,7 @@
   --mid-gray: #9B9B9B;
   --dark-gray: #2C2C2C;
   --near-black: #111111;
-  --accent: #C4A882;
+  --accent: #D4D4D4;
 }
 
 @layer base {
@@ -30,7 +32,45 @@
   h4 {
     font-family: var(--font-bebas), sans-serif;
     letter-spacing: 0.02em;
+    line-height: 1;
   }
+}
+
+@layer components {
+  .text-eyebrow {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #D4D4D4;
+  }
+
+  .text-eyebrow-muted {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #9B9B9B;
+  }
+
+  .text-display {
+    font-family: var(--font-bebas), sans-serif;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+}
+
+@keyframes photo-ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.photo-ken-burns {
+  animation: photo-ken-burns 5.5s linear forwards;
 }
 
 html {
@@ -38,13 +78,13 @@ html {
 }
 
 body {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-lato), sans-serif;
   background-color: #FFFFFF;
   color: #111111;
 }
 
 ::selection {
-  background: #C4A882;
+  background: #D4D4D4;
   color: #111111;
 }
 
@@ -53,5 +93,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C4A882;
+  background: #D4D4D4;
 }

@@ -79,7 +79,7 @@ function MorphingParticles() {
       stride={3}
     >
       <PointMaterial
-        color="#C4A882"
+        color="#D4D4D4"
         size={0.04}
         transparent
         opacity={0.8}

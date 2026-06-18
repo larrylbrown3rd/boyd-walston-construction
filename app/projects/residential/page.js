@@ -20,15 +20,15 @@ export default function ResidentialProjects() {
 
       <section className="bg-[#111111] text-white py-24 px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+          <p className="text-eyebrow text-sm mb-4">
             Residential
           </p>
-          <h1 className="font-bebas text-6xl md:text-7xl text-white leading-none mb-6">
+          <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Residential Projects
           </h1>
-          <p className="font-inter text-[#9B9B9B] text-lg max-w-2xl">
+          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
             Custom home builds, additions, and renovations crafted
-            with care across Pike Road and surrounding communities.
+            with care across The River Region and surrounding communities.
           </p>
         </div>
       </section>
@@ -36,17 +36,19 @@ export default function ResidentialProjects() {
       <section className="py-24 px-8 bg-[#F8F7F5]">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+            <p className="text-eyebrow text-sm mb-4">
               Featured Transformation
             </p>
-            <h2 className="font-bebas text-5xl md:text-6xl text-[#111111] mb-4">
+            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-4">
               See The Difference
             </h2>
-            <div className="w-12 h-px bg-[#C4A882] mb-12" />
+            <div className="w-12 h-px bg-[#D4D4D4] mb-12" />
           </ScrollReveal>
           <BeforeAfterSlider
-            beforeLabel="Before Renovation"
-            afterLabel="After Renovation"
+            beforeSrc="/frame-construction.jpg"
+            afterSrc="/closet-finished.jpg"
+            beforeLabel="During Construction"
+            afterLabel="After Completion"
           />
         </div>
       </section>
@@ -54,10 +56,10 @@ export default function ResidentialProjects() {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="font-inter text-xs tracking-[0.25em] uppercase text-[#C4A882] mb-4">
+            <p className="text-eyebrow text-sm mb-4">
               Featured Projects
             </p>
-            <h2 className="font-bebas text-5xl md:text-6xl text-[#111111] mb-12">
+            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
               Our Residential Work
             </h2>
           </ScrollReveal>

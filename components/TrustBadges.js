@@ -1,27 +1,27 @@
 export default function TrustBadges() {
   const badges = [
     {
-      icon: '✓',
+      mark: '✓',
       title: 'Licensed & Insured',
       subtitle: 'Alabama Contractor',
     },
     {
-      icon: '⭐',
+      mark: '5.0',
       title: '5-Star Rated',
       subtitle: '200+ Happy Clients',
     },
     {
-      icon: '⚡',
+      mark: '2h',
       title: 'Fast Response',
       subtitle: 'Reply Within 2 Hours',
     },
     {
-      icon: '🏆',
+      mark: '10+',
       title: '10+ Years',
       subtitle: 'Industry Experience',
     },
     {
-      icon: '💯',
+      mark: '100%',
       title: '100% Satisfaction',
       subtitle: 'Guaranteed',
     },
@@ -33,13 +33,15 @@ export default function TrustBadges() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
           {badges.map((badge, i) => (
             <div key={i} className="flex flex-col items-center text-center">
-              <span className="text-2xl mb-2">
-                {badge.icon}
-              </span>
-              <p className="font-inter font-semibold text-xs text-[#111111] mb-1">
+              <div className="w-10 h-10 rounded-full border border-[#E8E8E8] flex items-center justify-center mb-3">
+                <span className="font-inter font-semibold text-[10px] tracking-wide text-[#111111]">
+                  {badge.mark}
+                </span>
+              </div>
+              <p className="font-lato font-light text-xs text-[#111111] mb-1">
                 {badge.title}
               </p>
-              <p className="font-inter text-xs text-[#9B9B9B]">
+              <p className="font-lato font-light text-xs text-[#9B9B9B]">
                 {badge.subtitle}
               </p>
             </div>

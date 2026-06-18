@@ -13,15 +13,15 @@ export default function ProjectsCTA() {
       <WebGLGradient />
       <div className="absolute inset-0 bg-[#111111]/60" style={{ zIndex: 1 }} />
       <div className="relative max-w-2xl mx-auto" style={{ zIndex: 2 }}>
-        <h2 className="font-bebas text-5xl md:text-6xl text-white mb-4">
+        <h2 className="text-display text-5xl md:text-6xl text-white mb-4">
           Start Your Project Today
         </h2>
-        <p className="font-inter text-[#9B9B9B] mb-8">
+        <p className="font-lato font-light text-base text-[#9B9B9B] mb-8 leading-relaxed">
           Contact us for a free consultation and quote.
         </p>
         <a
           href="/quote"
-          className="inline-block bg-white text-[#111111] font-inter font-semibold text-sm px-10 py-4 rounded-full hover:bg-[#F0EFED] transition-colors duration-300"
+          className="inline-block bg-white text-[#111111] font-inter font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-[#F0EFED] transition-colors duration-300"
         >
           Get A Free Quote
         </a>

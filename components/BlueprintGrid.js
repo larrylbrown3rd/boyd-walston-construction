@@ -48,7 +48,7 @@ function Grid() {
     <group ref={groupRef}>
       <lineSegments geometry={geometry}>
         <lineBasicMaterial
-          color="#C4A882"
+          color="#D4D4D4"
           transparent
           opacity={0.08}
         />
