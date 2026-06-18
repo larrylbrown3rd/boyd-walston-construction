@@ -43,7 +43,7 @@ export default function BeforeAfterSlider({
         alt={afterLabel}
         fill
         className="object-cover"
-        style={{ objectPosition: '50% 25%' }}
+        style={{ objectPosition: '50% 5%' }}
         quality={100}
       />
 
@@ -60,7 +60,7 @@ export default function BeforeAfterSlider({
             alt={beforeLabel}
             fill
             className="object-cover"
-            style={{ objectPosition: '50% 25%' }}
+            style={{ objectPosition: '50% 5%' }}
             quality={100}
           />
         </div>
