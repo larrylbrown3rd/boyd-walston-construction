@@ -95,6 +95,7 @@ export default function ProjectCarousel({ projects = defaultProjects }) {
                 fill
                 quality={100}
                 className="object-cover"
+                style={project.objectPosition ? { objectPosition: project.objectPosition } : undefined}
               />
             ) : (
               <div className="absolute inset-0 flex items-center justify-center">

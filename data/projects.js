@@ -26,6 +26,7 @@ export const residentialProjects = [
     title: 'Attic Room Conversion',
     location: 'The River Region, AL — 2024',
     image: '/attic-room.png',
+    objectPosition: 'center 25%',
   },
 ]
 
