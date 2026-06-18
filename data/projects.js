@@ -2,23 +2,30 @@ export const residentialProjects = [
   {
     id: 1,
     category: 'Residential',
-    title: 'Custom Home Build',
+    title: 'Custom Shower Build',
     location: 'The River Region, AL — 2024',
-    image: '/aerial.jpg',
+    image: '/shower-tile.png',
   },
   {
     id: 3,
     category: 'Residential',
-    title: 'Full Home Renovation',
-    location: 'The River Region, AL — 2023',
-    image: '/shower-after.jpg',
+    title: 'Concrete Patio Pour',
+    location: 'The River Region, AL — 2024',
+    image: '/concrete-patio.png',
   },
   {
     id: 5,
     category: 'Residential',
     title: 'Walk-In Closet Build-Out',
-    location: 'The River Region, AL — 2023',
-    image: '/closet-finished.jpg',
+    location: 'The River Region, AL — 2024',
+    image: '/walk-in-closet.png',
+  },
+  {
+    id: 7,
+    category: 'Residential',
+    title: 'Attic Room Conversion',
+    location: 'The River Region, AL — 2024',
+    image: '/attic-room.png',
   },
 ]
 
