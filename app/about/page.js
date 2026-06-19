@@ -74,25 +74,64 @@ export default function About() {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
+            <p className="text-eyebrow text-sm mb-4">
+              Our History
+            </p>
             <h2 className="text-display text-5xl text-[#111111] mb-6">
-              Our Story
+              About Boyd Walston Construction
             </h2>
             <p className="font-lato font-light text-base text-[#9B9B9B] leading-relaxed mb-4 max-w-3xl">
-              Founded with a commitment to quality craftsmanship
-              and honest work, Boyd Walston Construction has grown
-              into one of the most trusted names in The River Region, AL.
+              Boyd Walston Construction is a family-owned construction company founded in 2025, built on a legacy of craftsmanship that began generations ago. In 1960, our great-grandfather, Elsie Walston started his plumbing company in Black Creek, North Carolina laying the foundation for skilled trades, hard work, and pride in quality workmanship.
             </p>
             <p className="font-lato font-light text-base text-[#9B9B9B] leading-relaxed mb-4 max-w-3xl">
-              We specialize in residential construction, commercial
-              build-outs, and full construction management services.
-              Every project is handled with the same care and
-              attention to detail — no matter the size.
+              Today, we continue building on that legacy three generations later, expanding from plumbing into full-service construction to serve homeowners, businesses, and communities.
             </p>
             <p className="font-lato font-light text-base text-[#9B9B9B] leading-relaxed max-w-3xl">
-              When you work with Boyd Walston Construction you get
-              a team that shows up, communicates clearly, and
-              delivers results you can be proud of.
+              From new home construction and renovations, to tenant build-outs, our team is committed to craftsmanship, transparency, and delivering projects the right way. We take pride in providing quality service while consistently striving to exceed customer expectations.
             </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="py-24 px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div>
+                <h3 className="text-display text-2xl text-[#111111] mb-6">Residential</h3>
+                <ul className="space-y-3">
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Renovations</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Additions</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Decks</li>
+                </ul>
+                <a href="/projects/residential" className="inline-block mt-6 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-[#9B9B9B] hover:border-[#9B9B9B] transition-colors">
+                  More Info
+                </a>
+              </div>
+              <div>
+                <h3 className="text-display text-2xl text-[#111111] mb-6">Commercial</h3>
+                <ul className="space-y-3">
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Tenant Build Out</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Commercial Renovations</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">{`Owner's Rep`}</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Facility Maintenance</li>
+                </ul>
+                <a href="/projects/commercial" className="inline-block mt-6 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-[#9B9B9B] hover:border-[#9B9B9B] transition-colors">
+                  More Info
+                </a>
+              </div>
+              <div>
+                <h3 className="text-display text-2xl text-[#111111] mb-6">Civil Construction</h3>
+                <ul className="space-y-3">
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Site Prep</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Excavation</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Concrete</li>
+                </ul>
+                <a href="/services" className="inline-block mt-6 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-[#9B9B9B] hover:border-[#9B9B9B] transition-colors">
+                  More Info
+                </a>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </section>
