@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 
-const ConcreteSphere = dynamic(
-  () => import('@/components/ConcreteSphere'),
+const ConstructionMonument3D = dynamic(
+  () => import('@/components/ConstructionMonument3D'),
   { ssr: false }
 )
 
@@ -53,7 +53,7 @@ export default function About() {
               commercial construction.
             </p>
           </div>
-          <ConcreteSphere />
+          <ConstructionMonument3D />
         </div>
       </section>
 
