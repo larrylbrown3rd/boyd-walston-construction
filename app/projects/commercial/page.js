@@ -49,6 +49,8 @@ export default function CommercialProjects() {
             afterSrc="/commercial-after.png"
             beforeLabel="Before"
             afterLabel="After"
+            beforePosition="object-center"
+            afterPosition="object-center"
           />
         </div>
       </section>

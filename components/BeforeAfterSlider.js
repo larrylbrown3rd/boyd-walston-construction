@@ -8,6 +8,8 @@ export default function BeforeAfterSlider({
   afterSrc = '/after.jpg',
   beforeLabel = 'Before',
   afterLabel = 'After',
+  beforePosition = 'object-top',
+  afterPosition = 'object-top',
 }) {
   const [sliderPos, setSliderPos] = useState(50)
   const containerRef = useRef(null)
@@ -42,7 +44,7 @@ export default function BeforeAfterSlider({
         src={afterSrc}
         alt={afterLabel}
         fill
-        className="object-cover object-top"
+        className={`object-cover ${afterPosition}`}
         quality={100}
       />
 
@@ -58,7 +60,7 @@ export default function BeforeAfterSlider({
             src={beforeSrc}
             alt={beforeLabel}
             fill
-            className="object-cover object-top"
+            className={`object-cover ${beforePosition}`}
             quality={100}
           />
         </div>
