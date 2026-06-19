@@ -41,9 +41,9 @@ export const commercialProjects = [
   {
     id: 4,
     category: 'Commercial',
-    title: 'Commercial Outdoor Space',
-    location: 'The River Region, AL — 2023',
-    image: '/commercial-patio-3.jpg',
+    title: 'New Construction Build',
+    location: 'The River Region, AL — 2024',
+    image: '/aerial-construction.png',
   },
   {
     id: 6,
