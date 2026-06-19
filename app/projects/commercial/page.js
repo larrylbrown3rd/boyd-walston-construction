@@ -45,8 +45,8 @@ export default function CommercialProjects() {
             <div className="w-12 h-px bg-[#D4D4D4] mb-12" />
           </ScrollReveal>
           <BeforeAfterSlider
-            beforeSrc="/kitchen-before.png"
-            afterSrc="/kitchen-after.png"
+            beforeSrc="/commercial-before.png"
+            afterSrc="/commercial-after.png"
             beforeLabel="Before"
             afterLabel="After"
           />
