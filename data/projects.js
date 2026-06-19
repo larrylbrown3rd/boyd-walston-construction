@@ -41,9 +41,9 @@ export const commercialProjects = [
   {
     id: 4,
     category: 'Commercial',
-    title: 'New Construction Build',
+    title: 'Commercial Framing',
     location: 'The River Region, AL — 2024',
-    image: '/aerial-construction.png',
+    image: '/framing-crew.png',
   },
   {
     id: 6,
