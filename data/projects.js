@@ -48,9 +48,9 @@ export const commercialProjects = [
   {
     id: 6,
     category: 'Commercial',
-    title: 'Brick Building Construction',
-    location: 'The River Region, AL — 2022',
-    image: '/brick-building.jpg',
+    title: 'Commercial Outdoor Patio',
+    location: 'The River Region, AL — 2024',
+    image: '/commercial-patio-outdoor.png',
   },
 ]
 
