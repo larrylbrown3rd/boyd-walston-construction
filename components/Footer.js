@@ -31,10 +31,10 @@ export default function Footer() {
             Contact
           </h3>
           <ul className="space-y-2 list-none">
-            <li className="font-lato font-light text-sm text-[#9B9B9B]">The River Region, AL</li>
-            <li className="font-lato font-light text-sm text-[#9B9B9B]">info@boydwalston.com</li>
-            <li className="font-lato font-light text-sm text-[#9B9B9B]">(555) 000-0000</li>
-            <li className="font-lato font-light text-sm text-[#9B9B9B]">Mon–Fri 7am–5pm</li>
+            <li className="font-lato font-light text-sm text-[#9B9B9B]">P.O. Box 640313, Pike Road, AL</li>
+            <li><a href="mailto:Info@buildwithboyd.com" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">Info@buildwithboyd.com</a></li>
+            <li><a href="tel:3346093504" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">334-609-3504</a></li>
+            <li className="font-lato font-light text-sm text-[#9B9B9B]">Mon–Fri 8am–5pm</li>
           </ul>
         </div>
 

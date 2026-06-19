@@ -145,20 +145,26 @@ export default function Contact() {
             </h2>
             <ul className="space-y-6 list-none">
               <li>
-                <p className="text-eyebrow-muted text-xs mb-1">Location</p>
-                <p className="font-lato text-sm text-[#111111]">The River Region, Alabama</p>
+                <p className="text-eyebrow-muted text-xs mb-1">Address</p>
+                <p className="font-lato text-sm text-[#111111]">P.O. Box 640313</p>
+                <p className="font-lato text-sm text-[#111111]">Pike Road, Alabama</p>
               </li>
               <li>
                 <p className="text-eyebrow-muted text-xs mb-1">Phone</p>
-                <p className="font-lato text-sm text-[#111111]">(555) 000-0000</p>
+                <a href="tel:3346093504" className="font-lato text-sm text-[#111111] hover:text-[#9B9B9B] transition-colors">
+                  334-609-3504
+                </a>
               </li>
               <li>
                 <p className="text-eyebrow-muted text-xs mb-1">Email</p>
-                <p className="font-lato text-sm text-[#111111]">info@boydwalston.com</p>
+                <a href="mailto:Info@buildwithboyd.com" className="font-lato text-sm text-[#111111] hover:text-[#9B9B9B] transition-colors">
+                  Info@buildwithboyd.com
+                </a>
               </li>
               <li>
                 <p className="text-eyebrow-muted text-xs mb-1">Hours</p>
-                <p className="font-lato text-sm text-[#111111]">Monday – Friday · 7am – 5pm</p>
+                <p className="font-lato text-sm text-[#111111]">Monday – Friday</p>
+                <p className="font-lato text-sm text-[#111111]">8:00 AM – 5:00 PM</p>
               </li>
             </ul>
           </div>
