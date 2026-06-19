@@ -59,7 +59,7 @@ export default function About() {
 
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-8">
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <p className="text-eyebrow text-sm mb-4">
               We Build Dreams
             </p>
@@ -67,7 +67,48 @@ export default function About() {
               From Vision to Reality
             </h2>
           </div>
-          <ParticleMorph />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="relative aspect-square overflow-hidden col-span-2 row-span-2">
+              <Image
+                src="/concrete-patio.png"
+                alt="Concrete patio pour"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src="/shower-tile.png"
+                alt="Custom shower build"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src="/walk-in-closet.png"
+                alt="Walk-in closet build-out"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src="/framing-crew.png"
+                alt="Commercial framing"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src="/attic-room.png"
+                alt="Attic room conversion"
+                fill
+                className="object-cover object-top hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
