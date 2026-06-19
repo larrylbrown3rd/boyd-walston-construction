@@ -9,7 +9,9 @@ export default function StickyCTA() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setVisible(window.scrollY > 600)
+      const scrolledPast = window.scrollY > 600
+      const nearBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 300
+      setVisible(scrolledPast && !nearBottom)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     handleScroll()
