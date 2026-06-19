@@ -1,45 +1,46 @@
 'use client'
 
+import { useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic'
-import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import TrustBadges from '@/components/TrustBadges'
-import ResponsePromise from '@/components/ResponsePromise'
+
+const JOBBER_CLIENT_HUB_ID = '007f2831-0cdb-4f7e-83f2-b58a55cb5b8d'
 
 const ParticleTunnel = dynamic(
   () => import('@/components/ParticleTunnel'),
   { ssr: false }
 )
 
-const labelClass = "block text-eyebrow-muted text-sm mb-2"
-const inputClass = "w-full border border-[#E8E8E8] px-4 py-3 font-lato font-light text-sm text-[#111111] focus:border-[#111111] focus:outline-none"
+function JobberForm() {
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    if (!containerRef.current) return
+
+    const link = document.createElement('link')
+    link.rel = 'stylesheet'
+    link.media = 'screen'
+    link.href = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css'
+    document.head.appendChild(link)
+
+    const script = document.createElement('script')
+    script.src = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js'
+    script.setAttribute('clienthub_id', JOBBER_CLIENT_HUB_ID)
+    script.setAttribute('form_url', `https://clienthub.getjobber.com/client_hubs/${JOBBER_CLIENT_HUB_ID}/public/work_request/embedded_work_request_form`)
+    containerRef.current.appendChild(script)
+
+    return () => {
+      link.remove()
+      script.remove()
+    }
+  }, [])
+
+  return <div ref={containerRef} id={JOBBER_CLIENT_HUB_ID} />
+}
 
 export default function Quote() {
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    projectType: '',
-    budget: '',
-    timeline: '',
-    description: '',
-  })
-
-  const [submitted, setSubmitted] = useState(false)
-
-  function handleChange(e) {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault()
-    if (formData.name && formData.email && formData.projectType) {
-      setSubmitted(true)
-    }
-  }
-
   return (
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
@@ -66,151 +67,7 @@ export default function Quote() {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl mx-auto">
-
-          {submitted ? (
-            <div className="border border-[#E8E8E8] p-12 text-center">
-              <h2 className="text-display text-5xl text-[#111111] mb-4">
-                Quote Request Received
-              </h2>
-              <p className="font-lato font-light text-base text-[#9B9B9B] leading-relaxed">
-                Thank you for reaching out. We will review your project
-                details and follow up within one business day.
-              </p>
-            </div>
-          ) : (
-            <>
-            <ResponsePromise />
-            <form onSubmit={handleSubmit} className="space-y-8">
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className={labelClass}>
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className={inputClass}
-                    placeholder="Your full name"
-                  />
-                </div>
-
-                <div>
-                  <label className={labelClass}>
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className={inputClass}
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className={labelClass}>
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className={inputClass}
-                    placeholder="(555) 000-0000"
-                  />
-                </div>
-
-                <div>
-                  <label className={labelClass}>
-                    Project Type
-                  </label>
-                  <select
-                    name="projectType"
-                    value={formData.projectType}
-                    onChange={handleChange}
-                    className={inputClass}
-                  >
-                    <option value="">Select a project type</option>
-                    <option value="residential">Residential Construction</option>
-                    <option value="commercial">Commercial Build-Out</option>
-                    <option value="renovation">Home Renovation</option>
-                    <option value="management">Construction Management</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className={labelClass}>
-                    Estimated Budget
-                  </label>
-                  <select
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleChange}
-                    className={inputClass}
-                  >
-                    <option value="">Select a budget range</option>
-                    <option value="under-50k">Under $50,000</option>
-                    <option value="50k-100k">$50,000 – $100,000</option>
-                    <option value="100k-250k">$100,000 – $250,000</option>
-                    <option value="250k-500k">$250,000 – $500,000</option>
-                    <option value="over-500k">Over $500,000</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className={labelClass}>
-                    Desired Timeline
-                  </label>
-                  <select
-                    name="timeline"
-                    value={formData.timeline}
-                    onChange={handleChange}
-                    className={inputClass}
-                  >
-                    <option value="">Select a timeline</option>
-                    <option value="asap">As soon as possible</option>
-                    <option value="1-3months">1 – 3 months</option>
-                    <option value="3-6months">3 – 6 months</option>
-                    <option value="6-12months">6 – 12 months</option>
-                    <option value="flexible">Flexible</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label className={labelClass}>
-                  Project Description
-                </label>
-                <textarea
-                  name="description"
-                  value={formData.description}
-                  onChange={handleChange}
-                  rows={6}
-                  className={inputClass}
-                  placeholder="Describe your project in as much detail as possible..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="font-inter font-medium text-white text-sm py-4 w-full rounded-lg hover:bg-[#2C2C2C] transition-colors duration-300"
-              >
-                Submit Quote Request
-              </button>
-
-            </form>
-            </>
-          )}
+            <JobberForm />
           </div>
         </div>
       </section>
