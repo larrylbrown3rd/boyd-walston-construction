@@ -56,14 +56,25 @@ export const residentialProjects = [
     investment: 'Contact us for a project estimate',
   },
   {
+    id: 16,
+    category: 'Residential',
+    title: 'Kitchen Renovation',
+    location: 'Pike Road, AL — 2024',
+    image: '/kitchen-after-new.png',
+    description:
+      'Full kitchen remodel with quartz countertops, white shaker cabinets, farmhouse sink, pot filler, subway tile, and custom range hood.',
+    scope: ['Demo and structural updates', 'Drywall and insulation', 'Cabinet and countertop install', 'Custom hood, tile, and fixtures'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
     id: 15,
     category: 'Residential',
     title: 'Kitchen Hood Build',
     location: 'Pike Road, AL — 2024',
-    image: '/kitchen-hood-build.png',
+    image: '/kitchen-hood-finished.png',
     description:
-      'Custom kitchen vent hood enclosure with trim details, built on site to match the kitchen renovation layout.',
-    scope: ['Custom carpentry', 'Hood enclosure framing', 'Trim and finish prep', 'Coordination with kitchen layout'],
+      'Custom kitchen vent hood with board-and-batten detail, wood mantel trim, and coordination with the full kitchen renovation.',
+    scope: ['Custom carpentry', 'Hood enclosure framing', 'Trim and finish detail', 'Coordination with kitchen layout'],
     investment: 'Contact us for a project estimate',
   },
 ]

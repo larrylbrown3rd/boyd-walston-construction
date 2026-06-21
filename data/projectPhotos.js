@@ -36,8 +36,9 @@ export const projectPhotos = [
     href: '/projects/commercial',
   },
   {
-    src: '/kitchen-hood-build.png',
-    alt: 'Custom kitchen hood build in progress',
+    src: '/kitchen-after-new.png',
+    alt: 'Finished modern kitchen renovation',
     href: '/projects/residential',
+    objectPosition: 'object-top',
   },
 ]

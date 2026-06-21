@@ -62,10 +62,20 @@ const residentialTransformations = [
   {
     eyebrow: 'Kitchen Renovation',
     title: 'Before & After Kitchen Remodel',
-    description: 'Full kitchen transformation with updated finishes, layout improvements, and a brighter finished space.',
+    description: 'Complete kitchen transformation from dated layout to a bright modern space with quartz counters and custom finishes.',
     beforeSrc: '/kitchen-before.png',
     afterSrc: '/kitchen-after.png',
+    beforePosition: 'object-center',
     afterPosition: 'object-top',
+  },
+  {
+    eyebrow: 'Kitchen Build',
+    title: 'Demo to Finished Detail',
+    description: 'Structural updates and finish work from active renovation to a completed sink, range, and custom hood area.',
+    beforeSrc: '/kitchen-demo-progress.png',
+    afterSrc: '/kitchen-finished-detail.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
   },
 ]
 
