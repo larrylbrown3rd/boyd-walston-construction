@@ -23,6 +23,24 @@ const commercialTransformations = [
     beforePosition: 'object-center',
     afterPosition: 'object-center',
   },
+  {
+    eyebrow: 'Commercial Build-Out',
+    title: 'Outdoor Patio & Amenities',
+    description: 'From concrete pour to a finished break area with seating, planters, lighting, and site amenities.',
+    beforeSrc: '/commercial-concrete-pour.png',
+    afterSrc: '/commercial-patio-complete.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+  {
+    eyebrow: 'Site Work',
+    title: 'Excavation to Finished Patio',
+    description: 'Commercial site prep and excavation leading to a completed outdoor gathering space.',
+    beforeSrc: '/commercial-site-excavation.png',
+    afterSrc: '/commercial-patio-finished.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
 ]
 
 export default function CommercialProjects() {

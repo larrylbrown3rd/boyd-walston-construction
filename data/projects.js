@@ -48,14 +48,47 @@ export const residentialProjects = [
 
 export const commercialProjects = [
   {
-    id: 2,
+    id: 10,
     category: 'Commercial',
-    title: 'Luxury Building Exterior',
+    title: 'Outdoor Patio & Amenities',
     location: 'Central Alabama — 2024',
-    image: '/luxury-building.jpg',
+    image: '/commercial-patio-complete.png',
     description:
-      'Exterior improvement and finish work on a commercial property, including facade updates and professional presentation.',
-    scope: ['Exterior prep and repair', 'Finish upgrades', 'Site coordination', 'Final walkthrough'],
+      'Full commercial outdoor break area with concrete patio, picnic seating, black planters, lighting, and site amenities.',
+    scope: ['Concrete patio pour', 'Site furnishings and seating', 'Planters and landscaping', 'Lighting and charging stations'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 11,
+    category: 'Commercial',
+    title: 'Commercial Concrete Pour',
+    location: 'Central Alabama — 2024',
+    image: '/commercial-concrete-pour.png',
+    description:
+      'Large-scale commercial slab pour with pump truck delivery, formwork, rebar, and coordinated field crew.',
+    scope: ['Formwork and rebar', 'Concrete pump placement', 'Slab finish and cure', 'Site safety coordination'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 12,
+    category: 'Commercial',
+    title: 'Site Excavation & Prep',
+    location: 'Central Alabama — 2024',
+    image: '/commercial-site-excavation.png',
+    description:
+      'Commercial site excavation and grading under a covered walkway with heavy equipment and protected finishes.',
+    scope: ['Excavation and grading', 'Site protection', 'Equipment coordination', 'Subgrade prep'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 13,
+    category: 'Commercial',
+    title: 'Industrial Building Exterior',
+    location: 'Central Alabama — 2024',
+    image: '/commercial-building-exterior.png',
+    description:
+      'Modern industrial commercial building with metal siding, brick base, and professional exterior presentation.',
+    scope: ['Exterior coordination', 'Site and landscape integration', 'Finish protection', 'Final walkthrough'],
     investment: 'Contact us for a project estimate',
   },
   {
@@ -70,14 +103,14 @@ export const commercialProjects = [
     investment: 'Contact us for a project estimate',
   },
   {
-    id: 6,
+    id: 14,
     category: 'Commercial',
-    title: 'Commercial Outdoor Patio',
+    title: 'Planters & Site Finishes',
     location: 'Central Alabama — 2024',
-    image: '/commercial-patio-outdoor.png',
+    image: '/commercial-planters.png',
     description:
-      'Commercial outdoor break area with concrete patio, picnic seating, planters, bollards, and lighting.',
-    scope: ['Concrete patio pour', 'Site furnishings layout', 'Planters and landscaping', 'Lighting and bollards'],
+      'Commercial landscaping finishes with custom black planters, evergreens, decorative stone, and patio integration.',
+    scope: ['Planter installation', 'Landscape material placement', 'Decorative stone finish', 'Final site cleanup'],
     investment: 'Contact us for a project estimate',
   },
 ]

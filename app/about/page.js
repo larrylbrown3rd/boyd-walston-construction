@@ -63,8 +63,16 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square overflow-hidden col-span-2 row-span-2">
               <Image
-                src="/concrete-patio.png"
-                alt="Concrete patio pour"
+                src="/commercial-patio-complete.png"
+                alt="Commercial outdoor patio build-out"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src="/commercial-concrete-pour.png"
+                alt="Commercial concrete pour"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -79,26 +87,18 @@ export default function About() {
             </div>
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src="/walk-in-closet.png"
-                alt="Walk-in closet build-out"
+                src="/commercial-site-excavation.png"
+                alt="Commercial site excavation"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src="/framing-crew.png"
-                alt="Commercial framing"
+                src="/commercial-planters.png"
+                alt="Commercial planters and landscaping"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="relative aspect-square overflow-hidden">
-              <Image
-                src="/attic-room.png"
-                alt="Attic room conversion"
-                fill
-                className="object-cover object-top hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>

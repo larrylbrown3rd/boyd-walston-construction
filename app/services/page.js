@@ -50,7 +50,7 @@ const services = [
     items: ['Office build-outs', 'Retail spaces', 'Warehouse construction', 'Restaurant build-outs'],
     Visual: CommercialBuildout3D,
     visualFirst: false,
-    backgroundImage: '/luxury-building.jpg',
+    backgroundImage: '/commercial-building-exterior.png',
   },
 ]
 
