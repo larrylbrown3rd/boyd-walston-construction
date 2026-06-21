@@ -30,7 +30,7 @@ export default function StickyCTA() {
         >
           <div>
             <p className="font-lato text-sm font-medium text-white">
-              Free quote in 24 hours
+              Free quote in 48 hours
             </p>
             <p className="font-lato text-xs text-[#9B9B9B]">
               No obligation · Licensed & insured

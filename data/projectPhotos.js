@@ -1,38 +1,43 @@
 export const projectPhotos = [
   {
-    src: '/luxury-building-drone.jpg',
-    alt: 'Luxury building aerial view',
+    src: '/shower-tile.png',
+    alt: 'Custom shower tile renovation',
+    href: '/projects/residential',
   },
   {
-    src: '/aerial.jpg',
-    alt: 'Custom home aerial view',
+    src: '/concrete-patio.png',
+    alt: 'Residential concrete patio pour',
+    href: '/projects/residential',
+  },
+  {
+    src: '/walk-in-closet.png',
+    alt: 'Walk-in closet build-out',
+    href: '/projects/residential',
+  },
+  {
+    src: '/framing-crew.png',
+    alt: 'Commercial framing project',
+    href: '/projects/commercial',
+  },
+  {
+    src: '/commercial-patio-outdoor.png',
+    alt: 'Commercial outdoor patio space',
+    href: '/projects/commercial',
+  },
+  {
+    src: '/commercial-after.png',
+    alt: 'Institutional plaza masonry completion',
+    href: '/projects/government',
+  },
+  {
+    src: '/attic-room.png',
+    alt: 'Attic room conversion',
+    href: '/projects/residential',
+    objectPosition: 'center 25%',
   },
   {
     src: '/luxury-building.jpg',
-    alt: 'Luxury building exterior',
-  },
-  {
-    src: '/brick-building.jpg',
-    alt: 'Brick building construction',
-  },
-  {
-    src: '/frame-construction.jpg',
-    alt: 'Residential framing in progress',
-  },
-  {
-    src: '/closet-finished.jpg',
-    alt: 'Finished walk-in closet build-out',
-  },
-  {
-    src: '/shower-after.jpg',
-    alt: 'Bathroom renovation shower',
-  },
-  {
-    src: '/commercial-patio-3.jpg',
-    alt: 'Commercial outdoor patio space',
-  },
-  {
-    src: '/concrete-finished.jpg',
-    alt: 'Finished concrete driveway',
+    alt: 'Commercial building exterior',
+    href: '/projects/commercial',
   },
 ]

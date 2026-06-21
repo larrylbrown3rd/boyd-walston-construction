@@ -57,7 +57,7 @@ export default function Hero() {
           </h1>
 
           <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-relaxed max-w-xl mb-10">
-            Quality residential and commercial construction
+            Quality renovations and commercial construction
             delivered on time and built to last.
           </p>
 

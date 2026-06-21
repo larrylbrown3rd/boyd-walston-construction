@@ -1,47 +1,18 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import { useRef, useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import FeaturedProjects from '@/components/FeaturedProjects'
 import Footer from '@/components/Footer'
 import FAQ from '@/components/FAQ'
 import Button from '@/components/Button'
+import JobberForm from '@/components/JobberForm'
 
 const WebGLGradient = dynamic(
   () => import('@/components/WebGLGradient'),
   { ssr: false }
 )
-
-const JOBBER_CLIENT_HUB_ID = '007f2831-0cdb-4f7e-83f2-b58a55cb5b8d'
-
-function JobberForm() {
-  const containerRef = useRef(null)
-
-  useEffect(() => {
-    if (!containerRef.current) return
-
-    const link = document.createElement('link')
-    link.rel = 'stylesheet'
-    link.media = 'screen'
-    link.href = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css'
-    document.head.appendChild(link)
-
-    const script = document.createElement('script')
-    script.src = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js'
-    script.setAttribute('clienthub_id', JOBBER_CLIENT_HUB_ID)
-    script.setAttribute('form_url', `https://clienthub.getjobber.com/client_hubs/${JOBBER_CLIENT_HUB_ID}/public/work_request/embedded_work_request_form`)
-    containerRef.current.appendChild(script)
-
-    return () => {
-      link.remove()
-      script.remove()
-    }
-  }, [])
-
-  return <div ref={containerRef} id={JOBBER_CLIENT_HUB_ID} />
-}
 
 export default function Home() {
   return (
@@ -81,7 +52,7 @@ export default function Home() {
               Know Your Budget Before You Build
             </h2>
             <p className="font-lato text-base font-normal text-white/80 leading-relaxed">
-              Get a free ballpark estimate sent to your inbox within 24 hours.
+              Get a free ballpark estimate sent to your inbox within 48 hours.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row md:flex-col gap-4 md:justify-self-end md:w-full md:max-w-sm">

@@ -2,7 +2,7 @@ const items = [
   'Licensed & Insured',
   '200+ Projects Completed',
   '5.0 Client Rating',
-  'Reply Within 2 Hours',
+  'Reply Within 48 Hours',
 ]
 
 export default function TrustStrip() {

@@ -22,11 +22,11 @@ export default function ResponsePromise() {
       </div>
       <div>
         <p className="font-lato font-light text-sm text-[#111111]">
-          We respond within 2 hours
+          We respond within 48 hours
         </p>
         <p className="font-lato font-light text-xs text-[#9B9B9B]">
-          Monday – Friday · 7am – 5pm ·
-          After hours responses by 8am next day
+          Monday – Friday · 8am – 5pm ·
+          After hours responses by next business day
         </p>
       </div>
     </div>

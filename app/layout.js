@@ -35,7 +35,7 @@ const lato = Lato({
 
 export const metadata = {
   title: "Boyd Walston Construction",
-  description: "Quality residential and commercial construction throughout The River Region, Alabama.",
+  description: "Building what matters most — quality renovations and commercial construction delivered on time and built to last.",
 };
 
 export default function RootLayout({ children }) {

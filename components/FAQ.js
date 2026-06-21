@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const faqs = [
   {
     q: 'How much does a renovation or build-out cost?',
-    a: 'Project costs vary widely based on scope, materials, and finishes. We provide free detailed estimates after an initial site visit so you know exactly what to expect.',
+    a: 'Project costs vary based on scope, materials, and finishes. We provide free detailed estimates after an initial site visit so you know what to expect before work begins.',
   },
   {
     q: 'How long does a typical project take?',
@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     q: 'What areas do you serve?',
-    a: 'We primarily serve The River Region and surrounding Alabama communities. We also take on select projects throughout central Alabama. Contact us to confirm your location.',
+    a: 'We serve Pike Road, Montgomery, and surrounding central Alabama communities. Contact us to confirm your location and project scope.',
   },
   {
     q: 'How do I get started?',
-    a: 'The easiest way is to use our Smart Estimate tool — answer 5 quick questions and we will send you a ballpark estimate within 48 hours. Or you can book a free site visit directly on our calendar.',
+    a: 'The easiest way is to submit a quote request on our site — we will follow up within 48 hours. You can also use our Smart Estimate tool or book a free site visit.',
   },
   {
     q: 'Are you licensed and insured?',

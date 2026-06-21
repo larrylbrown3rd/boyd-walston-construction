@@ -13,7 +13,7 @@ export default function FeaturedProjects({ compact = false }) {
             <div>
               <p className="text-eyebrow text-sm mb-3">Recent Work</p>
               <h2 className={`text-display text-white ${compact ? 'text-4xl md:text-5xl' : 'text-5xl md:text-6xl'}`}>
-                Built Across The River Region
+                Craftsmanship You Can See
               </h2>
             </div>
             <a
@@ -29,7 +29,7 @@ export default function FeaturedProjects({ compact = false }) {
           {featured.map((photo, i) => (
             <ScrollReveal key={photo.src} delay={i * 0.08}>
               <a
-                href="/projects"
+                href={photo.href || '/projects'}
                 className="group relative block aspect-[5/6] overflow-hidden bg-[#2C2C2C]"
               >
                 <Image
@@ -37,6 +37,7 @@ export default function FeaturedProjects({ compact = false }) {
                   alt={photo.alt}
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
                 />
                 <div className="absolute inset-0 bg-[#111111]/20 group-hover:bg-[#111111]/10 transition-colors duration-300" />
               </a>

@@ -21,6 +21,7 @@ export default function Footer() {
             <li><a href="/services" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">Services</a></li>
             <li><a href="/projects/residential" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">Residential Projects</a></li>
             <li><a href="/projects/commercial" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">Commercial Projects</a></li>
+            <li><a href="/projects/government" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">Government Projects</a></li>
             <li><a href="/about" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">About</a></li>
             <li><a href="/contact" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-white transition-colors">Contact</a></li>
           </ul>

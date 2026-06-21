@@ -11,11 +11,6 @@ const ConstructionMonument3D = dynamic(
   { ssr: false }
 )
 
-const ParticleMorph = dynamic(
-  () => import('@/components/ParticleMorph'),
-  { ssr: false }
-)
-
 const ProgressBars3D = dynamic(
   () => import('@/components/ProgressBars3D'),
   { ssr: false }
@@ -47,10 +42,8 @@ export default function About() {
               Build With Boyd. Build With Confidence.
             </p>
             <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-lg leading-relaxed mt-6">
-              Boyd Walston Construction has been serving
-              The River Region and surrounding Alabama
-              communities with quality residential and
-              commercial construction.
+              Building what matters most — quality renovations and commercial
+              construction delivered on time and built to last.
             </p>
           </div>
           <ConstructionMonument3D />
@@ -137,7 +130,7 @@ export default function About() {
       <section className="py-24 px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
               <div>
                 <h3 className="text-display text-2xl text-[#111111] mb-6">Residential</h3>
                 <ul className="space-y-3">
@@ -169,6 +162,17 @@ export default function About() {
                   <li className="font-lato font-light text-base text-[#9B9B9B]">Concrete</li>
                 </ul>
                 <a href="/services" className="inline-block mt-6 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-[#9B9B9B] hover:border-[#9B9B9B] transition-colors">
+                  More Info
+                </a>
+              </div>
+              <div>
+                <h3 className="text-display text-2xl text-[#111111] mb-6">Government</h3>
+                <ul className="space-y-3">
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Campus Restoration</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Masonry & Hardscape</li>
+                  <li className="font-lato font-light text-base text-[#9B9B9B]">Facility Maintenance</li>
+                </ul>
+                <a href="/projects/government" className="inline-block mt-6 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-[#9B9B9B] hover:border-[#9B9B9B] transition-colors">
                   More Info
                 </a>
               </div>

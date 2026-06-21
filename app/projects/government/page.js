@@ -1,31 +1,31 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
-import { residentialProjects } from '@/data/projects'
+import { governmentProjects } from '@/data/projects'
 
 const ProjectCarousel = dynamic(
   () => import('@/components/ProjectCarousel'),
   { ssr: false }
 )
 
-const residentialTransformations = [
+const governmentTransformations = [
   {
-    eyebrow: 'Kitchen Renovation',
-    title: 'Before & After Kitchen Remodel',
-    description: 'Full kitchen transformation with updated finishes, layout improvements, and a brighter finished space.',
-    beforeSrc: '/kitchen-before.png',
-    afterSrc: '/kitchen-after.png',
-    afterPosition: 'object-top',
+    eyebrow: 'Government Contracting',
+    title: 'Campus Plaza Masonry',
+    description: 'Active-site masonry and hardscape restoration with protected finishes and phased construction.',
+    beforeSrc: '/commercial-before.png',
+    afterSrc: '/commercial-after.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
   },
 ]
 
-export default function ResidentialProjects() {
+export default function GovernmentProjects() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
@@ -33,13 +33,13 @@ export default function ResidentialProjects() {
       <section className="bg-[#111111] text-white py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <p className="text-eyebrow text-sm mb-4">
-            Residential
+            Government
           </p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Residential Projects
+            Government Projects
           </h1>
           <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
-            Renovations, additions, and remodels crafted with care for homeowners across central Alabama.
+            Institutional masonry, site work, and facility improvements delivered with compliance, safety, and accountability.
           </p>
         </div>
       </section>
@@ -55,7 +55,7 @@ export default function ResidentialProjects() {
             </h2>
             <div className="w-12 h-px bg-[#D4D4D4] mb-12" />
           </ScrollReveal>
-          <BeforeAfterGallery items={residentialTransformations} />
+          <BeforeAfterGallery items={governmentTransformations} />
         </div>
       </section>
 
@@ -66,10 +66,10 @@ export default function ResidentialProjects() {
               Featured Projects
             </p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
-              Our Residential Work
+              Our Government Work
             </h2>
           </ScrollReveal>
-          <ProjectCarousel projects={residentialProjects} />
+          <ProjectCarousel projects={governmentProjects} />
         </div>
       </section>
 

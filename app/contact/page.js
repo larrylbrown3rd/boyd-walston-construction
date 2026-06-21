@@ -63,7 +63,7 @@ export default function Contact() {
                 </p>
                 <p className="font-lato font-light text-sm text-[#9B9B9B]">
                   Thank you for reaching out. We will be in touch
-                  within one business day.
+                  within 48 hours.
                 </p>
               </div>
             ) : (

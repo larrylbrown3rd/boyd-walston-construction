@@ -11,9 +11,9 @@ export default function TrustBadges() {
       subtitle: '200+ Happy Clients',
     },
     {
-      mark: '2h',
+      mark: '48h',
       title: 'Fast Response',
-      subtitle: 'Reply Within 2 Hours',
+      subtitle: 'Reply Within 48 Hours',
     },
     {
       mark: '10+',

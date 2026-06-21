@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
-import BeforeAfterSlider from '@/components/BeforeAfterSlider'
+import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
 import { commercialProjects } from '@/data/projects'
 
@@ -12,6 +12,18 @@ const ProjectCarousel = dynamic(
   () => import('@/components/ProjectCarousel'),
   { ssr: false }
 )
+
+const commercialTransformations = [
+  {
+    eyebrow: 'Institutional Masonry',
+    title: 'Memorial Plaza Restoration',
+    description: 'Courtyard masonry rebuild and finished plaza restoration on an active institutional campus.',
+    beforeSrc: '/commercial-before.png',
+    afterSrc: '/commercial-after.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+]
 
 export default function CommercialProjects() {
   return (
@@ -27,8 +39,7 @@ export default function CommercialProjects() {
             Commercial Projects
           </h1>
           <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
-            Office build-outs, warehouse construction, and commercial
-            spaces built on time and on budget.
+            Tenant build-outs, commercial renovations, and professional spaces built on time and on budget.
           </p>
         </div>
       </section>
@@ -37,21 +48,14 @@ export default function CommercialProjects() {
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <p className="text-eyebrow text-sm mb-4">
-              Featured Transformation
+              Featured Transformations
             </p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-4">
               See The Difference
             </h2>
             <div className="w-12 h-px bg-[#D4D4D4] mb-12" />
           </ScrollReveal>
-          <BeforeAfterSlider
-            beforeSrc="/commercial-before.png"
-            afterSrc="/commercial-after.png"
-            beforeLabel="Before"
-            afterLabel="After"
-            beforePosition="object-center"
-            afterPosition="object-center"
-          />
+          <BeforeAfterGallery items={commercialTransformations} />
         </div>
       </section>
 

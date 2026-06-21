@@ -102,7 +102,7 @@ export default function Estimate() {
           </h1>
           <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
             Answer 5 quick questions and we will send you
-            a ballpark estimate within one business day.
+            a ballpark estimate within 48 hours.
           </p>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function Estimate() {
               <p className="font-lato font-light text-base text-[#9B9B9B] leading-relaxed">
                 Thank you {contact.name}. We will review
                 your project details and send a ballpark
-                estimate within one business day.
+                estimate within 48 hours.
               </p>
             </div>
           ) : (

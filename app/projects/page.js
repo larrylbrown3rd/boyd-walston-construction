@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     category: 'COMMERCIAL',
     title: 'Luxury Building Exterior',
-    location: 'The River Region, AL',
+    location: 'Central Alabama',
     description:
       'Full exterior renovation of luxury commercial property including painting and restoration.',
     image: '/luxury-building.jpg',
@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     category: 'COMMERCIAL',
     title: 'Commercial Outdoor Space',
-    location: 'The River Region, AL',
+    location: 'Central Alabama',
     description:
       'Complete outdoor patio build-out with custom planters, lighting, and seating.',
     image: '/commercial-patio-3.jpg',
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     category: 'RESIDENTIAL',
     title: 'Residential Renovation',
-    location: 'The River Region, AL',
+    location: 'Central Alabama',
     description:
       'Full residential renovation including framing, finishes, and detail work.',
     image: '/aerial.jpg',
@@ -37,7 +37,7 @@ const projects = [
     id: 4,
     category: 'RESIDENTIAL',
     title: 'Walk-In Closet Build-Out',
-    location: 'The River Region, AL',
+    location: 'Central Alabama',
     description:
       'Custom walk-in closet with built-in shelving, drawers, and black hardware throughout.',
     image: '/closet-finished.jpg',
@@ -46,7 +46,7 @@ const projects = [
     id: 5,
     category: 'RESIDENTIAL',
     title: 'Bathroom Renovation',
-    location: 'The River Region, AL',
+    location: 'Central Alabama',
     description:
       'Full bathroom renovation including custom tile shower with pebble floor and bench.',
     image: '/shower-after.jpg',
@@ -55,7 +55,7 @@ const projects = [
     id: 6,
     category: 'RESIDENTIAL',
     title: 'Concrete Driveway',
-    location: 'The River Region, AL',
+    location: 'Central Alabama',
     description:
       'Large residential concrete pour including driveway and patio extension.',
     image: '/concrete-finished.jpg',
@@ -84,10 +84,19 @@ export default function Projects() {
             Projects
           </h1>
           <p className="font-lato font-light text-lg text-[#9B9B9B] max-w-2xl">
-            Residential and commercial work throughout
-            The River Region and surrounding
-            Alabama communities.
+            Residential, commercial, and government work across central Alabama.
           </p>
+          <div className="flex flex-wrap gap-4 mt-8">
+            <a href="/projects/residential" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
+              Residential
+            </a>
+            <a href="/projects/commercial" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
+              Commercial
+            </a>
+            <a href="/projects/government" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
+              Government
+            </a>
+          </div>
         </div>
       </section>
 

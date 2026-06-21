@@ -64,7 +64,7 @@ export default function HowItWorks() {
                 Ready to take step one?
               </p>
               <p className="font-lato text-sm text-[#4A4A4A]">
-                Free estimate delivered within 24 hours. No commitment required.
+                Free estimate delivered within 48 hours. No commitment required.
               </p>
             </div>
             <Button href="/quote" variant="primary" className="!text-[#111111] shrink-0">

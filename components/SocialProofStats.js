@@ -8,7 +8,7 @@ const stats = [
     value: '200',
     suffix: '+',
     label: 'Projects Delivered',
-    trigger: 'Families and businesses across the River Region',
+    trigger: 'Homeowners and businesses across central Alabama',
   },
   {
     value: '10',

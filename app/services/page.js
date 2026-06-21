@@ -62,7 +62,7 @@ export default function Services() {
       <section className="relative overflow-hidden text-white py-24 px-6 md:px-10 min-h-[50vh] flex items-center">
         <Image
           src="/frame-construction.jpg"
-          alt="Boyd Walston Construction services River Region Alabama"
+          alt="Boyd Walston Construction services in central Alabama"
           fill
           priority
           className="object-cover object-center"
@@ -132,6 +132,48 @@ export default function Services() {
               <li>— Structural updates and code compliance</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 md:px-10 bg-white border-t border-[#E8E8E8]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <ScrollReveal>
+            <div className="border border-[#E8E8E8] p-8 md:p-10 h-full">
+              <p className="text-eyebrow text-sm mb-4">Civil Construction</p>
+              <h2 className="text-display text-3xl md:text-4xl text-[#111111] mb-4">
+                Site Prep & Concrete
+              </h2>
+              <p className="font-lato text-base font-normal text-[#4A4A4A] leading-relaxed mb-6">
+                From excavation and grading to finished concrete, we handle the groundwork
+                that sets every project up for success.
+              </p>
+              <ul className="font-lato text-sm text-[#4A4A4A] space-y-2 list-none">
+                <li>— Site prep</li>
+                <li>— Excavation</li>
+                <li>— Concrete</li>
+              </ul>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={0.05}>
+            <div className="border border-[#E8E8E8] p-8 md:p-10 h-full">
+              <p className="text-eyebrow text-sm mb-4">Government Contracting</p>
+              <h2 className="text-display text-3xl md:text-4xl text-[#111111] mb-4">
+                Institutional & Public Work
+              </h2>
+              <p className="font-lato text-base font-normal text-[#4A4A4A] leading-relaxed mb-6">
+                Masonry, hardscape, and facility improvements for institutional and public-sector
+                projects with safety, compliance, and clear communication.
+              </p>
+              <ul className="font-lato text-sm text-[#4A4A4A] space-y-2 list-none mb-6">
+                <li>— Campus and plaza restoration</li>
+                <li>— Masonry and hardscape</li>
+                <li>— Facility maintenance support</li>
+              </ul>
+              <a href="/projects/government" className="font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-[#9B9B9B] hover:border-[#9B9B9B] transition-colors">
+                View government projects
+              </a>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
