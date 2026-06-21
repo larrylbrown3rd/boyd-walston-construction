@@ -128,7 +128,7 @@ export default function About() {
               Today, we continue building on that legacy three generations later, expanding from plumbing into full-service construction to serve homeowners, businesses, and communities.
             </p>
             <p className="font-lato font-light text-base text-[#9B9B9B] leading-relaxed max-w-3xl">
-              From new home construction and renovations, to tenant build-outs, our team is committed to craftsmanship, transparency, and delivering projects the right way. We take pride in providing quality service while consistently striving to exceed customer expectations.
+              From renovations and additions, to tenant build-outs, our team is committed to craftsmanship, transparency, and delivering projects the right way. We take pride in providing quality service while consistently striving to exceed customer expectations.
             </p>
           </ScrollReveal>
         </div>

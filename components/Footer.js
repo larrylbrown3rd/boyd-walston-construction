@@ -8,7 +8,7 @@ export default function Footer() {
             Boyd Walston Construction
           </h3>
           <p className="font-lato font-light text-xs text-[#9B9B9B] tracking-wide mt-2">
-            Quality residential and commercial construction throughout The River Region, AL.
+            Building what matters most — quality renovations and construction delivered on time and built to last.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function Footer() {
 
       <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-[#2C2C2C]">
         <p className="font-lato font-light text-xs text-[#9B9B9B]">
-          © 2026 Boyd Walston Construction · The River Region, AL
+          © 2026 Boyd Walston Construction
         </p>
       </div>
 

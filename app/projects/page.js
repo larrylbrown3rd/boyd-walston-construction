@@ -27,10 +27,10 @@ const projects = [
   {
     id: 3,
     category: 'RESIDENTIAL',
-    title: 'Custom Home Build',
+    title: 'Residential Renovation',
     location: 'The River Region, AL',
     description:
-      'New residential construction from ground up including framing, roofing, and finish work.',
+      'Full residential renovation including framing, finishes, and detail work.',
     image: '/aerial.jpg',
   },
   {

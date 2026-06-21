@@ -16,10 +16,10 @@ const steps = [
     question: 'What type of project are you planning?',
     field: 'projectType',
     options: [
-      { label: 'New Home Build', value: 'new-home' },
-      { label: 'Home Renovation', value: 'renovation' },
+      { label: 'Residential Renovation', value: 'renovation' },
       { label: 'Commercial Build-Out', value: 'commercial' },
-      { label: 'Home Addition', value: 'addition' },
+      { label: 'Addition', value: 'addition' },
+      { label: 'Concrete / Site Work', value: 'concrete' },
       { label: 'Other', value: 'other' },
     ],
   },

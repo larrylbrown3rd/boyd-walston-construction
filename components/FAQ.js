@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const faqs = [
   {
-    q: 'How much does a custom home build cost?',
-    a: 'Custom home builds vary widely based on size, materials, and finishes. Most projects in The River Region area range from $150,000 to $500,000+. We provide free detailed estimates after an initial site visit.',
+    q: 'How much does a renovation or build-out cost?',
+    a: 'Project costs vary widely based on scope, materials, and finishes. We provide free detailed estimates after an initial site visit so you know exactly what to expect.',
   },
   {
     q: 'How long does a typical project take?',
-    a: 'A full custom home build typically takes 6-12 months. Renovations range from 2-8 weeks depending on scope. Commercial build-outs typically take 4-12 weeks. We provide a detailed timeline before any project begins.',
+    a: 'Renovations range from 2-8 weeks depending on scope. Commercial build-outs typically take 4-12 weeks. We provide a detailed timeline before any project begins.',
   },
   {
     q: 'Do you handle permits and inspections?',
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'How do I get started?',
-    a: 'The easiest way is to use our Smart Estimate tool — answer 5 quick questions and we will send you a ballpark estimate within 24 hours. Or you can book a free site visit directly on our calendar.',
+    a: 'The easiest way is to use our Smart Estimate tool — answer 5 quick questions and we will send you a ballpark estimate within 48 hours. Or you can book a free site visit directly on our calendar.',
   },
   {
     q: 'Are you licensed and insured?',

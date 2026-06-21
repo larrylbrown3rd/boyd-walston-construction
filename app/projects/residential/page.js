@@ -27,7 +27,7 @@ export default function ResidentialProjects() {
             Residential Projects
           </h1>
           <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
-            Custom home builds, additions, and renovations crafted
+            Renovations, additions, and remodels crafted
             with care across The River Region and surrounding communities.
           </p>
         </div>

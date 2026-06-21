@@ -14,7 +14,7 @@ const stats = [
   { value: '200+', label: 'Projects Delivered' },
   { value: '10+', label: 'Years Experience' },
   { value: '5.0', label: 'Client Rating' },
-  { value: '2hr', label: 'Avg Response' },
+  { value: '48hr', label: 'Avg Response' },
 ]
 
 export default function Hero() {
@@ -48,7 +48,7 @@ export default function Hero() {
       >
         <div>
           <p className="text-eyebrow text-sm mb-6">
-            The River Region, Alabama
+            Boyd Walston Construction
           </p>
 
           <h1 className="text-display text-6xl md:text-8xl lg:text-9xl text-white mb-8 max-w-3xl">
@@ -71,7 +71,7 @@ export default function Hero() {
           </div>
 
           <p className="font-lato text-sm text-white/70">
-            Free estimates · Reply within 2 hours
+            Free estimates · Reply within 48 hours
           </p>
         </div>
 

@@ -8,7 +8,7 @@ const defaultProjects = [
   {
     id: 1,
     category: 'Residential',
-    title: 'Custom Home Build',
+    title: 'Concrete Patio Pour',
     location: 'The River Region, AL — 2024',
     image: '/aerial.jpg',
   },
