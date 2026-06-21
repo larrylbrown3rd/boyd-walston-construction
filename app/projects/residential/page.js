@@ -1,7 +1,6 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -15,6 +14,24 @@ const ProjectCarousel = dynamic(
 )
 
 const residentialTransformations = [
+  {
+    eyebrow: 'Bathroom Restoration',
+    title: 'Full Bathroom Transformation',
+    description: 'Complete bathroom restoration from damaged space to a finished walk-in shower with tile, pebble floor, and modern fixtures.',
+    beforeSrc: '/bathroom-before-restoration.png',
+    afterSrc: '/shower-finished.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+  {
+    eyebrow: 'Shower Renovation',
+    title: 'Waterproofing to Finished Tile',
+    description: 'Professional shower build showing waterproofing, tile work, pebble floor, bench, and niche details.',
+    beforeSrc: '/shower-waterproofing.png',
+    afterSrc: '/shower-finished.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
   {
     eyebrow: 'Kitchen Renovation',
     title: 'Before & After Kitchen Remodel',

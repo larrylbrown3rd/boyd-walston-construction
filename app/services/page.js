@@ -115,7 +115,7 @@ export default function Services() {
 
       <section className="py-24 px-6 md:px-10 bg-[#F8F7F5] border-y border-[#E8E8E8]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 border border-[#E8E8E8] overflow-hidden">
-          <RenovationLayers3D className="h-72 md:h-96 lg:h-full min-h-[18rem]" backgroundImage="/shower-tile.png" />
+          <RenovationLayers3D className="h-72 md:h-96 lg:h-full min-h-[18rem]" backgroundImage="/shower-finished.png" />
           <div className="p-8 md:p-10 lg:p-12 flex flex-col justify-center bg-white">
             <p className="text-eyebrow text-sm mb-4">Renovations</p>
             <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-4">

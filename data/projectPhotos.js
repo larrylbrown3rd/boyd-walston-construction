@@ -20,8 +20,13 @@ export const projectPhotos = [
     href: '/projects/commercial',
   },
   {
-    src: '/shower-tile.png',
-    alt: 'Custom shower tile renovation',
+    src: '/shower-finished.png',
+    alt: 'Finished custom shower with pebble floor and tile',
+    href: '/projects/residential',
+  },
+  {
+    src: '/shower-waterproofing.png',
+    alt: 'Shower waterproofing in progress',
     href: '/projects/residential',
   },
   {

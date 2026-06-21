@@ -4,10 +4,21 @@ export const residentialProjects = [
     category: 'Residential',
     title: 'Custom Shower Build',
     location: 'Pike Road, AL — 2024',
-    image: '/shower-tile.png',
+    image: '/shower-finished.png',
     description:
-      'Full shower renovation with large-format tile, pebble floor, matte black fixtures, built-in bench, and recessed niche.',
-    scope: ['Demo and waterproofing', 'Large-format wall tile', 'Pebble shower floor', 'Matte black fixtures', 'Built-in bench and niche'],
+      'Full shower renovation with large-format tile, pebble floor, matte black fixtures, built-in bench, recessed niche, and frosted window.',
+    scope: ['Plumbing rough-in', 'Waterproofing membrane', 'Large-format wall tile', 'Pebble shower floor', 'Matte black fixtures', 'Built-in bench and niche'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 2,
+    category: 'Residential',
+    title: 'Bathroom Restoration',
+    location: 'Pike Road, AL — 2024',
+    image: '/bathroom-before-restoration.png',
+    description:
+      'Complete bathroom restoration and remodel, transforming a damaged space into a modern walk-in shower with premium finishes.',
+    scope: ['Demo and cleanup', 'Plumbing and waterproofing', 'Custom tile installation', 'Fixture and hardware install', 'Final punch and walkthrough'],
     investment: 'Contact us for a project estimate',
   },
   {
