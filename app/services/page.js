@@ -41,7 +41,7 @@ const services = [
     items: ['Renovations', 'Additions', 'Full remodels', 'Kitchen and bath upgrades'],
     Visual: ResidentialFrame3D,
     visualFirst: true,
-    backgroundImage: '/concrete-finished.jpg',
+    backgroundImage: '/concrete-prep.png',
   },
   {
     title: 'Commercial Build-Out',

@@ -26,10 +26,10 @@ export const residentialProjects = [
     category: 'Residential',
     title: 'Concrete Patio Pour',
     location: 'Pike Road, AL — 2024',
-    image: '/concrete-patio.png',
+    image: '/concrete-patio-pour.png',
     description:
-      'Backyard concrete patio extension with forms, pour, and finish work tied into the existing home.',
-    scope: ['Excavation and grading', 'Formwork and rebar', 'Concrete pour and finish', 'Site cleanup'],
+      'Backyard concrete patio extension with site prep, rebar, professional pour, and smooth finish work tied into the existing home.',
+    scope: ['Site prep and laser layout', 'Formwork and rebar', 'Concrete truck pour', 'Finish and cleanup'],
     investment: 'Contact us for a project estimate',
   },
   {
@@ -37,10 +37,10 @@ export const residentialProjects = [
     category: 'Residential',
     title: 'Walk-In Closet Build-Out',
     location: 'Pike Road, AL — 2024',
-    image: '/walk-in-closet.png',
+    image: '/closet-finished.png',
     description:
-      'Custom walk-in closet with floor-to-ceiling cabinetry, hanging rods, drawers, and matte black hardware.',
-    scope: ['Custom cabinetry', 'Shelving and hanging storage', 'Drawer stacks', 'Hardware and trim'],
+      'Custom walk-in closet with floor-to-ceiling cabinetry, hanging rods, drawer stacks, and matte black hardware.',
+    scope: ['Custom cabinet build', 'Shelving and hanging storage', 'Drawer stacks', 'Paint, hardware, and trim'],
     investment: 'Contact us for a project estimate',
   },
   {
@@ -48,11 +48,22 @@ export const residentialProjects = [
     category: 'Residential',
     title: 'Attic Room Conversion',
     location: 'Pike Road, AL — 2024',
-    image: '/attic-room.png',
+    image: '/attic-finished.png',
     objectPosition: 'center 25%',
     description:
-      'Finished attic conversion with new flooring, paint, trim, electrical, and HVAC updates in a vaulted space.',
-    scope: ['Flooring installation', 'Drywall and paint', 'Trim and baseboards', 'Electrical and vent updates'],
+      'Finished attic conversion with insulation, framing, flooring, paint, trim, electrical, and HVAC updates in a vaulted space.',
+    scope: ['Framing and insulation', 'Flooring installation', 'Drywall and paint', 'Electrical and vent updates'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 15,
+    category: 'Residential',
+    title: 'Kitchen Hood Build',
+    location: 'Pike Road, AL — 2024',
+    image: '/kitchen-hood-build.png',
+    description:
+      'Custom kitchen vent hood enclosure with trim details, built on site to match the kitchen renovation layout.',
+    scope: ['Custom carpentry', 'Hood enclosure framing', 'Trim and finish prep', 'Coordination with kitchen layout'],
     investment: 'Contact us for a project estimate',
   },
 ]

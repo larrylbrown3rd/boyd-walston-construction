@@ -15,6 +15,33 @@ const ProjectCarousel = dynamic(
 
 const residentialTransformations = [
   {
+    eyebrow: 'Concrete Work',
+    title: 'Site Prep to Finished Patio',
+    description: 'Professional concrete prep with laser layout, rebar, and a clean backyard patio pour.',
+    beforeSrc: '/concrete-prep.png',
+    afterSrc: '/concrete-patio-pour.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+  {
+    eyebrow: 'Attic Conversion',
+    title: 'Renovation to Finished Room',
+    description: 'Attic transformation from active renovation to a bright, finished living space with new flooring and trim.',
+    beforeSrc: '/attic-renovation-progress.png',
+    afterSrc: '/attic-finished.png',
+    beforePosition: 'object-center',
+    afterPosition: 'center 25%',
+  },
+  {
+    eyebrow: 'Closet Build-Out',
+    title: 'Custom Closet Transformation',
+    description: 'Floor-to-ceiling closet build from in-progress cabinetry to a finished organized storage space.',
+    beforeSrc: '/closet-in-progress.png',
+    afterSrc: '/closet-finished.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+  {
     eyebrow: 'Bathroom Restoration',
     title: 'Full Bathroom Transformation',
     description: 'Complete bathroom restoration from damaged space to a finished walk-in shower with tile, pebble floor, and modern fixtures.',

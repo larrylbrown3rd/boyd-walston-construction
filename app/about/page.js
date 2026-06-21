@@ -63,40 +63,40 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square overflow-hidden col-span-2 row-span-2">
               <Image
-                src="/commercial-patio-complete.png"
-                alt="Commercial outdoor patio build-out"
+                src="/concrete-patio-pour.png"
+                alt="Residential concrete patio pour"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src="/commercial-concrete-pour.png"
-                alt="Commercial concrete pour"
+                src="/shower-finished.png"
+                alt="Finished custom shower"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src="/shower-tile.png"
-                alt="Custom shower build"
+                src="/closet-finished.png"
+                alt="Walk-in closet build-out"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src="/commercial-site-excavation.png"
-                alt="Commercial site excavation"
+                src="/attic-finished.png"
+                alt="Attic room conversion"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
+                className="object-cover object-top hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src="/commercial-planters.png"
-                alt="Commercial planters and landscaping"
+                src="/kitchen-hood-build.png"
+                alt="Custom kitchen hood build"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
