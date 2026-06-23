@@ -36,7 +36,7 @@ export default function StickyCTA() {
               No obligation · Licensed & insured
             </p>
           </div>
-          <Button href="/quote" variant="primary" className="!px-5 !py-2.5 !text-xs shrink-0">
+          <Button href="/quote" variant="gold" className="!px-5 !py-2.5 !text-xs shrink-0">
             Get A Free Quote
           </Button>
         </motion.div>

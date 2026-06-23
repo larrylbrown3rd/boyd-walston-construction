@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'How do I get started?',
-    a: 'The easiest way is to submit a quote request on our site — we will follow up within 48 hours. You can also use our Smart Estimate tool or book a free site visit.',
+    a: 'The easiest way is to submit a quote request on our site — we will follow up within 48 hours. You can also use our Smart Estimate tool or contact us directly.',
   },
   {
     q: 'Are you licensed and insured?',
@@ -36,7 +36,8 @@ export default function FAQ({ sectionClassName = 'bg-white', embedded = false })
   const content = (
     <>
       <div className={embedded ? 'mb-8' : 'text-center mb-16'}>
-        <p className="text-eyebrow text-sm mb-4">
+        <span className={`accent-bar ${embedded ? '' : 'mx-auto'} mb-4`} />
+        <p className={`text-sm mb-4 ${embedded ? 'text-eyebrow-dark' : 'text-eyebrow-muted'}`}>
           Common Questions
         </p>
         <h2 className={`text-display text-4xl md:text-5xl text-[#111111] ${embedded ? '' : 'md:text-6xl'}`}>
@@ -50,12 +51,12 @@ export default function FAQ({ sectionClassName = 'bg-white', embedded = false })
             <div key={i} className="border-b border-[#E8E8E8]">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between py-6 text-left"
+                className="w-full flex items-center justify-between py-6 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/40 rounded-sm"
               >
                 <span className="font-lato font-light text-sm text-[#111111] pr-8">
                   {faq.q}
                 </span>
-                <span className={`font-inter text-lg text-[#9B9B9B] flex-shrink-0 transition-transform duration-300 ${open === i ? 'rotate-45' : ''}`}>
+                <span className={`font-inter text-lg flex-shrink-0 transition-all duration-300 ${open === i ? 'rotate-45 text-brand-gold' : 'text-[#9B9B9B]'}`}>
                   +
                 </span>
               </button>

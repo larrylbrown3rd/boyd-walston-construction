@@ -5,8 +5,9 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
+import ProjectPhotoGallery from '@/components/ProjectPhotoGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
-import { commercialProjects } from '@/data/projects'
+import { commercialProjects, commercialGalleryPhotos } from '@/data/projects'
 
 const ProjectCarousel = dynamic(
   () => import('@/components/ProjectCarousel'),
@@ -15,29 +16,11 @@ const ProjectCarousel = dynamic(
 
 const commercialTransformations = [
   {
-    eyebrow: 'Institutional Masonry',
-    title: 'Memorial Plaza Restoration',
-    description: 'Courtyard masonry rebuild and finished plaza restoration on an active institutional campus.',
-    beforeSrc: '/commercial-before.png',
-    afterSrc: '/commercial-after.png',
-    beforePosition: 'object-center',
-    afterPosition: 'object-center',
-  },
-  {
     eyebrow: 'Commercial Build-Out',
     title: 'Outdoor Patio & Amenities',
     description: 'From concrete pour to a finished break area with seating, planters, lighting, and site amenities.',
     beforeSrc: '/commercial-concrete-pour.png',
     afterSrc: '/commercial-patio-complete.png',
-    beforePosition: 'object-center',
-    afterPosition: 'object-center',
-  },
-  {
-    eyebrow: 'Site Work',
-    title: 'Excavation to Finished Patio',
-    description: 'Commercial site prep and excavation leading to a completed outdoor gathering space.',
-    beforeSrc: '/commercial-site-excavation.png',
-    afterSrc: '/commercial-patio-finished.png',
     beforePosition: 'object-center',
     afterPosition: 'object-center',
   },
@@ -50,24 +33,32 @@ export default function CommercialProjects() {
 
       <section className="bg-[#111111] text-white py-24 px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="text-eyebrow text-sm mb-4">
-            Commercial
-          </p>
+          <p className="text-eyebrow text-sm mb-4">Commercial</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Commercial Projects
           </h1>
           <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
-            Tenant build-outs, commercial renovations, and professional spaces built on time and on budget.
+            Commercial build-outs, facility maintenance, and professional spaces built on time and on budget.
           </p>
+        </div>
+      </section>
+
+      <section className="py-24 px-8">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <p className="text-eyebrow-dark text-sm mb-4">Project Gallery</p>
+            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
+              Our Commercial Work
+            </h2>
+          </ScrollReveal>
+          <ProjectPhotoGallery photos={commercialGalleryPhotos} columns={4} />
         </div>
       </section>
 
       <section className="py-24 px-8 bg-[#F8F7F5]">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow text-sm mb-4">
-              Featured Transformations
-            </p>
+            <p className="text-eyebrow-dark text-sm mb-4">Featured Transformations</p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-4">
               See The Difference
             </h2>
@@ -80,11 +71,9 @@ export default function CommercialProjects() {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow text-sm mb-4">
-              Featured Projects
-            </p>
+            <p className="text-eyebrow-dark text-sm mb-4">Featured Projects</p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
-              Our Commercial Work
+              Project Details
             </h2>
           </ScrollReveal>
           <ProjectCarousel projects={commercialProjects} />

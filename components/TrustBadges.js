@@ -1,47 +1,32 @@
-export default function TrustBadges() {
-  const badges = [
-    {
-      mark: '✓',
-      title: 'Licensed & Insured',
-      subtitle: 'Alabama Contractor',
-    },
-    {
-      mark: '5.0',
-      title: '5-Star Rated',
-      subtitle: '200+ Happy Clients',
-    },
-    {
-      mark: '48h',
-      title: 'Fast Response',
-      subtitle: 'Reply Within 48 Hours',
-    },
-    {
-      mark: '10+',
-      title: '10+ Years',
-      subtitle: 'Industry Experience',
-    },
-    {
-      mark: '100%',
-      title: '100% Satisfaction',
-      subtitle: 'Guaranteed',
-    },
-  ]
-
+function ArrowIcon() {
   return (
-    <section className="py-12 px-8 border-b border-[#E8E8E8]">
+    <svg aria-hidden="true" className="w-4 h-4 text-brand-gold-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+    </svg>
+  )
+}
+
+const badges = [
+  { title: 'Licensed & Insured', subtitle: 'Alabama contractor' },
+  { title: '48-Hour Response', subtitle: 'Mon–Fri, 8am–5pm' },
+  { title: '10+ Years', subtitle: 'Industry experience' },
+  { title: 'Family Owned', subtitle: 'Since 1960' },
+]
+
+export default function TrustBadges() {
+  return (
+    <section className="py-10 px-6 md:px-10 bg-white border-b border-[#E8E8E8]">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-          {badges.map((badge, i) => (
-            <div key={i} className="flex flex-col items-center text-center">
-              <div className="w-10 h-10 rounded-full border border-[#E8E8E8] flex items-center justify-center mb-3">
-                <span className="font-inter font-semibold text-[10px] tracking-wide text-[#111111]">
-                  {badge.mark}
-                </span>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
+          {badges.map((badge) => (
+            <div key={badge.title} className="flex flex-col items-center text-center group">
+              <div className="mb-3 group-hover:translate-x-1 transition-transform duration-300">
+                <ArrowIcon />
               </div>
-              <p className="font-lato font-light text-xs text-[#111111] mb-1">
+              <p className="font-lato text-xs font-semibold text-[#111111] mb-1">
                 {badge.title}
               </p>
-              <p className="font-lato font-light text-xs text-[#9B9B9B]">
+              <p className="font-lato text-xs text-[#9B9B9B]">
                 {badge.subtitle}
               </p>
             </div>

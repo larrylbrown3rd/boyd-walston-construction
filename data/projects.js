@@ -1,3 +1,5 @@
+export const HMMA_LOCATION = 'Hyundai Motor Manufacturing of Alabama — 2026'
+
 export const residentialProjects = [
   {
     id: 1,
@@ -15,10 +17,32 @@ export const residentialProjects = [
     category: 'Residential',
     title: 'Bathroom Restoration',
     location: 'Pike Road, AL — 2024',
-    image: '/bathroom-before-restoration.png',
+    image: '/bathroom-renovation-complete.png',
     description:
       'Complete bathroom restoration and remodel, transforming a damaged space into a modern walk-in shower with premium finishes.',
     scope: ['Demo and cleanup', 'Plumbing and waterproofing', 'Custom tile installation', 'Fixture and hardware install', 'Final punch and walkthrough'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 17,
+    category: 'Residential',
+    title: 'Guest Bath Remodel',
+    location: 'Pike Road, AL — 2024',
+    image: '/bathroom-pedestal-shower.png',
+    description:
+      'Compact bathroom remodel with pedestal sink, corner glass shower, updated lighting, and wood-look flooring.',
+    scope: ['Fixture and shower install', 'Flooring and trim', 'Vanity lighting', 'Paint and finish work'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 18,
+    category: 'Residential',
+    title: 'Barn Door Bath Entry',
+    location: 'Pike Road, AL — 2024',
+    image: '/bathroom-barn-door.png',
+    description:
+      'Interior renovation featuring a custom barn door entry, updated flooring, trim, and a refreshed bathroom layout.',
+    scope: ['Barn door install', 'Flooring and trim', 'Paint and finish', 'Bathroom coordination'],
     investment: 'Contact us for a project estimate',
   },
   {
@@ -81,10 +105,26 @@ export const residentialProjects = [
 
 export const commercialProjects = [
   {
+    id: 26,
+    category: 'Commercial',
+    title: 'Georgiana Opera House Roof',
+    location: 'Georgiana, AL — 2026',
+    image: '/aerial-roofing.png',
+    description:
+      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system.',
+    scope: [
+      'TPO roof removal',
+      'New decking installation',
+      'Modified bitumen roofing system',
+      'Alabama Council on the Arts grant project',
+    ],
+    investment: 'Contact us for a project estimate',
+  },
+  {
     id: 10,
     category: 'Commercial',
     title: 'Outdoor Patio & Amenities',
-    location: 'Central Alabama — 2024',
+    location: HMMA_LOCATION,
     image: '/commercial-patio-complete.png',
     description:
       'Full commercial outdoor break area with concrete patio, picnic seating, black planters, lighting, and site amenities.',
@@ -92,10 +132,43 @@ export const commercialProjects = [
     investment: 'Contact us for a project estimate',
   },
   {
+    id: 19,
+    category: 'Commercial',
+    title: 'Site Grading & Prep',
+    location: HMMA_LOCATION,
+    image: '/site-grading.png',
+    description:
+      'Commercial site grading and layout with skid steer equipment, grade checking, and subgrade preparation.',
+    scope: ['Site grading', 'Grade verification', 'Equipment coordination', 'Subgrade prep'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 20,
+    category: 'Commercial',
+    title: 'Exterior Lift Work',
+    location: HMMA_LOCATION,
+    image: '/exterior-lift-work.png',
+    description:
+      'Commercial exterior maintenance and renovation using boom lift access for second-story window and facade work.',
+    scope: ['Lift setup and safety', 'Exterior prep', 'Window and facade work', 'Site cleanup'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 21,
+    category: 'Commercial',
+    title: 'Building Renovation',
+    location: HMMA_LOCATION,
+    image: '/exterior-renovation-progress.png',
+    description:
+      'Large-scale exterior renovation with window protection, facade updates, and coordinated lift access.',
+    scope: ['Window protection', 'Exterior prep and repair', 'Lift coordination', 'Finish protection'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
     id: 11,
     category: 'Commercial',
     title: 'Commercial Concrete Pour',
-    location: 'Central Alabama — 2024',
+    location: HMMA_LOCATION,
     image: '/commercial-concrete-pour.png',
     description:
       'Large-scale commercial slab pour with pump truck delivery, formwork, rebar, and coordinated field crew.',
@@ -103,79 +176,118 @@ export const commercialProjects = [
     investment: 'Contact us for a project estimate',
   },
   {
-    id: 12,
-    category: 'Commercial',
-    title: 'Site Excavation & Prep',
-    location: 'Central Alabama — 2024',
-    image: '/commercial-site-excavation.png',
-    description:
-      'Commercial site excavation and grading under a covered walkway with heavy equipment and protected finishes.',
-    scope: ['Excavation and grading', 'Site protection', 'Equipment coordination', 'Subgrade prep'],
-    investment: 'Contact us for a project estimate',
-  },
-  {
-    id: 13,
-    category: 'Commercial',
-    title: 'Industrial Building Exterior',
-    location: 'Central Alabama — 2024',
-    image: '/commercial-building-exterior.png',
-    description:
-      'Modern industrial commercial building with metal siding, brick base, and professional exterior presentation.',
-    scope: ['Exterior coordination', 'Site and landscape integration', 'Finish protection', 'Final walkthrough'],
-    investment: 'Contact us for a project estimate',
-  },
-  {
     id: 4,
     category: 'Commercial',
     title: 'Commercial Framing',
-    location: 'Central Alabama — 2024',
-    image: '/framing-crew.png',
+    location: HMMA_LOCATION,
+    image: '/commercial-framing.png',
     description:
       'Structural framing for a commercial build with crew on site, lumber staging, and coordinated field execution.',
     scope: ['Framing layout', 'Wall and roof framing', 'Structural coordination', 'Jobsite safety and staging'],
     investment: 'Contact us for a project estimate',
   },
   {
-    id: 14,
+    id: 22,
     category: 'Commercial',
-    title: 'Planters & Site Finishes',
-    location: 'Central Alabama — 2024',
-    image: '/commercial-planters.png',
+    title: 'Brick Building Site Work',
+    location: HMMA_LOCATION,
+    image: '/commercial-brick-site.png',
     description:
-      'Commercial landscaping finishes with custom black planters, evergreens, decorative stone, and patio integration.',
-    scope: ['Planter installation', 'Landscape material placement', 'Decorative stone finish', 'Final site cleanup'],
+      'Active commercial site work at a multi-story brick building with compaction, utility coordination, and mud-season logistics.',
+    scope: ['Site compaction', 'Utility coordination', 'Equipment staging', 'Safety and access control'],
     investment: 'Contact us for a project estimate',
   },
-]
-
-export const governmentProjects = [
+  {
+    id: 23,
+    category: 'Commercial',
+    title: 'Utility Trench Work',
+    location: HMMA_LOCATION,
+    image: '/commercial-utility-work.png',
+    description:
+      'Commercial utility trenching and underground work at an active building site with crew and equipment on site.',
+    scope: ['Trench excavation', 'Utility placement', 'Backfill and compaction', 'Site restoration'],
+    investment: 'Contact us for a project estimate',
+  },
   {
     id: 8,
-    category: 'Government',
+    category: 'Commercial',
     title: 'Memorial Plaza Masonry',
-    location: 'Central Alabama — 2024',
-    image: '/commercial-after.png',
+    location: 'Alabama State University — 2026',
+    image: '/lockhart-hall-plaza.png',
     description:
-      'Institutional masonry and plaza restoration with CMU construction, brick paving, and monument integration.',
+      'Institutional masonry and plaza restoration with CMU construction, brick paving, and monument integration at Lockhart Hall.',
     scope: ['Site protection and prep', 'CMU and brick masonry', 'Plaza paving and finishes', 'Monument pedestal work'],
     investment: 'Contact us for a project estimate',
   },
   {
     id: 9,
-    category: 'Government',
+    category: 'Commercial',
     title: 'Campus Hardscape Restoration',
-    location: 'Central Alabama — 2024',
-    image: '/commercial-before.png',
+    location: 'Alabama State University — 2026',
+    image: '/masonry-blocks-progress.png',
     objectPosition: 'object-center',
     description:
       'Courtyard masonry rebuild on an active institutional campus, including block work, rebar, and phased site protection.',
     scope: ['Phased site protection', 'CMU layout and install', 'Rebar and structural tie-ins', 'Finish coordination'],
     investment: 'Contact us for a project estimate',
   },
+  {
+    id: 24,
+    category: 'Commercial',
+    title: 'Campus Masonry Work',
+    location: 'Alabama State University — 2026',
+    image: '/campus-masonry-work.png',
+    description:
+      'On-campus masonry project with block layout, mortar work, cement mixing, and protected walkways between historic buildings.',
+    scope: ['Material staging', 'Block and mortar work', 'Walkway protection', 'Site cleanup'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 25,
+    category: 'Commercial',
+    title: 'Site Demolition & Clearing',
+    location: HMMA_LOCATION,
+    image: '/site-demolition.png',
+    description:
+      'Heavy demolition and site clearing with excavator and skid steer equipment to prepare property for new work.',
+    scope: ['Demolition', 'Debris removal', 'Site clearing', 'Equipment coordination'],
+    investment: 'Contact us for a project estimate',
+  },
 ]
+
+export const governmentProjects = []
 
 export const allProjects = [
   ...residentialProjects,
   ...commercialProjects,
   ...governmentProjects,
+]
+
+export const residentialGalleryPhotos = [
+  { src: '/shower-finished.png', alt: 'Custom shower renovation', title: 'Custom Shower Build' },
+  { src: '/bathroom-pedestal-shower.png', alt: 'Guest bath remodel', title: 'Guest Bath Remodel' },
+  { src: '/bathroom-barn-door.png', alt: 'Barn door bath entry', title: 'Barn Door Bath Entry' },
+  { src: '/bathroom-renovation-complete.png', alt: 'Bathroom restoration', title: 'Bathroom Restoration' },
+  { src: '/kitchen-after-new.png', alt: 'Kitchen renovation', title: 'Kitchen Renovation', objectPosition: 'top' },
+  { src: '/kitchen-hood-finished.png', alt: 'Kitchen hood build', title: 'Kitchen Hood Build' },
+  { src: '/closet-finished.png', alt: 'Walk-in closet', title: 'Walk-In Closet Build-Out' },
+  { src: '/attic-finished.png', alt: 'Attic conversion', title: 'Attic Room Conversion', objectPosition: 'center 25%' },
+  { src: '/concrete-patio-pour.png', alt: 'Concrete patio pour', title: 'Concrete Patio Pour' },
+  { src: '/kitchen-before.png', alt: 'Kitchen before remodel', title: 'Kitchen Before' },
+  { src: '/kitchen-after.png', alt: 'Kitchen after remodel', title: 'Kitchen After' },
+]
+
+export const commercialGalleryPhotos = [
+  { src: '/commercial-patio-complete.png', alt: 'Commercial patio complete', title: 'Outdoor Patio & Amenities' },
+  { src: '/commercial-concrete-pour.png', alt: 'Commercial concrete pour', title: 'Commercial Concrete Pour' },
+  { src: '/commercial-site-excavation.png', alt: 'Site excavation', title: 'Site Excavation' },
+  { src: '/commercial-framing.png', alt: 'Commercial framing', title: 'Commercial Framing' },
+  { src: '/site-grading.png', alt: 'Site grading', title: 'Site Grading & Prep' },
+  { src: '/site-demolition.png', alt: 'Site demolition', title: 'Site Demolition' },
+  { src: '/exterior-lift-work.png', alt: 'Exterior lift work', title: 'Exterior Lift Work' },
+  { src: '/exterior-renovation-progress.png', alt: 'Building renovation', title: 'Building Renovation' },
+  { src: '/lockhart-hall-plaza.png', alt: 'Memorial plaza masonry', title: 'Memorial Plaza Masonry' },
+  { src: '/campus-masonry-work.png', alt: 'Campus masonry work', title: 'Campus Masonry Work' },
+  { src: '/masonry-blocks-progress.png', alt: 'Masonry in progress', title: 'Campus Hardscape Restoration' },
+  { src: '/aerial-roofing.png', alt: 'Georgiana Opera House roof', title: 'Georgiana Opera House Roof' },
 ]

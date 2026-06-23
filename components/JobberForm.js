@@ -1,11 +1,12 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export const JOBBER_CLIENT_HUB_ID = '007f2831-0cdb-4f7e-83f2-b58a55cb5b8d'
 
 export default function JobberForm() {
   const containerRef = useRef(null)
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -23,6 +24,7 @@ export default function JobberForm() {
       'form_url',
       `https://clienthub.getjobber.com/client_hubs/${JOBBER_CLIENT_HUB_ID}/public/work_request/embedded_work_request_form`
     )
+    script.onload = () => setLoaded(true)
     containerRef.current.appendChild(script)
 
     return () => {
@@ -31,5 +33,17 @@ export default function JobberForm() {
     }
   }, [])
 
-  return <div ref={containerRef} id={JOBBER_CLIENT_HUB_ID} />
+  return (
+    <div className="relative bg-white border border-[#E8E8E8] p-6 md:p-8 shadow-sm">
+      {!loaded && (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#F8F7F5] z-10">
+          <div className="text-center">
+            <div className="w-8 h-8 border-2 border-brand-gold border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+            <p className="font-lato text-sm text-[#9B9B9B]">Loading form…</p>
+          </div>
+        </div>
+      )}
+      <div ref={containerRef} id={JOBBER_CLIENT_HUB_ID} className="min-h-[420px] jobber-form-embed" />
+    </div>
+  )
 }

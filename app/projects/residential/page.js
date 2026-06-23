@@ -5,8 +5,9 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
+import ProjectPhotoGallery from '@/components/ProjectPhotoGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
-import { residentialProjects } from '@/data/projects'
+import { residentialProjects, residentialGalleryPhotos } from '@/data/projects'
 
 const ProjectCarousel = dynamic(
   () => import('@/components/ProjectCarousel'),
@@ -38,6 +39,15 @@ const residentialTransformations = [
     description: 'Floor-to-ceiling closet build from in-progress cabinetry to a finished organized storage space.',
     beforeSrc: '/closet-in-progress.png',
     afterSrc: '/closet-finished.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+  {
+    eyebrow: 'Guest Bath Remodel',
+    title: 'Restoration to Finished Bath',
+    description: 'Compact bathroom remodel with pedestal sink, glass shower, updated lighting, and new flooring.',
+    beforeSrc: '/bathroom-before-restoration.png',
+    afterSrc: '/bathroom-pedestal-shower.png',
     beforePosition: 'object-center',
     afterPosition: 'object-center',
   },
@@ -86,24 +96,32 @@ export default function ResidentialProjects() {
 
       <section className="bg-[#111111] text-white py-24 px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="text-eyebrow text-sm mb-4">
-            Residential
-          </p>
+          <p className="text-eyebrow text-sm mb-4">Residential</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Residential Projects
           </h1>
           <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
-            Renovations, additions, and remodels crafted with care for homeowners across central Alabama.
+            Kitchen and bath remodels, additions, and full interior renovations crafted with care.
           </p>
+        </div>
+      </section>
+
+      <section className="py-24 px-8">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <p className="text-eyebrow-dark text-sm mb-4">Project Gallery</p>
+            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
+              Our Residential Work
+            </h2>
+          </ScrollReveal>
+          <ProjectPhotoGallery photos={residentialGalleryPhotos} columns={4} />
         </div>
       </section>
 
       <section className="py-24 px-8 bg-[#F8F7F5]">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow text-sm mb-4">
-              Featured Transformations
-            </p>
+            <p className="text-eyebrow-dark text-sm mb-4">Featured Transformations</p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-4">
               See The Difference
             </h2>
@@ -116,11 +134,9 @@ export default function ResidentialProjects() {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow text-sm mb-4">
-              Featured Projects
-            </p>
+            <p className="text-eyebrow-dark text-sm mb-4">Featured Projects</p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
-              Our Residential Work
+              Project Details
             </h2>
           </ScrollReveal>
           <ProjectCarousel projects={residentialProjects} />
