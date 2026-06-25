@@ -17,7 +17,7 @@ export default function ProjectsCTA() {
           Start Your Project Today
         </h2>
         <p className="font-lato font-light text-base text-[#9B9B9B] mb-8 leading-relaxed">
-          Contact us for a free consultation and quote.
+          Let&apos;s talk about your project.
         </p>
         <a
           href="/quote"

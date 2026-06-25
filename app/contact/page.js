@@ -164,7 +164,7 @@ export default function Contact() {
               <li>
                 <p className="text-eyebrow-muted text-xs mb-1">Hours</p>
                 <p className="font-lato text-sm text-[#111111]">Monday – Friday</p>
-                <p className="font-lato text-sm text-[#111111]">8:00 AM – 5:00 PM</p>
+                <p className="font-lato text-sm text-[#111111]">7:00 AM – 6:00 PM</p>
               </li>
             </ul>
           </div>

@@ -115,35 +115,39 @@ export default function ProjectCarousel({ projects = [] }) {
       </AnimatePresence>
 
       <div className="flex items-center justify-between mt-8">
-        <div className="flex gap-3">
-          {projects.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => {
-                setDirection(i > safeActive ? 1 : -1)
-                setActive(i)
-              }}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                i === safeActive ? 'bg-[#111111] w-8' : 'bg-[#E8E8E8] w-2'
-              }`}
-            />
-          ))}
-        </div>
+        {projects.length > 1 && (
+          <>
+            <div className="flex gap-3">
+              {projects.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => {
+                    setDirection(i > safeActive ? 1 : -1)
+                    setActive(i)
+                  }}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    i === safeActive ? 'bg-[#111111] w-8' : 'bg-[#E8E8E8] w-2'
+                  }`}
+                />
+              ))}
+            </div>
 
-        <div className="flex gap-4">
-          <button
-            onClick={prev}
-            className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
-          >
-            ←
-          </button>
-          <button
-            onClick={next}
-            className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
-          >
-            →
-          </button>
-        </div>
+            <div className="flex gap-4">
+              <button
+                onClick={prev}
+                className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+              >
+                ←
+              </button>
+              <button
+                onClick={next}
+                className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+              >
+                →
+              </button>
+            </div>
+          </>
+        )}
       </div>
 
       <AnimatePresence>

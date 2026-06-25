@@ -26,8 +26,8 @@ export const residentialProjects = [
   {
     id: 17,
     category: 'Residential',
-    title: 'Guest Bath Remodel',
-    location: 'Pike Road, AL — 2024',
+    title: 'Guest Bath Addition',
+    location: 'Montgomery, AL — 2024',
     image: '/bathroom-pedestal-shower.png',
     description:
       'Compact bathroom remodel with pedestal sink, corner glass shower, updated lighting, and wood-look flooring.',
@@ -103,23 +103,11 @@ export const residentialProjects = [
   },
 ]
 
-export const commercialProjects = [
-  {
-    id: 26,
-    category: 'Commercial',
-    title: 'Georgiana Opera House Roof',
-    location: 'Georgiana, AL — 2026',
-    image: '/aerial-roofing.png',
-    description:
-      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system.',
-    scope: [
-      'TPO roof removal',
-      'New decking installation',
-      'Modified bitumen roofing system',
-      'Alabama Council on the Arts grant project',
-    ],
-    investment: 'Contact us for a project estimate',
-  },
+export const featuredResidentialProjects = residentialProjects.filter(
+  (project) => project.id !== 2 && project.id !== 18
+)
+
+export const featuredCommercialProjects = [
   {
     id: 10,
     category: 'Commercial',
@@ -131,6 +119,9 @@ export const commercialProjects = [
     scope: ['Concrete patio pour', 'Site furnishings and seating', 'Planters and landscaping', 'Lighting and charging stations'],
     investment: 'Contact us for a project estimate',
   },
+]
+
+export const commercialProjects = [
   {
     id: 19,
     category: 'Commercial',
@@ -265,11 +256,11 @@ export const allProjects = [
 
 export const residentialGalleryPhotos = [
   { src: '/shower-finished.png', alt: 'Custom shower renovation', title: 'Custom Shower Build' },
-  { src: '/bathroom-pedestal-shower.png', alt: 'Guest bath remodel', title: 'Guest Bath Remodel' },
-  { src: '/bathroom-barn-door.png', alt: 'Barn door bath entry', title: 'Barn Door Bath Entry' },
-  { src: '/bathroom-renovation-complete.png', alt: 'Bathroom restoration', title: 'Bathroom Restoration' },
+  { src: '/bathroom-pedestal-shower.png', alt: 'Bathroom addition', title: 'Bathroom Addition' },
+  { src: '/bathroom-barn-door.png', alt: 'Bathroom addition', title: 'Bathroom Addition' },
+  { src: '/bathroom-renovation-complete.png', alt: 'Addition', title: 'Addition' },
   { src: '/kitchen-after-new.png', alt: 'Kitchen renovation', title: 'Kitchen Renovation', objectPosition: 'top' },
-  { src: '/kitchen-hood-finished.png', alt: 'Kitchen hood build', title: 'Kitchen Hood Build' },
+  { src: '/kitchen-hood-finished.png', alt: 'Custom kitchen hood', title: 'Custom Kitchen Hood Build' },
   { src: '/closet-finished.png', alt: 'Walk-in closet', title: 'Walk-In Closet Build-Out' },
   { src: '/attic-finished.png', alt: 'Attic conversion', title: 'Attic Room Conversion', objectPosition: 'center 25%' },
   { src: '/concrete-patio-pour.png', alt: 'Concrete patio pour', title: 'Concrete Patio Pour' },
@@ -279,15 +270,17 @@ export const residentialGalleryPhotos = [
 
 export const commercialGalleryPhotos = [
   { src: '/commercial-patio-complete.png', alt: 'Commercial patio complete', title: 'Outdoor Patio & Amenities' },
+  { src: '/commercial-framing.png', alt: 'Exterior painting', title: 'Exterior Painting' },
+  { src: '/exterior-lift-work.png', alt: 'Painting', title: 'Painting' },
+  { src: '/exterior-renovation-progress.png', alt: 'Exterior painting', title: 'Exterior Painting' },
+  { src: '/lockhart-hall-plaza.png', alt: 'College masonry work', title: 'College Masonry Work' },
+  { src: '/campus-masonry-work.png', alt: 'College masonry work', title: 'College Masonry Work' },
+  { src: '/masonry-blocks-progress.png', alt: 'College masonry work', title: 'College Masonry Work' },
+]
+
+export const civilGalleryPhotos = [
   { src: '/commercial-concrete-pour.png', alt: 'Commercial concrete pour', title: 'Commercial Concrete Pour' },
   { src: '/commercial-site-excavation.png', alt: 'Site excavation', title: 'Site Excavation' },
-  { src: '/commercial-framing.png', alt: 'Commercial framing', title: 'Commercial Framing' },
   { src: '/site-grading.png', alt: 'Site grading', title: 'Site Grading & Prep' },
   { src: '/site-demolition.png', alt: 'Site demolition', title: 'Site Demolition' },
-  { src: '/exterior-lift-work.png', alt: 'Exterior lift work', title: 'Exterior Lift Work' },
-  { src: '/exterior-renovation-progress.png', alt: 'Building renovation', title: 'Building Renovation' },
-  { src: '/lockhart-hall-plaza.png', alt: 'Memorial plaza masonry', title: 'Memorial Plaza Masonry' },
-  { src: '/campus-masonry-work.png', alt: 'Campus masonry work', title: 'Campus Masonry Work' },
-  { src: '/masonry-blocks-progress.png', alt: 'Masonry in progress', title: 'Campus Hardscape Restoration' },
-  { src: '/aerial-roofing.png', alt: 'Georgiana Opera House roof', title: 'Georgiana Opera House Roof' },
 ]

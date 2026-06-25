@@ -3,62 +3,61 @@
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 
 const projects = [
   {
     id: 1,
     category: 'COMMERCIAL',
-    title: 'Luxury Building Exterior',
-    location: 'Central Alabama',
+    title: 'Outdoor Patio & Amenities',
+    location: 'Hyundai Motor Manufacturing of Alabama',
     description:
-      'Full exterior renovation of luxury commercial property including painting and restoration.',
-    image: '/luxury-building.jpg',
+      'Complete outdoor patio build-out with custom planters, lighting, and seating.',
+    image: '/commercial-patio-complete.png',
   },
   {
     id: 2,
     category: 'COMMERCIAL',
-    title: 'Commercial Outdoor Space',
-    location: 'Central Alabama',
+    title: 'Exterior Painting',
+    location: 'Diamond One Event Center',
     description:
-      'Complete outdoor patio build-out with custom planters, lighting, and seating.',
-    image: '/commercial-patio-3.jpg',
+      'Full exterior painting and restoration of a commercial event facility.',
+    image: '/luxury-building.jpg',
   },
   {
     id: 3,
     category: 'RESIDENTIAL',
-    title: 'Residential Renovation',
-    location: 'Central Alabama',
+    title: 'Framing',
+    location: 'Titus, AL',
     description:
-      'Full residential renovation including framing, finishes, and detail work.',
+      'Structural framing and construction for a residential build.',
     image: '/aerial.jpg',
   },
   {
     id: 4,
     category: 'RESIDENTIAL',
     title: 'Walk-In Closet Build-Out',
-    location: 'Central Alabama',
+    location: 'Pike Road, AL',
     description:
       'Custom walk-in closet with built-in shelving, drawers, and black hardware throughout.',
-    image: '/closet-finished.jpg',
+    image: '/closet-finished.png',
   },
   {
     id: 5,
     category: 'RESIDENTIAL',
     title: 'Bathroom Renovation',
-    location: 'Central Alabama',
+    location: 'Pine Level, AL',
     description:
       'Full bathroom renovation including custom tile shower with pebble floor and bench.',
-    image: '/shower-after.jpg',
+    image: '/shower-finished.png',
   },
   {
     id: 6,
     category: 'RESIDENTIAL',
-    title: 'Concrete Driveway',
-    location: 'Central Alabama',
+    title: 'Concrete Pad',
+    location: 'Prattville, AL',
     description:
-      'Large residential concrete pour including driveway and patio extension.',
-    image: '/concrete-finished.jpg',
+      'Residential concrete pad pour with professional finish work.',
+    image: '/concrete-patio-pour.png',
   },
 ]
 
@@ -77,14 +76,12 @@ export default function Projects() {
           />
         </div>
         <div className="relative max-w-6xl mx-auto z-10">
-          <p className="text-eyebrow text-sm mb-4">
-            Our Work
-          </p>
+          <p className="text-eyebrow text-sm mb-4">Our Work</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Projects
           </h1>
           <p className="font-lato font-light text-lg text-[#9B9B9B] max-w-2xl">
-            Residential, commercial, and government work across central Alabama.
+            Residential, commercial, civil, and government work across central Alabama.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <a href="/projects/residential" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
@@ -93,27 +90,13 @@ export default function Projects() {
             <a href="/projects/commercial" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
               Commercial
             </a>
+            <a href="/projects/civil" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
+              Civil
+            </a>
             <a href="/projects/government" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
               Government
             </a>
           </div>
-        </div>
-      </section>
-
-      <section className="py-24 px-8 bg-[#F8F7F5]">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-eyebrow text-sm mb-4">
-            Transformations
-          </p>
-          <h2 className="text-display text-5xl text-[#111111] mb-12">
-            See The Difference
-          </h2>
-          <BeforeAfterSlider
-            beforeSrc="/kitchen-before.png"
-            afterSrc="/kitchen-after.png"
-            beforeLabel="Before"
-            afterLabel="After"
-          />
         </div>
       </section>
 
@@ -135,9 +118,7 @@ export default function Projects() {
                   />
                 </div>
                 <div className="p-6">
-                  <p className="text-eyebrow text-sm mb-2">
-                    {project.category}
-                  </p>
+                  <p className="text-eyebrow-dark text-sm mb-2">{project.category}</p>
                   <h3 className="text-display text-2xl text-[#111111] mb-2">
                     {project.title}
                   </h3>
@@ -160,7 +141,7 @@ export default function Projects() {
             Start Your Project Today
           </h2>
           <p className="font-lato font-light text-[#9B9B9B] mb-8">
-            Contact us for a free consultation and quote.
+            Let&apos;s talk about your project.
           </p>
           <a
             href="/quote"

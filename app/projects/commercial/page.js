@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ProjectPhotoGallery from '@/components/ProjectPhotoGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
-import { commercialProjects, commercialGalleryPhotos } from '@/data/projects'
+import { featuredCommercialProjects, commercialGalleryPhotos } from '@/data/projects'
 
 const ProjectCarousel = dynamic(
   () => import('@/components/ProjectCarousel'),
@@ -16,7 +16,7 @@ const ProjectCarousel = dynamic(
 
 const commercialTransformations = [
   {
-    eyebrow: 'Commercial Build-Out',
+    eyebrow: 'Outdoor Patio & Amenities',
     title: 'Outdoor Patio & Amenities',
     description: 'From concrete pour to a finished break area with seating, planters, lighting, and site amenities.',
     beforeSrc: '/commercial-concrete-pour.png',
@@ -31,34 +31,22 @@ export default function CommercialProjects() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-8">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-eyebrow text-sm mb-4">Commercial</p>
-          <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Commercial Projects
-          </h1>
-          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
-            Commercial build-outs, facility maintenance, and professional spaces built on time and on budget.
-          </p>
-        </div>
-      </section>
-
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow-dark text-sm mb-4">Project Gallery</p>
-            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
-              Our Commercial Work
-            </h2>
+            <p className="text-eyebrow-dark text-sm mb-4">Feature Project</p>
+            <h1 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
+              Commercial Projects
+            </h1>
           </ScrollReveal>
-          <ProjectPhotoGallery photos={commercialGalleryPhotos} columns={4} />
+          <ProjectCarousel projects={featuredCommercialProjects} />
         </div>
       </section>
 
       <section className="py-24 px-8 bg-[#F8F7F5]">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow-dark text-sm mb-4">Featured Transformations</p>
+            <p className="text-eyebrow-dark text-sm mb-4">Project</p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-4">
               See The Difference
             </h2>
@@ -71,12 +59,12 @@ export default function CommercialProjects() {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow-dark text-sm mb-4">Featured Projects</p>
+            <p className="text-eyebrow-dark text-sm mb-4">Project Gallery</p>
             <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
-              Project Details
+              Our Commercial Work
             </h2>
           </ScrollReveal>
-          <ProjectCarousel projects={commercialProjects} />
+          <ProjectPhotoGallery photos={commercialGalleryPhotos} columns={4} />
         </div>
       </section>
 

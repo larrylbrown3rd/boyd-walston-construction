@@ -37,10 +37,10 @@ export default function About() {
             <span className="accent-bar mb-4" />
             <p className="text-eyebrow-dark text-sm mb-4">Leadership</p>
             <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-6">
-              Boyd Walston
+              Devoski Boyd
             </h2>
             <p className="font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-6">
-              Boyd Walston leads Boyd Walston Construction with a hands-on approach rooted in three generations of trade experience. From residential remodels to commercial build-outs and civil site work, Boyd is committed to honest communication, quality craftsmanship, and delivering every project on time.
+              Bio coming soon.
             </p>
             <a
               href="https://www.linkedin.com/in/dboyd5620"

@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ProjectPhotoGallery from '@/components/ProjectPhotoGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
-import { residentialProjects, residentialGalleryPhotos } from '@/data/projects'
+import { featuredResidentialProjects, residentialGalleryPhotos } from '@/data/projects'
 
 const ProjectCarousel = dynamic(
   () => import('@/components/ProjectCarousel'),
@@ -52,27 +52,8 @@ const residentialTransformations = [
     afterPosition: 'object-center',
   },
   {
-    eyebrow: 'Bathroom Restoration',
-    title: 'Full Bathroom Transformation',
-    description: 'Complete bathroom restoration from damaged space to a finished walk-in shower with tile, pebble floor, and modern fixtures.',
-    beforeSrc: '/bathroom-before-restoration.png',
-    afterSrc: '/shower-finished.png',
-    beforePosition: 'object-center',
-    afterPosition: 'object-center',
-  },
-  {
-    eyebrow: 'Shower Renovation',
-    title: 'Waterproofing to Finished Tile',
-    description: 'Professional shower build showing waterproofing, tile work, pebble floor, bench, and niche details.',
-    beforeSrc: '/shower-waterproofing.png',
-    afterSrc: '/shower-finished.png',
-    beforePosition: 'object-center',
-    afterPosition: 'object-center',
-  },
-  {
     eyebrow: 'Kitchen Renovation',
     title: 'Before & After Kitchen Remodel',
-    description: 'Complete kitchen transformation from dated layout to a bright modern space with quartz counters and custom finishes.',
     beforeSrc: '/kitchen-before.png',
     afterSrc: '/kitchen-after.png',
     beforePosition: 'object-center',
@@ -134,12 +115,9 @@ export default function ResidentialProjects() {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow-dark text-sm mb-4">Featured Projects</p>
-            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
-              Project Details
-            </h2>
+            <p className="text-eyebrow-dark text-sm mb-12">Featured Projects</p>
           </ScrollReveal>
-          <ProjectCarousel projects={residentialProjects} />
+          <ProjectCarousel projects={featuredResidentialProjects} />
         </div>
       </section>
 

@@ -29,8 +29,8 @@ const services = [
     visualFirst: true,
   },
   {
-    title: 'Commercial Build-Out',
-    items: ['Commercial Build-Out', 'Facility Maintenance'],
+    title: 'Tenant Buildout',
+    items: ['Roofing', 'Amenity Builds', 'Owner Rep Services', 'Facility Maintenance'],
     backgroundImage: '/commercial-building-exterior.png',
     visualFirst: false,
   },
@@ -89,14 +89,9 @@ export default function Services() {
                   <h2 className="text-display text-3xl md:text-4xl text-[#111111] mb-6">
                     {service.title}
                   </h2>
-                  <ul className="font-lato text-sm text-[#4A4A4A] space-y-2 list-none">
+                  <ul className="font-lato text-sm text-[#4A4A4A] space-y-2 list-disc pl-5">
                     {service.items.map((item) => (
-                      <li key={item} className="flex items-center gap-3">
-                        <svg aria-hidden="true" className="w-4 h-4 text-brand-gold-dark shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                        {item}
-                      </li>
+                      <li key={item}>{item}</li>
                     ))}
                   </ul>
                 </div>

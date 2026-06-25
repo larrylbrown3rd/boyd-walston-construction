@@ -30,10 +30,10 @@ export default function StickyCTA() {
         >
           <div>
             <p className="font-lato text-sm font-medium text-white">
-              Free quote in 48 hours
+              Let&apos;s talk about your project
             </p>
             <p className="font-lato text-xs text-[#9B9B9B]">
-              No obligation · Licensed & insured
+              Licensed & insured
             </p>
           </div>
           <Button href="/quote" variant="gold" className="!px-5 !py-2.5 !text-xs shrink-0">

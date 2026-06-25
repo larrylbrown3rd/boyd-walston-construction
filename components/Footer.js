@@ -11,7 +11,7 @@ export default function Footer() {
               Ready To Start Your Project?
             </p>
             <p className="font-lato text-sm text-[#9B9B9B]">
-              Free quote · Reply within 48 hours · Licensed & insured
+              Let&apos;s talk about your project · Licensed & insured
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -35,10 +35,7 @@ export default function Footer() {
               Boyd Walston Construction
             </h3>
             <span className="accent-bar mt-4 mb-4" />
-            <p className="font-lato font-light text-xs text-[#9B9B9B] tracking-wide leading-relaxed mb-6">
-              Building what matters most — quality renovations and construction delivered on time and built to last.
-            </p>
-            <SocialLinks className="[&_a]:text-white [&_a]:border-white/20 [&_a]:hover:border-brand-gold [&_a]:hover:text-brand-gold" />
+            <SocialLinks className="[&_a]:text-white [&_a]:border-white/20 [&_a]:hover:border-brand-gold [&_a]:hover:text-brand-gold mb-6" />
           </div>
 
           <div>
@@ -50,6 +47,7 @@ export default function Footer() {
               <li><a href="/services" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Services</a></li>
               <li><a href="/projects/residential" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Residential Projects</a></li>
               <li><a href="/projects/commercial" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Commercial Projects</a></li>
+              <li><a href="/projects/civil" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Civil Projects</a></li>
               <li><a href="/about" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">About</a></li>
               <li><a href="/contact" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Contact</a></li>
             </ul>
@@ -63,15 +61,9 @@ export default function Footer() {
               <li className="font-lato font-light text-sm text-[#9B9B9B]">P.O. Box 640313, Pike Road, AL</li>
               <li><a href="mailto:Info@buildwithboyd.com" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Info@buildwithboyd.com</a></li>
               <li><a href="tel:3346093504" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">334-609-3504</a></li>
-              <li className="font-lato font-light text-sm text-[#9B9B9B]">Mon–Fri 8am–5pm</li>
+              <li className="font-lato font-light text-sm text-[#9B9B9B]">Mon–Fri 7am–6pm</li>
             </ul>
           </div>
-        </div>
-
-        <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-[#2C2C2C]">
-          <p className="font-lato font-light text-xs text-[#9B9B9B]">
-            © 2026 Boyd Walston Construction · Licensed & insured in Alabama
-          </p>
         </div>
       </div>
     </footer>

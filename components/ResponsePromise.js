@@ -25,7 +25,7 @@ export default function ResponsePromise() {
           We respond within 48 hours
         </p>
         <p className="font-lato text-xs text-[#9B9B9B]">
-          Monday – Friday · 8am – 5pm · After-hours messages answered next business day
+          Monday – Friday · 7am – 6pm · After-hours messages answered next business day
         </p>
       </div>
     </div>

@@ -22,6 +22,8 @@ export default function Navbar({ companyName }) {
   const projectLinks = [
     { href: '/projects/residential', label: 'Residential' },
     { href: '/projects/commercial', label: 'Commercial' },
+    { href: '/projects/civil', label: 'Civil' },
+    { href: '/projects/government', label: 'Government' },
   ]
 
   const dropdownLinkClass =
