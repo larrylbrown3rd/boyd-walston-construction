@@ -14,7 +14,7 @@ const services = [
   {
     title: 'Civil Construction',
     description: 'Site prep, excavation, concrete, and utility work.',
-    href: '/services',
+    href: '/projects/civil',
   },
 ]
 

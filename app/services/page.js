@@ -1,16 +1,10 @@
 'use client'
 
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import Button from '@/components/Button'
-
-const WebGLGradient = dynamic(
-  () => import('@/components/WebGLGradient'),
-  { ssr: false }
-)
 
 const services = [
   {
@@ -101,15 +95,13 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-6 md:px-10">
-        <WebGLGradient />
-        <div className="absolute inset-0 bg-[#111111]/60" style={{ zIndex: 1 }} />
-        <div className="relative max-w-2xl mx-auto text-center" style={{ zIndex: 2 }}>
+      <section className="bg-[#111111] text-white py-24 px-6 md:px-10">
+        <div className="relative max-w-2xl mx-auto text-center">
           <h2 className="text-display text-5xl md:text-6xl text-white mb-4">
             Ready to Start Your Project?
           </h2>
           <p className="font-lato font-normal text-base text-white/80 mb-8 leading-relaxed">
-            Contact us today for a free consultation and quote.
+            Let&apos;s talk about your project.
           </p>
           <Button href="/quote" variant="gold">
             Get A Free Quote

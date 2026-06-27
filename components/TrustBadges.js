@@ -8,7 +8,7 @@ function ArrowIcon() {
 
 const badges = [
   { title: 'Licensed & Insured', subtitle: 'Alabama contractor' },
-  { title: '48-Hour Response', subtitle: 'Mon–Fri, 8am–5pm' },
+  { title: '48-Hour Response', subtitle: 'Mon–Fri, 7am–6pm' },
   { title: '10+ Years', subtitle: 'Industry experience' },
   { title: 'Family Owned', subtitle: 'Since 1960' },
 ]

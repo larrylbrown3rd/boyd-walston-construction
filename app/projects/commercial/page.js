@@ -24,15 +24,6 @@ const commercialTransformations = [
     beforePosition: 'object-center',
     afterPosition: 'object-center',
   },
-  {
-    eyebrow: 'Georgiana Opera House',
-    title: 'Roof Replacement',
-    description: 'Commercial roof replacement from tear-off and new decking to a finished modified bitumen system.',
-    beforeSrc: '/georgiana-opera-roof-demo.png',
-    afterSrc: '/georgiana-opera-roof-complete.png',
-    beforePosition: 'object-center',
-    afterPosition: 'object-center',
-  },
 ]
 
 export default function CommercialProjects() {
@@ -52,6 +43,18 @@ export default function CommercialProjects() {
         </div>
       </section>
 
+      <section className="py-24 px-8">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <p className="text-eyebrow-dark text-sm mb-4">Project Gallery</p>
+            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
+              Our Commercial Work
+            </h2>
+          </ScrollReveal>
+          <ProjectPhotoGallery photos={commercialGalleryPhotos} columns={4} />
+        </div>
+      </section>
+
       <section className="py-24 px-8 bg-[#F8F7F5]">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
@@ -62,18 +65,6 @@ export default function CommercialProjects() {
             <div className="w-12 h-px bg-[#D4D4D4] mb-12" />
           </ScrollReveal>
           <BeforeAfterGallery items={commercialTransformations} />
-        </div>
-      </section>
-
-      <section className="py-24 px-8">
-        <div className="max-w-6xl mx-auto">
-          <ScrollReveal>
-            <p className="text-eyebrow-dark text-sm mb-4">Project Gallery</p>
-            <h2 className="text-display text-5xl md:text-6xl text-[#111111] mb-12">
-              Our Commercial Work
-            </h2>
-          </ScrollReveal>
-          <ProjectPhotoGallery photos={commercialGalleryPhotos} columns={4} />
         </div>
       </section>
 

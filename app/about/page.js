@@ -12,9 +12,9 @@ export default function About() {
 
       <section className="bg-[#111111] text-white py-24 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
-          <p className="text-eyebrow text-sm mb-4">Bio</p>
+          <p className="text-eyebrow text-sm mb-4">About Us</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Meet Our President
+            Company History
           </h1>
         </div>
       </section>
@@ -22,12 +22,7 @@ export default function About() {
       <section className="py-24 px-6 md:px-10">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
-            <span className="accent-bar mb-4" />
-            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-8">
-              Devoski Boyd
-            </h2>
-
-            <div className="space-y-6 font-lato font-light text-base text-[#4A4A4A] leading-relaxed">
+            <div className="space-y-6 font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-16">
               <p>
                 At the beginning of 2026, Boyd Walston Construction was launched through the rebranding of Boyd&apos;s Property Solutions, marking the next chapter in a business that has grown steadily since its founding in 2018.
               </p>
@@ -37,6 +32,17 @@ export default function About() {
               <p>
                 The decision to rebrand as Boyd Walston Construction reflects not only the company&apos;s growth but also its long-term vision. It honors Devoski&apos;s family&apos;s construction heritage, paying tribute to his great-grandfather, who founded Walston &amp; Son&apos;s Plumbing Company in Black Creek, North Carolina, in 1960. Today, Boyd Walston Construction proudly carries that legacy forward while serving homeowners, businesses, developers, and communities throughout Alabama.
               </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <span className="accent-bar mb-4" />
+            <p className="text-eyebrow-dark text-sm mb-4">Leadership</p>
+            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-8">
+              Devoski Boyd
+            </h2>
+
+            <div className="space-y-6 font-lato font-light text-base text-[#4A4A4A] leading-relaxed">
               <p>
                 As President, Devoski leads the company with a commitment to craftsmanship, integrity, and excellence. His experience spans residential renovations, additions, commercial construction, construction management, and real estate development, allowing him to guide projects from the earliest planning stages through completion.
               </p>

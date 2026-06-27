@@ -31,10 +31,7 @@ export default function Footer() {
       <div className="py-16 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-display text-xl tracking-wider text-white">
-              Boyd Walston Construction
-            </h3>
-            <span className="accent-bar mt-4 mb-4" />
+            <span className="accent-bar mb-4" />
             <SocialLinks className="[&_a]:text-white [&_a]:border-white/20 [&_a]:hover:border-brand-gold [&_a]:hover:text-brand-gold mb-6" />
           </div>
 

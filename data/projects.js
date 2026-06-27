@@ -119,6 +119,17 @@ export const featuredCommercialProjects = [
     scope: ['Concrete patio pour', 'Site furnishings and seating', 'Planters and landscaping', 'Lighting and charging stations'],
     investment: 'Contact us for a project estimate',
   },
+  {
+    id: 26,
+    category: 'Commercial',
+    title: 'Georgiana Opera House Roof',
+    location: 'Georgiana, AL — 2026',
+    image: '/georgiana-opera-roof-complete.png',
+    description:
+      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system. The client was a recipient of an Alabama Council on the Arts grant for this project.',
+    scope: ['TPO roof removal', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
+    investment: 'Contact us for a project estimate',
+  },
 ]
 
 export const commercialProjects = [
@@ -129,8 +140,8 @@ export const commercialProjects = [
     location: 'Georgiana, AL — 2026',
     image: '/georgiana-opera-roof-complete.png',
     description:
-      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old roofing system, new decking installation, and a new modified bitumen roofing system.',
-    scope: ['Roof tear-off and demo', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
+      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system. The client was a recipient of an Alabama Council on the Arts grant for this project.',
+    scope: ['TPO roof removal', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
     investment: 'Contact us for a project estimate',
   },
   {
