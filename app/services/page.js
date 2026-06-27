@@ -55,7 +55,7 @@ export default function Services() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Our Services
           </h1>
-          <p className="font-lato text-lg font-normal text-white/80 max-w-2xl leading-relaxed">
+          <p className="font-lato text-lg font-normal text-white/80 max-w-2xl leading-[1.75]">
             From residential renovations to commercial build-outs and civil site work —
             we handle every phase of construction with precision and care.
           </p>

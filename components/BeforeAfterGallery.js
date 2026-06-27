@@ -13,7 +13,7 @@ export default function BeforeAfterGallery({ items }) {
               {item.title}
             </h3>
             {item.description && (
-              <p className="font-lato font-light text-sm text-[#9B9B9B] max-w-2xl leading-relaxed">
+              <p className="text-lead-light">
                 {item.description}
               </p>
             )}

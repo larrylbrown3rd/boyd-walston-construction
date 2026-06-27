@@ -188,7 +188,7 @@ export default function ProjectCarousel({ projects = [] }) {
                   {selected.location}
                 </p>
                 {selected.description && (
-                  <p className="font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-6">
+                  <p className="text-body-muted mb-6">
                     {selected.description}
                   </p>
                 )}

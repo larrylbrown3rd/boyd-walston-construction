@@ -65,7 +65,7 @@ export default function Hero() {
             <span className="text-brand-gold">Matters Most</span>
           </h1>
 
-          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-relaxed max-w-xl mb-10">
+          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] max-w-xl mb-10">
             Quality renovations and commercial construction
             delivered on time and built to last.
           </p>
@@ -79,7 +79,7 @@ export default function Hero() {
             </Button>
           </div>
 
-          <p className="font-lato text-sm text-white/70">
+          <p className="font-lato text-base font-normal text-white/80">
             Free estimates · Reply within 48 hours · Licensed & insured
           </p>
         </div>

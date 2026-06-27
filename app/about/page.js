@@ -22,7 +22,7 @@ export default function About() {
       <section className="py-24 px-6 md:px-10">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
-            <div className="space-y-6 font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-16">
+            <div className="space-y-6 text-body-muted mb-16">
               <p>
                 At the beginning of 2026, Boyd Walston Construction was launched through the rebranding of Boyd&apos;s Property Solutions, marking the next chapter in a business that has grown steadily since its founding in 2018.
               </p>
@@ -42,7 +42,7 @@ export default function About() {
               Devoski Boyd
             </h2>
 
-            <div className="space-y-6 font-lato font-light text-base text-[#4A4A4A] leading-relaxed">
+            <div className="space-y-6 text-body-muted">
               <p>
                 As President, Devoski leads the company with a commitment to craftsmanship, integrity, and excellence. His experience spans residential renovations, additions, commercial construction, construction management, and real estate development, allowing him to guide projects from the earliest planning stages through completion.
               </p>

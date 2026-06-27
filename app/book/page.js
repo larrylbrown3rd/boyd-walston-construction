@@ -14,7 +14,7 @@ export default function Book() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Book A Site Visit
           </h1>
-          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
+          <p className="text-lead-dark">
             Ready to move forward? Book a free walkthrough
             directly onto our calendar. We will come to
             your site and give you a detailed quote.

@@ -42,7 +42,7 @@ export default function Contact() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Contact Us
           </h1>
-          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
+          <p className="text-lead-dark">
             Ready to start your project? We would love to hear from you.
           </p>
         </div>

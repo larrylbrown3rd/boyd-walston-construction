@@ -24,7 +24,7 @@ export default function Home() {
           <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-4">
             Request A Quote
           </h2>
-          <p className="font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-6">
+          <p className="text-lead-light mb-6">
             Tell us about your project and our team will follow up within 48 hours with clear next steps.
           </p>
           <ResponsePromise />

@@ -72,7 +72,7 @@ export default function ResidentialProjects() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Residential Projects
           </h1>
-          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
+          <p className="text-lead-dark">
             Kitchen and bath remodels, additions, and full interior renovations crafted with care.
           </p>
         </div>

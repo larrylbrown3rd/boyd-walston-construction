@@ -16,7 +16,7 @@ export default function ProjectsCTA() {
         <h2 className="text-display text-5xl md:text-6xl text-white mb-4">
           Start Your Project Today
         </h2>
-        <p className="font-lato font-light text-base text-[#9B9B9B] mb-8 leading-relaxed">
+        <p className="text-lead-dark mb-8">
           Let&apos;s talk about your project.
         </p>
         <a

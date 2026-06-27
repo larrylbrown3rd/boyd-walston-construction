@@ -29,7 +29,7 @@ export default function ServicesPreview() {
             <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-4">
               One Team. Every Scale.
             </h2>
-            <p className="font-lato text-base text-[#4A4A4A] leading-relaxed">
+            <p className="text-lead-light">
               From a single bathroom remodel to multi-story commercial sites —
               you get the same attention to detail at every level.
             </p>
@@ -52,7 +52,7 @@ export default function ServicesPreview() {
                 <h3 className="text-display text-2xl text-[#111111] mb-3">
                   {service.title}
                 </h3>
-                <p className="font-lato text-sm text-[#4A4A4A] leading-relaxed">
+                <p className="font-lato text-base font-normal text-[#4A4A4A] leading-[1.75]">
                   {service.description}
                 </p>
               </a>

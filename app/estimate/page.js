@@ -100,7 +100,7 @@ export default function Estimate() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Get Your Estimate
           </h1>
-          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
+          <p className="text-lead-dark">
             Answer 5 quick questions and we will send you
             a ballpark estimate within 48 hours.
           </p>

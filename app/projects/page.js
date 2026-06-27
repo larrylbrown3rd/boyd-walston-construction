@@ -80,7 +80,7 @@ export default function Projects() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Projects
           </h1>
-          <p className="font-lato font-light text-lg text-[#9B9B9B] max-w-2xl">
+          <p className="text-lead-dark">
             Residential, commercial, civil, and government work across central Alabama.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
@@ -125,7 +125,7 @@ export default function Projects() {
                   <p className="font-lato font-light text-sm text-[#9B9B9B] mb-2">
                     {project.location}
                   </p>
-                  <p className="font-lato font-light text-sm text-[#9B9B9B] leading-relaxed">
+                  <p className="font-lato text-base font-normal text-[#4A4A4A] leading-[1.75]">
                     {project.description}
                   </p>
                 </div>

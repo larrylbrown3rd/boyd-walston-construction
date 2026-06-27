@@ -17,7 +17,7 @@ export default function CivilProjects() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Civil Projects
           </h1>
-          <p className="font-lato font-thin text-lg text-[#9B9B9B] max-w-2xl leading-relaxed">
+          <p className="text-lead-dark">
             Site prep, excavation, and civil work for commercial and institutional projects across Alabama.
           </p>
         </div>
