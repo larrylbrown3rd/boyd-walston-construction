@@ -6,7 +6,7 @@ const variants = {
   dark:
     'bg-[#111111] text-white shadow-md shadow-black/10 hover:bg-[#2C2C2C] hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]',
   gold:
-    'bg-brand-gold text-[#111111] shadow-md shadow-brand-gold/20 hover:bg-brand-gold-dark hover:text-white hover:scale-[1.02] active:scale-[0.98]',
+    'bg-brand-gold-dark text-white shadow-md shadow-black/10 hover:bg-[#111111] hover:scale-[1.02] active:scale-[0.98]',
 }
 
 export default function Button({

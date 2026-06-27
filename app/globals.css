@@ -16,9 +16,9 @@
   --dark-gray: #2C2C2C;
   --near-black: #111111;
   --accent: #D4D4D4;
-  --brand-gold: #C4A962;
-  --brand-gold-dark: #A68B4B;
-  --brand-gold-light: #E8D5A3;
+  --brand-gold: #9B9B9B;
+  --brand-gold-dark: #2C2C2C;
+  --brand-gold-light: #D4D4D4;
 }
 
 @layer base {

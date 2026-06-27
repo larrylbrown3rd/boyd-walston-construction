@@ -4,9 +4,9 @@ export default {
     extend: {
       colors: {
         brand: {
-          gold: '#C4A962',
-          'gold-dark': '#A68B4B',
-          'gold-light': '#E8D5A3',
+          gold: '#9B9B9B',
+          'gold-dark': '#2C2C2C',
+          'gold-light': '#D4D4D4',
         },
       },
       fontFamily: {
