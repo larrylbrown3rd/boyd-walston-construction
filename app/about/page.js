@@ -12,9 +12,9 @@ export default function About() {
 
       <section className="bg-[#111111] text-white py-24 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
-          <p className="text-eyebrow text-sm mb-4">About Us</p>
+          <p className="text-eyebrow text-sm mb-4">Bio</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Company History
+            Meet Our President
           </h1>
         </div>
       </section>
@@ -22,31 +22,44 @@ export default function About() {
       <section className="py-24 px-6 md:px-10">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
-            <p className="font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-6">
-              Boyd Walston Construction is a family-owned construction company founded in 2025, built on a legacy of craftsmanship that began generations ago. In 1960, our great-grandfather, Elsie Walston, started his plumbing company in Black Creek, North Carolina — laying the foundation for skilled trades, hard work, and pride in quality workmanship.
-            </p>
-            <p className="font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-6">
-              Today, we continue building on that legacy three generations later, expanding from plumbing into full-service construction to serve homeowners, businesses, and communities across central Alabama.
-            </p>
-            <p className="font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-16">
-              From renovations and additions to tenant build-outs, our team is committed to craftsmanship, transparency, and delivering projects the right way. We take pride in providing quality service while consistently striving to exceed customer expectations.
-            </p>
-          </ScrollReveal>
-
-          <ScrollReveal>
             <span className="accent-bar mb-4" />
-            <p className="text-eyebrow-dark text-sm mb-4">Leadership</p>
-            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-6">
+            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-8">
               Devoski Boyd
             </h2>
-            <p className="font-lato font-light text-base text-[#4A4A4A] leading-relaxed mb-6">
-              Bio coming soon.
+
+            <div className="space-y-6 font-lato font-light text-base text-[#4A4A4A] leading-relaxed">
+              <p>
+                At the beginning of 2026, Boyd Walston Construction was launched through the rebranding of Boyd&apos;s Property Solutions, marking the next chapter in a business that has grown steadily since its founding in 2018.
+              </p>
+              <p>
+                While attending college, Devoski Boyd started Boyd&apos;s Property Solutions as a pressure washing and pool cleaning business to earn extra income during his undergraduate years. What began as a side business quickly became something more. As he built relationships with customers, they began asking if he could help with additional projects around their homes and businesses. One opportunity led to another, and those &ldquo;odd jobs&rdquo; gradually evolved into repairs, remodeling, renovations, additions, commercial build-outs, construction management, and owner representation.
+              </p>
+              <p>
+                The decision to rebrand as Boyd Walston Construction reflects not only the company&apos;s growth but also its long-term vision. It honors Devoski&apos;s family&apos;s construction heritage, paying tribute to his great-grandfather, who founded Walston &amp; Son&apos;s Plumbing Company in Black Creek, North Carolina, in 1960. Today, Boyd Walston Construction proudly carries that legacy forward while serving homeowners, businesses, developers, and communities throughout Alabama.
+              </p>
+              <p>
+                As President, Devoski leads the company with a commitment to craftsmanship, integrity, and excellence. His experience spans residential renovations, additions, commercial construction, construction management, and real estate development, allowing him to guide projects from the earliest planning stages through completion.
+              </p>
+              <p>
+                Devoski earned a Bachelor of Science in Political Science from Alabama State University and an Executive MBA from Faulkner University. Before leading Boyd Walston Construction full-time, he built a career in government affairs and economic development, experiences that continue to shape his approach to construction by emphasizing collaboration, strategic planning, and long-term community impact.
+              </p>
+              <p>
+                Beyond his work in construction, Devoski remains actively engaged in civic and community leadership. He serves on multiple nonprofit boards and currently serves as a board chairman. He also serves on the Industrial Development Board for the City of Montgomery, where he works alongside fellow leaders to help support economic growth, business investment, and job creation throughout the region.
+              </p>
+              <p>
+                Devoski believes construction is about more than completing projects—it&apos;s about earning trust, creating opportunities, and building spaces where families can make memories, businesses can grow, and communities can thrive. Every project is an opportunity to leave a lasting impact and continue a legacy of service built on integrity, relationships, and quality workmanship.
+              </p>
+            </div>
+
+            <p className="text-display text-2xl md:text-3xl text-[#111111] mt-12 pt-8 border-t border-[#E8E8E8]">
+              When the foundation matters, Build with Boyd
             </p>
+
             <a
               href="https://www.linkedin.com/in/dboyd5620"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-brand-gold-dark hover:border-brand-gold-dark transition-colors"
+              className="inline-flex items-center gap-2 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-brand-gold-dark hover:border-brand-gold-dark transition-colors mt-8"
             >
               Connect on LinkedIn
               <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

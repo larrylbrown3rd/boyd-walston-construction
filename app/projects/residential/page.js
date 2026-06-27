@@ -43,21 +43,12 @@ const residentialTransformations = [
     afterPosition: 'object-center',
   },
   {
-    eyebrow: 'Guest Bath Remodel',
-    title: 'Restoration to Finished Bath',
-    description: 'Compact bathroom remodel with pedestal sink, glass shower, updated lighting, and new flooring.',
-    beforeSrc: '/bathroom-before-restoration.png',
-    afterSrc: '/bathroom-pedestal-shower.png',
-    beforePosition: 'object-center',
-    afterPosition: 'object-center',
-  },
-  {
     eyebrow: 'Kitchen Renovation',
     title: 'Before & After Kitchen Remodel',
     beforeSrc: '/kitchen-before.png',
     afterSrc: '/kitchen-after.png',
     beforePosition: 'object-center',
-    afterPosition: 'object-top',
+    afterPosition: 'object-center',
   },
   {
     eyebrow: 'Kitchen Build',

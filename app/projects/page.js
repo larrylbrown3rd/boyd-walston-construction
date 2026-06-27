@@ -17,11 +17,11 @@ const projects = [
   {
     id: 2,
     category: 'COMMERCIAL',
-    title: 'Exterior Painting',
-    location: 'Diamond One Event Center',
+    title: 'Georgiana Opera House Roof',
+    location: 'Georgiana, AL',
     description:
-      'Full exterior painting and restoration of a commercial event facility.',
-    image: '/luxury-building.jpg',
+      'Complete commercial roof replacement with tear-off, new decking, and modified bitumen roofing system.',
+    image: '/georgiana-opera-roof-complete.png',
   },
   {
     id: 3,
@@ -45,10 +45,10 @@ const projects = [
     id: 5,
     category: 'RESIDENTIAL',
     title: 'Bathroom Renovation',
-    location: 'Pine Level, AL',
+    location: 'Montgomery, AL',
     description:
-      'Full bathroom renovation including custom tile shower with pebble floor and bench.',
-    image: '/shower-finished.png',
+      'Full bathroom remodel with custom tile shower, marble finishes, and modern fixtures.',
+    image: '/residential-remodel-master-bath.png',
   },
   {
     id: 6,

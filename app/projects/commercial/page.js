@@ -24,6 +24,15 @@ const commercialTransformations = [
     beforePosition: 'object-center',
     afterPosition: 'object-center',
   },
+  {
+    eyebrow: 'Georgiana Opera House',
+    title: 'Roof Replacement',
+    description: 'Commercial roof replacement from tear-off and new decking to a finished modified bitumen system.',
+    beforeSrc: '/georgiana-opera-roof-demo.png',
+    afterSrc: '/georgiana-opera-roof-complete.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
 ]
 
 export default function CommercialProjects() {

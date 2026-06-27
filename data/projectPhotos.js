@@ -1,6 +1,6 @@
 export const projectPhotos = [
   {
-    src: '/aerial-roofing.png',
+    src: '/georgiana-opera-roof-complete.png',
     alt: 'Georgiana Opera House roof replacement',
     title: 'Georgiana Opera House Roof',
     category: 'Commercial',
@@ -14,14 +14,14 @@ export const projectPhotos = [
     href: '/projects/commercial',
   },
   {
-    src: '/shower-finished.png',
+    src: '/residential-remodel-shower.png',
     alt: 'Finished custom shower renovation',
-    title: 'Custom Shower Build',
+    title: 'Residential Remodel',
     category: 'Residential',
     href: '/projects/residential',
   },
   {
-    src: '/kitchen-after-new.png',
+    src: '/kitchen-after.png',
     alt: 'Finished modern kitchen renovation',
     title: 'Kitchen Renovation',
     category: 'Residential',
@@ -36,9 +36,9 @@ export const projectPhotos = [
     href: '/projects/commercial',
   },
   {
-    src: '/bathroom-pedestal-shower.png',
-    alt: 'Guest bath remodel with pedestal sink',
-    title: 'Guest Bath Remodel',
+    src: '/residential-remodel-master-bath.png',
+    alt: 'Master bath remodel with double vanity and walk-in shower',
+    title: 'Residential Remodel',
     category: 'Residential',
     href: '/projects/residential',
   },

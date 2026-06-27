@@ -5,11 +5,11 @@ export const residentialProjects = [
     id: 1,
     category: 'Residential',
     title: 'Custom Shower Build',
-    location: 'Pike Road, AL — 2024',
-    image: '/shower-finished.png',
+    location: 'Montgomery, AL — 2024',
+    image: '/residential-remodel-shower.png',
     description:
-      'Full shower renovation with large-format tile, pebble floor, matte black fixtures, built-in bench, recessed niche, and frosted window.',
-    scope: ['Plumbing rough-in', 'Waterproofing membrane', 'Large-format wall tile', 'Pebble shower floor', 'Matte black fixtures', 'Built-in bench and niche'],
+      'Walk-in shower with large-format marble-look tile, glass enclosure, and a custom hex mosaic niche.',
+    scope: ['Plumbing rough-in', 'Waterproofing membrane', 'Large-format wall tile', 'Custom niche tile work', 'Glass enclosure', 'Fixtures and finish'],
     investment: 'Contact us for a project estimate',
   },
   {
@@ -28,10 +28,10 @@ export const residentialProjects = [
     category: 'Residential',
     title: 'Guest Bath Addition',
     location: 'Montgomery, AL — 2024',
-    image: '/bathroom-pedestal-shower.png',
+    image: '/residential-remodel-guest-bath.png',
     description:
-      'Compact bathroom remodel with pedestal sink, corner glass shower, updated lighting, and wood-look flooring.',
-    scope: ['Fixture and shower install', 'Flooring and trim', 'Vanity lighting', 'Paint and finish work'],
+      'Guest bath remodel with marble vanity, backlit mirror, wood shelving, and wood-look tile flooring.',
+    scope: ['Vanity and countertop install', 'Fixtures and lighting', 'Flooring and trim', 'Paint and finish work'],
     investment: 'Contact us for a project estimate',
   },
   {
@@ -84,7 +84,7 @@ export const residentialProjects = [
     category: 'Residential',
     title: 'Kitchen Renovation',
     location: 'Pike Road, AL — 2024',
-    image: '/kitchen-after-new.png',
+    image: '/kitchen-after.png',
     description:
       'Full kitchen remodel with quartz countertops, white shaker cabinets, farmhouse sink, pot filler, subway tile, and custom range hood.',
     scope: ['Demo and structural updates', 'Drywall and insulation', 'Cabinet and countertop install', 'Custom hood, tile, and fixtures'],
@@ -122,6 +122,17 @@ export const featuredCommercialProjects = [
 ]
 
 export const commercialProjects = [
+  {
+    id: 26,
+    category: 'Commercial',
+    title: 'Georgiana Opera House Roof',
+    location: 'Georgiana, AL — 2026',
+    image: '/georgiana-opera-roof-complete.png',
+    description:
+      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old roofing system, new decking installation, and a new modified bitumen roofing system.',
+    scope: ['Roof tear-off and demo', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
+    investment: 'Contact us for a project estimate',
+  },
   {
     id: 19,
     category: 'Commercial',
@@ -255,11 +266,11 @@ export const allProjects = [
 ]
 
 export const residentialGalleryPhotos = [
-  { src: '/shower-finished.png', alt: 'Custom shower renovation', title: 'Custom Shower Build' },
-  { src: '/bathroom-pedestal-shower.png', alt: 'Bathroom addition', title: 'Bathroom Addition' },
-  { src: '/bathroom-barn-door.png', alt: 'Bathroom addition', title: 'Bathroom Addition' },
-  { src: '/bathroom-renovation-complete.png', alt: 'Addition', title: 'Addition' },
-  { src: '/kitchen-after-new.png', alt: 'Kitchen renovation', title: 'Kitchen Renovation', objectPosition: 'top' },
+  { src: '/residential-remodel-master-bath.png', alt: 'Master bath remodel', title: 'Residential Remodel' },
+  { src: '/residential-remodel-shower.png', alt: 'Custom shower build', title: 'Residential Remodel' },
+  { src: '/residential-remodel-guest-bath.png', alt: 'Guest bath remodel', title: 'Residential Remodel' },
+  { src: '/residential-remodel-shower-niche.png', alt: 'Shower niche tile detail', title: 'Residential Remodel' },
+  { src: '/kitchen-after.png', alt: 'Kitchen renovation', title: 'Kitchen Renovation', objectPosition: 'top' },
   { src: '/kitchen-hood-finished.png', alt: 'Custom kitchen hood', title: 'Custom Kitchen Hood Build' },
   { src: '/closet-finished.png', alt: 'Walk-in closet', title: 'Walk-In Closet Build-Out' },
   { src: '/attic-finished.png', alt: 'Attic conversion', title: 'Attic Room Conversion', objectPosition: 'center 25%' },
@@ -269,6 +280,9 @@ export const residentialGalleryPhotos = [
 ]
 
 export const commercialGalleryPhotos = [
+  { src: '/georgiana-opera-roof-complete.png', alt: 'Georgiana Opera House roof complete', title: 'Georgiana Opera House Roof' },
+  { src: '/georgiana-opera-roof-progress.png', alt: 'Georgiana Opera House roof decking', title: 'Georgiana Opera House Roof' },
+  { src: '/georgiana-opera-roof-demo.png', alt: 'Georgiana Opera House roof tear-off', title: 'Georgiana Opera House Roof' },
   { src: '/commercial-patio-complete.png', alt: 'Commercial patio complete', title: 'Outdoor Patio & Amenities' },
   { src: '/commercial-framing.png', alt: 'Exterior painting', title: 'Exterior Painting' },
   { src: '/exterior-lift-work.png', alt: 'Painting', title: 'Painting' },
@@ -279,6 +293,8 @@ export const commercialGalleryPhotos = [
 ]
 
 export const civilGalleryPhotos = [
+  { src: '/tuskegee-civil-excavation.png', alt: 'Excavation at Tuskegee University', title: 'Tuskegee University — Site Excavation' },
+  { src: '/tuskegee-civil-site-prep.png', alt: 'Site prep at Tuskegee University', title: 'Tuskegee University — Site Prep' },
   { src: '/commercial-concrete-pour.png', alt: 'Commercial concrete pour', title: 'Commercial Concrete Pour' },
   { src: '/commercial-site-excavation.png', alt: 'Site excavation', title: 'Site Excavation' },
   { src: '/site-grading.png', alt: 'Site grading', title: 'Site Grading & Prep' },
