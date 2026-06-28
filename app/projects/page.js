@@ -18,7 +18,7 @@ export default function Projects() {
             src="/frame-construction.jpg"
             alt="Boyd Walston Construction frame build"
             fill
-            className="object-cover object-center opacity-20"
+            className="object-cover object-center opacity-40"
           />
         </div>
         <div className="relative max-w-6xl mx-auto z-10">

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -26,8 +27,16 @@ export default function GovernmentProjects() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto">
+      <section className="bg-[#111111] text-white py-24 px-6 md:px-10 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/lockhart-hall-plaza.png"
+            alt="Government institutional project"
+            fill
+            className="object-cover object-center opacity-40"
+          />
+        </div>
+        <div className="relative max-w-6xl mx-auto z-10">
           <p className="text-eyebrow text-sm mb-4">Government</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Government Projects

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ResponsePromise from '@/components/ResponsePromise'
@@ -34,8 +35,16 @@ export default function Contact() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-8">
-        <div className="max-w-6xl mx-auto">
+      <section className="bg-[#111111] text-white py-24 px-8 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/frame-construction.jpg"
+            alt="Boyd Walston Construction"
+            fill
+            className="object-cover object-center opacity-40"
+          />
+        </div>
+        <div className="relative max-w-6xl mx-auto z-10">
           <p className="text-eyebrow text-sm mb-4">
             Get In Touch
           </p>
