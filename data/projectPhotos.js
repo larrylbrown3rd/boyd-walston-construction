@@ -3,8 +3,8 @@ export const projectPhotos = [
     src: '/georgiana-opera-roof-complete.png',
     alt: 'Georgiana Opera House roof replacement',
     title: 'Georgiana Opera House Roof',
-    category: 'Commercial',
-    href: '/projects/commercial',
+    category: 'Civil',
+    href: '/projects/civil',
   },
   {
     src: '/commercial-patio-complete.png',

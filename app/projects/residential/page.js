@@ -66,7 +66,7 @@ export default function ResidentialProjects() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-8">
+      <section className="bg-[#111111] text-white py-24 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <p className="text-eyebrow text-sm mb-4">Residential</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
@@ -80,7 +80,16 @@ export default function ResidentialProjects() {
         </div>
       </section>
 
-      <section className="py-24 px-8">
+      <section className="section-pad">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <p className="text-eyebrow-dark text-sm mb-4">Featured Projects</p>
+          </ScrollReveal>
+          <ProjectCarousel projects={featuredResidentialProjects} />
+        </div>
+      </section>
+
+      <section className="section-pad bg-[#F8F7F5] border-y border-[#E8E8E8]">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <p className="text-eyebrow-dark text-sm mb-4">Project Gallery</p>
@@ -92,7 +101,7 @@ export default function ResidentialProjects() {
         </div>
       </section>
 
-      <section className="py-24 px-8 bg-[#F8F7F5]">
+      <section className="section-pad">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <p className="text-eyebrow-dark text-sm mb-4">Featured Transformations</p>
@@ -102,15 +111,6 @@ export default function ResidentialProjects() {
             <div className="w-12 h-px bg-[#D4D4D4] mb-12" />
           </ScrollReveal>
           <BeforeAfterGallery items={residentialTransformations} />
-        </div>
-      </section>
-
-      <section className="py-24 px-8">
-        <div className="max-w-6xl mx-auto">
-          <ScrollReveal>
-            <p className="text-eyebrow-dark text-sm mb-12">Featured Projects</p>
-          </ScrollReveal>
-          <ProjectCarousel projects={featuredResidentialProjects} />
         </div>
       </section>
 

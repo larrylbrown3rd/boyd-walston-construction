@@ -104,8 +104,20 @@ export const residentialProjects = [
 ]
 
 export const featuredResidentialProjects = residentialProjects.filter(
-  (project) => project.id !== 2 && project.id !== 18
+  (project) => ![2, 3, 5, 18].includes(project.id)
 )
+
+const georgianaOperaHouseProject = {
+  id: 26,
+  category: 'Civil',
+  title: 'Georgiana Opera House Roof',
+  location: 'Georgiana, AL — 2026',
+  image: '/georgiana-opera-roof-complete.png',
+  description:
+    'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system. The client was a recipient of an Alabama Council on the Arts grant for this project.',
+  scope: ['TPO roof removal', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
+  investment: 'Contact us for a project estimate',
+}
 
 export const featuredCommercialProjects = [
   {
@@ -119,31 +131,80 @@ export const featuredCommercialProjects = [
     scope: ['Concrete patio pour', 'Site furnishings and seating', 'Planters and landscaping', 'Lighting and charging stations'],
     investment: 'Contact us for a project estimate',
   },
+]
+
+export const civilProjects = [
+  georgianaOperaHouseProject,
   {
-    id: 26,
-    category: 'Commercial',
-    title: 'Georgiana Opera House Roof',
-    location: 'Georgiana, AL — 2026',
-    image: '/georgiana-opera-roof-complete.png',
+    id: 30,
+    category: 'Civil',
+    title: 'Tuskegee University — Site Excavation',
+    location: 'Tuskegee, AL — 2026',
+    image: '/tuskegee-civil-excavation.png',
     description:
-      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system. The client was a recipient of an Alabama Council on the Arts grant for this project.',
-    scope: ['TPO roof removal', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
+      'Site excavation and earthwork for an institutional project at Tuskegee University with coordinated equipment and grade control.',
+    scope: ['Site excavation', 'Earthwork and grading', 'Equipment coordination', 'Site safety'],
+    investment: 'Contact us for a project estimate',
+  },
+  {
+    id: 31,
+    category: 'Civil',
+    title: 'Tuskegee University — Site Prep',
+    location: 'Tuskegee, AL — 2026',
+    image: '/tuskegee-civil-site-prep.png',
+    description:
+      'Site preparation and subgrade work ahead of construction at Tuskegee University.',
+    scope: ['Site clearing', 'Subgrade prep', 'Layout and staking', 'Drainage coordination'],
     investment: 'Contact us for a project estimate',
   },
 ]
 
-export const commercialProjects = [
+export const featuredCivilProjects = [georgianaOperaHouseProject]
+
+export const projectsOverview = [
+  {
+    id: 10,
+    category: 'Commercial',
+    title: 'Outdoor Patio & Amenities',
+    location: HMMA_LOCATION,
+    description:
+      'Complete outdoor patio build-out with custom planters, lighting, and seating.',
+    image: '/commercial-patio-complete.png',
+    href: '/projects/commercial',
+  },
   {
     id: 26,
-    category: 'Commercial',
+    category: 'Civil',
     title: 'Georgiana Opera House Roof',
     location: 'Georgiana, AL — 2026',
-    image: '/georgiana-opera-roof-complete.png',
     description:
-      'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system. The client was a recipient of an Alabama Council on the Arts grant for this project.',
-    scope: ['TPO roof removal', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
-    investment: 'Contact us for a project estimate',
+      'Complete roof replacement with tear-off, new decking, and modified bitumen roofing system at the historic Georgiana Opera House.',
+    image: '/georgiana-opera-roof-complete.png',
+    href: '/projects/civil',
   },
+  {
+    id: 27,
+    category: 'Residential',
+    title: 'Framing',
+    location: 'Titus, AL',
+    description:
+      'Structural framing and construction for a residential build.',
+    image: '/aerial.jpg',
+    href: '/projects/residential',
+  },
+  {
+    id: 28,
+    category: 'Residential',
+    title: 'Bathroom Renovation',
+    location: 'Tallassee, AL',
+    description:
+      'Full bathroom remodel with custom tile shower, marble finishes, and modern fixtures.',
+    image: '/residential-remodel-master-bath.png',
+    href: '/projects/residential',
+  },
+]
+
+export const commercialProjects = [
   {
     id: 19,
     category: 'Commercial',
@@ -273,6 +334,7 @@ export const governmentProjects = []
 export const allProjects = [
   ...residentialProjects,
   ...commercialProjects,
+  ...civilProjects,
   ...governmentProjects,
 ]
 
@@ -291,9 +353,6 @@ export const residentialGalleryPhotos = [
 ]
 
 export const commercialGalleryPhotos = [
-  { src: '/georgiana-opera-roof-complete.png', alt: 'Georgiana Opera House roof complete', title: 'Georgiana Opera House Roof' },
-  { src: '/georgiana-opera-roof-progress.png', alt: 'Georgiana Opera House roof decking', title: 'Georgiana Opera House Roof' },
-  { src: '/georgiana-opera-roof-demo.png', alt: 'Georgiana Opera House roof tear-off', title: 'Georgiana Opera House Roof' },
   { src: '/commercial-patio-complete.png', alt: 'Commercial patio complete', title: 'Outdoor Patio & Amenities' },
   { src: '/commercial-exterior-painting-before.png', alt: 'Commercial exterior painting in progress', title: 'Exterior Painting' },
   { src: '/commercial-exterior-painting-after.png', alt: 'Commercial exterior painting complete', title: 'Exterior Painting' },
@@ -305,6 +364,9 @@ export const commercialGalleryPhotos = [
 ]
 
 export const civilGalleryPhotos = [
+  { src: '/georgiana-opera-roof-complete.png', alt: 'Georgiana Opera House roof complete', title: 'Georgiana Opera House Roof' },
+  { src: '/georgiana-opera-roof-progress.png', alt: 'Georgiana Opera House roof decking', title: 'Georgiana Opera House Roof' },
+  { src: '/georgiana-opera-roof-demo.png', alt: 'Georgiana Opera House roof tear-off', title: 'Georgiana Opera House Roof' },
   { src: '/tuskegee-civil-excavation.png', alt: 'Excavation at Tuskegee University', title: 'Tuskegee University — Site Excavation' },
   { src: '/tuskegee-civil-site-prep.png', alt: 'Site prep at Tuskegee University', title: 'Tuskegee University — Site Prep' },
   { src: '/commercial-concrete-pour.png', alt: 'Commercial concrete pour', title: 'Commercial Concrete Pour' },

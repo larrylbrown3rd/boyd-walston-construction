@@ -3,70 +3,16 @@
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-
-const projects = [
-  {
-    id: 1,
-    category: 'COMMERCIAL',
-    title: 'Outdoor Patio & Amenities',
-    location: 'Hyundai Motor Manufacturing of Alabama',
-    description:
-      'Complete outdoor patio build-out with custom planters, lighting, and seating.',
-    image: '/commercial-patio-complete.png',
-  },
-  {
-    id: 2,
-    category: 'COMMERCIAL',
-    title: 'Georgiana Opera House Roof',
-    location: 'Georgiana, AL',
-    description:
-      'Complete commercial roof replacement with tear-off, new decking, and modified bitumen roofing system.',
-    image: '/georgiana-opera-roof-complete.png',
-  },
-  {
-    id: 3,
-    category: 'RESIDENTIAL',
-    title: 'Framing',
-    location: 'Titus, AL',
-    description:
-      'Structural framing and construction for a residential build.',
-    image: '/aerial.jpg',
-  },
-  {
-    id: 4,
-    category: 'RESIDENTIAL',
-    title: 'Walk-In Closet Build-Out',
-    location: 'Pike Road, AL',
-    description:
-      'Custom walk-in closet with built-in shelving, drawers, and black hardware throughout.',
-    image: '/closet-finished.png',
-  },
-  {
-    id: 5,
-    category: 'RESIDENTIAL',
-    title: 'Bathroom Renovation',
-    location: 'Montgomery, AL',
-    description:
-      'Full bathroom remodel with custom tile shower, marble finishes, and modern fixtures.',
-    image: '/residential-remodel-master-bath.png',
-  },
-  {
-    id: 6,
-    category: 'RESIDENTIAL',
-    title: 'Concrete Pad',
-    location: 'Prattville, AL',
-    description:
-      'Residential concrete pad pour with professional finish work.',
-    image: '/concrete-patio-pour.png',
-  },
-]
+import ProjectsCTA from '@/components/ProjectsCTA'
+import ScrollReveal from '@/components/ScrollReveal'
+import { projectsOverview } from '@/data/projects'
 
 export default function Projects() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-8 relative overflow-hidden">
+      <section className="bg-[#111111] text-white py-24 px-6 md:px-10 relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/frame-construction.jpg"
@@ -100,58 +46,50 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="py-24 px-8">
+      <section className="section-pad">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="group border border-[#E8E8E8] overflow-hidden hover:border-[#111111] transition-colors duration-300"
-              >
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    quality={100}
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <p className="text-eyebrow-dark text-sm mb-2">{project.category}</p>
-                  <h3 className="text-display text-2xl text-[#111111] mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="font-lato font-light text-sm text-[#9B9B9B] mb-2">
-                    {project.location}
-                  </p>
-                  <p className="font-lato text-base font-normal text-[#4A4A4A] leading-[1.75]">
-                    {project.description}
-                  </p>
-                </div>
-              </div>
+          <ScrollReveal>
+            <p className="text-eyebrow-dark text-sm mb-4">Featured Work</p>
+            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-12">
+              Recent Projects
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projectsOverview.map((project, i) => (
+              <ScrollReveal key={project.id} delay={i * 0.08}>
+                <a
+                  href={project.href}
+                  className="group block border border-[#E8E8E8] overflow-hidden hover:border-brand-gold transition-colors duration-300 h-full"
+                >
+                  <div className="relative h-64 overflow-hidden bg-[#F0EFED]">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      quality={100}
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <p className="text-eyebrow-dark text-sm mb-2">{project.category}</p>
+                    <h3 className="text-display text-2xl text-[#111111] mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="font-lato font-light text-sm text-[#9B9B9B] mb-3">
+                      {project.location}
+                    </p>
+                    <p className="font-lato text-base font-normal text-[#4A4A4A] leading-[1.75]">
+                      {project.description}
+                    </p>
+                  </div>
+                </a>
+              </ScrollReveal>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#111111] text-white py-20 px-8 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-display text-5xl text-white mb-4">
-            Start Your Project Today
-          </h2>
-          <p className="font-lato font-light text-[#9B9B9B] mb-8">
-            Let&apos;s talk about your project.
-          </p>
-          <a
-            href="/quote"
-            className="bg-white text-[#111111] font-inter font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-[#F0EFED] transition-colors"
-          >
-            Get A Free Quote
-          </a>
-        </div>
-      </section>
-
+      <ProjectsCTA />
       <Footer />
     </main>
   )

@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-2 list-none">
               <li><a href="/" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Home</a></li>
               <li><a href="/services" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Services</a></li>
-              <li><a href="/projects/residential" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Residential Projects</a></li>
+              <li><a href="/projects/residential" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Residential Construction</a></li>
               <li><a href="/projects/commercial" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Commercial Projects</a></li>
               <li><a href="/projects/civil" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Civil Projects</a></li>
               <li><a href="/about" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">About</a></li>

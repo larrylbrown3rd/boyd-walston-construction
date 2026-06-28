@@ -26,15 +26,19 @@ export default function GovernmentProjects() {
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-8">
+      <section className="bg-[#111111] text-white py-24 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
+          <p className="text-eyebrow text-sm mb-4">Government</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Government Projects
           </h1>
+          <p className="text-lead-dark">
+            Contracting, waste collection, and portable restroom services for municipal and institutional clients.
+          </p>
         </div>
       </section>
 
-      <section className="py-24 px-8">
+      <section className="section-pad">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {governmentServices.map((service, i) => (
