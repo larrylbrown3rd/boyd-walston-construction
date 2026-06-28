@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ConstructionIcon from '@/components/ConstructionIcon'
 
 const ParticleTunnel = dynamic(
   () => import('@/components/ParticleTunnel'),
@@ -155,7 +156,7 @@ export default function Estimate() {
                       className="w-full text-left border border-[#E8E8E8] px-6 py-4 font-inter text-sm text-[#111111] rounded-lg hover:border-[#111111] hover:bg-[#F8F7F5] transition-all duration-200 flex items-center justify-between"
                     >
                       {option.label}
-                      <span className="text-[#9B9B9B]">→</span>
+                      <ConstructionIcon name="ruler" className="w-4 h-4 text-[#9B9B9B]" />
                     </button>
                   ))}
                 </div>
@@ -177,7 +178,7 @@ export default function Estimate() {
                     onClick={() => setCurrentStep(currentStep + 1)}
                     className="bg-[#111111] text-white font-inter text-sm px-7 py-3.5 rounded-lg hover:bg-[#2C2C2C] transition-colors"
                   >
-                    Continue →
+                    Continue
                   </button>
                 </div>
               )}
@@ -224,7 +225,7 @@ export default function Estimate() {
                   onClick={() => setCurrentStep(currentStep - 1)}
                   className="mt-8 font-inter text-xs text-[#9B9B9B] hover:text-[#111111] transition-colors"
                 >
-                  ← Back
+                  Back
                 </button>
               )}
             </>

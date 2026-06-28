@@ -16,6 +16,15 @@ const ProjectCarousel = dynamic(
 
 const commercialTransformations = [
   {
+    eyebrow: 'Exterior Painting',
+    title: 'Exterior Painting',
+    description: 'Full exterior repaint with boom lift access for second-story windows, facade prep, and a finished look from street level.',
+    beforeSrc: '/commercial-exterior-painting-before.png',
+    afterSrc: '/commercial-exterior-painting-after.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+  {
     eyebrow: 'Outdoor Patio & Amenities',
     title: 'Outdoor Patio & Amenities',
     description: 'From concrete pour to a finished break area with seating, planters, lighting, and site amenities.',

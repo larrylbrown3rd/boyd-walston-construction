@@ -10,12 +10,6 @@ const HeroParticles = dynamic(
   { ssr: false }
 )
 
-const stats = [
-  { value: '10+', label: 'Years Experience' },
-  { value: '1960', label: 'Family Legacy' },
-  { value: '48hr', label: 'Avg Response' },
-]
-
 export default function Hero() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
   const [reduceMotion, setReduceMotion] = useState(false)
@@ -48,7 +42,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#111111]/70 via-[#111111]/60 to-[#111111]/80" style={{ zIndex: 1 }} />
 
       <div
-        className="relative max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-16 items-end"
+        className="relative max-w-6xl mx-auto w-full"
         style={{
           transform: reduceMotion
             ? undefined
@@ -57,20 +51,20 @@ export default function Hero() {
           zIndex: 2,
         }}
       >
-        <div>
+        <div className="max-w-3xl">
           <span className="accent-bar mb-6" />
 
-          <h1 className="text-display text-6xl md:text-8xl lg:text-9xl text-white mb-8 max-w-3xl">
-            Building What<br />
-            <span className="text-brand-gold">Matters Most</span>
+          <h1 className="text-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-8">
+            Three Generations of Craft.
+            <br />
+            <span className="text-brand-gold">One Standard of Excellence</span>
           </h1>
 
           <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] max-w-xl mb-10">
-            Quality renovations and commercial construction
-            delivered on time and built to last.
+            Honoring a Legacy Building the Future
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-6">
+          <div className="flex flex-wrap gap-4">
             <Button href="/quote" variant="gold">
               Get A Quote
             </Button>
@@ -78,27 +72,6 @@ export default function Hero() {
               View Projects
             </Button>
           </div>
-
-          <p className="font-lato text-base font-normal text-white/80">
-            Free estimates · Reply within 48 hours · Licensed & insured
-          </p>
-        </div>
-
-        <div className="grid grid-cols-3 gap-4 lg:gap-5">
-          {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="relative border border-white/15 bg-white/5 backdrop-blur-sm p-5 md:p-6 overflow-hidden group"
-            >
-              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-brand-gold to-brand-gold-dark scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              <p className="text-display text-3xl md:text-4xl text-white mb-2">
-                {stat.value}
-              </p>
-              <p className="font-lato text-xs text-white/70">
-                {stat.label}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

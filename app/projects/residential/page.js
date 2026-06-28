@@ -70,10 +70,12 @@ export default function ResidentialProjects() {
         <div className="max-w-6xl mx-auto">
           <p className="text-eyebrow text-sm mb-4">Residential</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Residential Projects
+            Residential Construction
+            <br />
+            Remodel
           </h1>
           <p className="text-lead-dark">
-            Kitchen and bath remodels, additions, and full interior renovations crafted with care.
+            Whether you&apos;re updating a single room or transforming your entire home, we deliver quality construction built to last.
           </p>
         </div>
       </section>

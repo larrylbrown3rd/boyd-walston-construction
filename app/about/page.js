@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import SocialLinks from '@/components/SocialLinks'
+import ConstructionIcon from '@/components/ConstructionIcon'
 
 export default function About() {
   return (
@@ -68,9 +69,7 @@ export default function About() {
               className="inline-flex items-center gap-2 font-inter text-sm text-[#111111] border-b border-[#111111] pb-1 hover:text-brand-gold-dark hover:border-brand-gold-dark transition-colors mt-8"
             >
               Connect on LinkedIn
-              <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
+              <ConstructionIcon name="link" className="w-4 h-4" />
             </a>
           </ScrollReveal>
 

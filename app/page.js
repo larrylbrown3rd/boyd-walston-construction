@@ -15,7 +15,6 @@ export default function Home() {
       <Navbar companyName="Boyd Walston Construction" />
       <Hero />
       <FeaturedProjects compact />
-      <TrustBadges />
       <ServicesPreview />
 
       <section className="section-pad bg-white border-y border-[#E8E8E8]">
@@ -31,6 +30,8 @@ export default function Home() {
           <JobberForm />
         </div>
       </section>
+
+      <TrustBadges />
 
       <Footer />
     </main>

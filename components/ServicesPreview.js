@@ -2,18 +2,16 @@ import ScrollReveal from '@/components/ScrollReveal'
 
 const services = [
   {
-    title: 'Residential',
-    description: 'Kitchen and bath remodels, additions, and full interior renovations.',
+    title: 'Residential Construction',
+    subtitle: 'Remodel',
     href: '/projects/residential',
   },
   {
     title: 'Commercial',
-    description: 'Commercial build-outs, facility maintenance, and tenant improvements.',
     href: '/projects/commercial',
   },
   {
     title: 'Civil Construction',
-    description: 'Site prep, excavation, concrete, and utility work.',
     href: '/projects/civil',
   },
 ]
@@ -43,18 +41,14 @@ export default function ServicesPreview() {
                 href={service.href}
                 className="group block h-full bg-white border border-[#E8E8E8] p-6 hover:border-brand-gold hover:shadow-lg hover:shadow-brand-gold/5 transition-all duration-300"
               >
-                <div className="flex items-center gap-2 mb-5">
-                  <svg aria-hidden="true" className="w-4 h-4 text-brand-gold-dark group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                  <div className="w-8 h-0.5 bg-brand-gold group-hover:w-12 transition-all duration-300" />
-                </div>
-                <h3 className="text-display text-2xl text-[#111111] mb-3">
+                <h3 className="text-display text-2xl text-[#111111]">
                   {service.title}
                 </h3>
-                <p className="font-lato text-base font-normal text-[#4A4A4A] leading-[1.75]">
-                  {service.description}
-                </p>
+                {service.subtitle && (
+                  <p className="text-display text-xl text-[#9B9B9B] mt-1">
+                    {service.subtitle}
+                  </p>
+                )}
               </a>
             </ScrollReveal>
           ))}

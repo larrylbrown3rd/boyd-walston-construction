@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ScrollReveal from '@/components/ScrollReveal'
+import ConstructionIcon from '@/components/ConstructionIcon'
 import { projectPhotos } from '@/data/projectPhotos'
 
 const featured = projectPhotos.slice(0, 4)
@@ -22,12 +23,10 @@ export default function FeaturedProjects({ compact = false }) {
             </div>
             <a
               href="/projects"
-              className="inline-flex items-center font-inter text-sm text-brand-gold hover:text-brand-gold-light transition-colors shrink-0 group"
+              className="inline-flex items-center gap-2 font-inter text-sm text-brand-gold hover:text-brand-gold-light transition-colors shrink-0 group"
             >
               View all projects
-              <svg aria-hidden="true" className="inline-block w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
+              <ConstructionIcon name="ruler" className="w-4 h-4 group-hover:scale-110 transition-transform" />
             </a>
           </div>
         </ScrollReveal>

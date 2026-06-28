@@ -73,8 +73,8 @@ export default function BeforeAfterSlider({
         onTouchStart={() => { isDragging.current = true }}
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
-          <span className="text-[#111111] text-xs font-bold select-none">
-            ⟷
+          <span className="text-[#111111] text-[10px] font-semibold tracking-widest select-none">
+            DRAG
           </span>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import Button from '@/components/Button'
+import ConstructionIcon from '@/components/ConstructionIcon'
 
 export default function ProjectCarousel({ projects = [] }) {
   const [active, setActive] = useState(0)
@@ -134,16 +135,20 @@ export default function ProjectCarousel({ projects = [] }) {
 
             <div className="flex gap-4">
               <button
+                type="button"
                 onClick={prev}
-                className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+                aria-label="Previous project"
+                className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
               >
-                ←
+                <ConstructionIcon name="wrench" className="w-4 h-4" />
               </button>
               <button
+                type="button"
                 onClick={next}
-                className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center font-inter text-sm text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
+                aria-label="Next project"
+                className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
               >
-                →
+                <ConstructionIcon name="hammer" className="w-4 h-4" />
               </button>
             </div>
           </>
