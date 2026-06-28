@@ -2,8 +2,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 
 const services = [
   {
-    title: 'Residential Construction',
-    subtitle: 'Remodel',
+    title: 'Residential',
     href: '/projects/residential',
   },
   {

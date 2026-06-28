@@ -61,9 +61,9 @@ export default function Hero() {
           </h1>
 
           <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] max-w-xl mb-10">
-            Honoring A Legacy
+            Honoring A Legacy.
             <br />
-            Building The Future
+            Building The Future.
           </p>
 
           <div className="flex flex-wrap gap-4">
