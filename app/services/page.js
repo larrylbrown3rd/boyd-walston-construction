@@ -23,14 +23,14 @@ const services = [
     visualFirst: true,
   },
   {
-    title: 'Tenant Buildout',
+    title: 'Commercial Tenant Buildout',
     items: ['Roofing', 'Amenity Builds', 'Owner Rep Services', 'Facility Maintenance'],
     backgroundImage: '/commercial-building-exterior.png',
     visualFirst: false,
   },
   {
     title: 'Civil Construction',
-    items: ['Site Prep', 'Excavation', 'Concrete & Utilities'],
+    items: ['Site Prep', 'Excavation', 'Concrete & Utilities', 'Land Clearing', 'Demolition'],
     backgroundImage: '/site-grading.png',
     visualFirst: true,
   },
