@@ -54,16 +54,14 @@ export default function Hero() {
         <div className="max-w-3xl">
           <span className="accent-bar mb-6" />
 
-          <h1 className="text-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-8">
-            Three Generations of Craft.
+          <h1 className="text-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4">
+            Three Generations Of Craft.
             <br />
-            <span className="text-brand-gold">One Standard of Excellence</span>
+            <span className="text-brand-gold">One Standard Of Excellence</span>
           </h1>
 
-          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] max-w-xl mb-10">
-            Honoring A Legacy.
-            <br />
-            Building The Future.
+          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] mb-10 whitespace-nowrap">
+            Building A Future
           </p>
 
           <div className="flex flex-wrap gap-4">

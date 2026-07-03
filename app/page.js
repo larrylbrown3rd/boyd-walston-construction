@@ -3,7 +3,6 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import FeaturedProjects from '@/components/FeaturedProjects'
-import TrustBadges from '@/components/TrustBadges'
 import ServicesPreview from '@/components/ServicesPreview'
 import Footer from '@/components/Footer'
 import JobberForm from '@/components/JobberForm'
@@ -30,8 +29,6 @@ export default function Home() {
           <JobberForm />
         </div>
       </section>
-
-      <TrustBadges />
 
       <Footer />
     </main>

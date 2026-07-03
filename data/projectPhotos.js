@@ -1,12 +1,5 @@
 export const projectPhotos = [
   {
-    src: '/georgiana-opera-roof-complete.png',
-    alt: 'Georgiana Opera House roof replacement',
-    title: 'Georgiana Opera House Roof',
-    category: 'Civil',
-    href: '/projects/civil',
-  },
-  {
     src: '/commercial-patio-complete.png',
     alt: 'Finished commercial outdoor patio at HMMA',
     title: 'Outdoor Patio & Amenities',
@@ -44,8 +37,8 @@ export const projectPhotos = [
   },
   {
     src: '/site-grading.png',
-    alt: 'Commercial site grading and prep',
-    title: 'Site Grading & Prep',
+    alt: 'Enterprise Car Rental grading',
+    title: 'Enterprise Car Rental — Grading',
     category: 'Commercial',
     href: '/projects/commercial',
   },

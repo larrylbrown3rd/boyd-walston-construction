@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '@/components/Button'
 import SocialLinks from '@/components/SocialLinks'
 
@@ -40,13 +41,13 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2 list-none">
-              <li><a href="/" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Home</a></li>
-              <li><a href="/services" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Services</a></li>
-              <li><a href="/projects/residential" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Residential Construction</a></li>
-              <li><a href="/projects/commercial" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Commercial Projects</a></li>
-              <li><a href="/projects/civil" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Civil Projects</a></li>
-              <li><a href="/about" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">About</a></li>
-              <li><a href="/contact" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Contact</a></li>
+              <li><Link href="/" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Home</Link></li>
+              <li><Link href="/services" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Services</Link></li>
+              <li><Link href="/projects/residential" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Residential Construction</Link></li>
+              <li><Link href="/projects/commercial" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Commercial Projects</Link></li>
+              <li><Link href="/projects/civil" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Civil Projects</Link></li>
+              <li><Link href="/about" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">About</Link></li>
+              <li><Link href="/contact" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Contact</Link></li>
             </ul>
           </div>
 

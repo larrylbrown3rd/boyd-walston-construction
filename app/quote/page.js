@@ -3,7 +3,6 @@
 import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import TrustBadges from '@/components/TrustBadges'
 import JobberForm from '@/components/JobberForm'
 
 const ParticleTunnel = dynamic(
@@ -32,8 +31,6 @@ export default function Quote() {
           </p>
         </div>
       </section>
-
-      <TrustBadges />
 
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">

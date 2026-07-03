@@ -101,23 +101,22 @@ export const residentialProjects = [
     scope: ['Custom carpentry', 'Hood enclosure framing', 'Trim and finish detail', 'Coordination with kitchen layout'],
     investment: 'Contact us for a project estimate',
   },
+  {
+    id: 32,
+    category: 'Residential',
+    title: 'Tongue and Groove Patio',
+    location: 'Central Alabama — 2026',
+    image: '/tongue-and-groove-patio.png',
+    description:
+      'Covered patio build with a custom tongue-and-groove wood ceiling, ceiling fan, and a finished outdoor living space tied into the home.',
+    scope: ['Tongue-and-groove ceiling install', 'Patio structure and trim', 'Ceiling fan and electrical', 'Finish carpentry'],
+    investment: 'Contact us for a project estimate',
+  },
 ]
 
 export const featuredResidentialProjects = residentialProjects.filter(
   (project) => ![2, 3, 5, 18].includes(project.id)
 )
-
-const georgianaOperaHouseProject = {
-  id: 26,
-  category: 'Civil',
-  title: 'Georgiana Opera House Roof',
-  location: 'Georgiana, AL — 2026',
-  image: '/georgiana-opera-roof-complete.png',
-  description:
-    'Complete roof replacement at the historic Georgiana Opera House, including removal of the old TPO roofing system, installation of all new decking, and a new modified bitumen roofing system. The client was a recipient of an Alabama Council on the Arts grant for this project.',
-  scope: ['TPO roof removal', 'New decking installation', 'Modified bitumen roofing system', 'Alabama Council on the Arts grant project'],
-  investment: 'Contact us for a project estimate',
-}
 
 export const featuredCommercialProjects = [
   {
@@ -133,8 +132,19 @@ export const featuredCommercialProjects = [
   },
 ]
 
+const excavationAndGradingProject = {
+  id: 33,
+  category: 'Civil',
+  title: 'Excavation and Grading',
+  location: 'Central Alabama — 2026',
+  image: '/excavation-and-grading.png',
+  description:
+    'Site excavation and grading with excavator and dump truck, including earthwork, gravel placement, and grade control around an active residential property.',
+  scope: ['Site excavation', 'Grading and earthwork', 'Gravel placement', 'Equipment coordination'],
+  investment: 'Contact us for a project estimate',
+}
+
 export const civilProjects = [
-  georgianaOperaHouseProject,
   {
     id: 30,
     category: 'Civil',
@@ -157,9 +167,10 @@ export const civilProjects = [
     scope: ['Site clearing', 'Subgrade prep', 'Layout and staking', 'Drainage coordination'],
     investment: 'Contact us for a project estimate',
   },
+  excavationAndGradingProject,
 ]
 
-export const featuredCivilProjects = [georgianaOperaHouseProject]
+export const featuredCivilProjects = [excavationAndGradingProject]
 
 export const projectsOverview = [
   {
@@ -171,16 +182,6 @@ export const projectsOverview = [
       'Complete outdoor patio build-out with custom planters, lighting, and seating.',
     image: '/commercial-patio-complete.png',
     href: '/projects/commercial',
-  },
-  {
-    id: 26,
-    category: 'Civil',
-    title: 'Georgiana Opera House Roof',
-    location: 'Georgiana, AL — 2026',
-    description:
-      'Complete roof replacement with tear-off, new decking, and modified bitumen roofing system at the historic Georgiana Opera House.',
-    image: '/georgiana-opera-roof-complete.png',
-    href: '/projects/civil',
   },
   {
     id: 27,
@@ -208,8 +209,8 @@ export const commercialProjects = [
   {
     id: 19,
     category: 'Commercial',
-    title: 'Site Grading & Prep',
-    location: HMMA_LOCATION,
+    title: 'Enterprise Car Rental — Grading',
+    location: 'Enterprise Car Rental — 2026',
     image: '/site-grading.png',
     description:
       'Commercial site grading and layout with skid steer equipment, grade checking, and subgrade preparation.',
@@ -241,12 +242,12 @@ export const commercialProjects = [
   {
     id: 11,
     category: 'Commercial',
-    title: 'Commercial Concrete Pour',
+    title: 'Hyundai Motor Manufacturing Alabama — Excavation',
     location: HMMA_LOCATION,
     image: '/commercial-concrete-pour.png',
     description:
-      'Large-scale commercial slab pour with pump truck delivery, formwork, rebar, and coordinated field crew.',
-    scope: ['Formwork and rebar', 'Concrete pump placement', 'Slab finish and cure', 'Site safety coordination'],
+      'Large-scale commercial excavation with coordinated equipment, earthwork, and site prep for Hyundai Motor Manufacturing of Alabama.',
+    scope: ['Site excavation', 'Earthwork and grading', 'Equipment coordination', 'Site safety'],
     investment: 'Contact us for a project estimate',
   },
   {
@@ -339,6 +340,8 @@ export const allProjects = [
 ]
 
 export const residentialGalleryPhotos = [
+  { src: '/tongue-and-groove-patio.png', alt: 'Tongue and groove patio', title: 'Tongue and Groove Patio' },
+  { src: '/tongue-and-groove-patio-ceiling.png', alt: 'Tongue and groove patio ceiling detail', title: 'Tongue and Groove Patio' },
   { src: '/residential-remodel-master-bath.png', alt: 'Master bath remodel', title: 'Residential Remodel' },
   { src: '/residential-remodel-shower.png', alt: 'Custom shower build', title: 'Residential Remodel' },
   { src: '/residential-remodel-guest-bath.png', alt: 'Guest bath remodel', title: 'Residential Remodel' },
@@ -364,13 +367,11 @@ export const commercialGalleryPhotos = [
 ]
 
 export const civilGalleryPhotos = [
-  { src: '/georgiana-opera-roof-complete.png', alt: 'Georgiana Opera House roof complete', title: 'Georgiana Opera House Roof' },
-  { src: '/georgiana-opera-roof-progress.png', alt: 'Georgiana Opera House roof decking', title: 'Georgiana Opera House Roof' },
-  { src: '/georgiana-opera-roof-demo.png', alt: 'Georgiana Opera House roof tear-off', title: 'Georgiana Opera House Roof' },
+  { src: '/excavation-and-grading.png', alt: 'Excavation and grading with excavator', title: 'Excavation and Grading' },
   { src: '/tuskegee-civil-excavation.png', alt: 'Excavation at Tuskegee University', title: 'Tuskegee University — Site Excavation' },
   { src: '/tuskegee-civil-site-prep.png', alt: 'Site prep at Tuskegee University', title: 'Tuskegee University — Site Prep' },
-  { src: '/commercial-concrete-pour.png', alt: 'Commercial concrete pour', title: 'Commercial Concrete Pour' },
+  { src: '/commercial-concrete-pour.png', alt: 'Hyundai Motor Manufacturing Alabama excavation', title: 'Hyundai Motor Manufacturing Alabama — Excavation' },
   { src: '/commercial-site-excavation.png', alt: 'Site excavation', title: 'Site Excavation' },
-  { src: '/site-grading.png', alt: 'Site grading', title: 'Site Grading & Prep' },
+  { src: '/site-grading.png', alt: 'Enterprise Car Rental grading', title: 'Enterprise Car Rental — Grading' },
   { src: '/site-demolition.png', alt: 'Site demolition', title: 'Site Demolition' },
 ]
