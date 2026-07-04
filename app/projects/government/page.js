@@ -38,7 +38,7 @@ export default function GovernmentProjects() {
         </div>
         <div className="relative max-w-6xl mx-auto z-10">
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Government Contracting
+            Contracting Projects
           </h1>
         </div>
       </section>

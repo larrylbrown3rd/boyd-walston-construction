@@ -39,6 +39,7 @@ export default function BeforeAfterSlider({
       onMouseUp={() => { isDragging.current = false }}
       onMouseLeave={() => { isDragging.current = false }}
       onTouchMove={handleTouchMove}
+      onTouchEnd={() => { isDragging.current = false }}
     >
       <Image
         src={afterSrc}

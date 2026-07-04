@@ -74,7 +74,7 @@ export default function ProjectCarousel({ projects = [] }) {
                 fill
                 quality={100}
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                style={project.objectPosition ? { objectPosition: project.objectPosition } : undefined}
+                style={project.objectPosition ? { objectPosition: project.objectPosition.replace(/^object-/, '') } : undefined}
               />
             ) : (
               <div className="absolute inset-0 flex items-center justify-center">
@@ -181,7 +181,7 @@ export default function ProjectCarousel({ projects = [] }) {
                   alt={selected.title}
                   fill
                   className="object-cover"
-                  style={selected.objectPosition ? { objectPosition: selected.objectPosition } : undefined}
+                  style={selected.objectPosition ? { objectPosition: selected.objectPosition.replace(/^object-/, '') } : undefined}
                 />
               </div>
               <div className="p-8 md:p-10">

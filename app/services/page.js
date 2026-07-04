@@ -23,8 +23,8 @@ const services = [
     visualFirst: true,
   },
   {
-    title: 'Commercial Tenant Buildout',
-    items: ['Roofing', 'Amenity Builds', 'Owner Rep Services', 'Facility Maintenance'],
+    title: 'Commercial',
+    items: ['Tenant Build-Out', 'Roofing', 'Amenity Builds', 'Owner Rep Services', 'Facility Maintenance'],
     backgroundImage: '/commercial-building-exterior.png',
     visualFirst: false,
   },

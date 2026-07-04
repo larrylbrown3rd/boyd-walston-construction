@@ -17,7 +17,7 @@ export default function ProjectPhotoGallery({ photos, columns = 3 }) {
               alt={photo.alt}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
-              style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
+              style={photo.objectPosition ? { objectPosition: photo.objectPosition.replace(/^object-/, '') } : undefined}
             />
             {photo.title && (
               <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-[#111111]/90 to-transparent">

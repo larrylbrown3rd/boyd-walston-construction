@@ -122,7 +122,7 @@ const georgianaOperaHouseProject = {
   id: 26,
   category: 'Commercial Roofing',
   title: 'Georgiana Opera House Roof',
-  location: 'Georgiana, AL — 2026',
+  location: 'Georgiana, AL — 2025',
   image: '/georgiana-opera-roof-complete.png',
   description:
     'Complete roof replacement at the historic Georgiana Opera House, including removal of the old metal roofing system, installation of all new decking, and a new modified bitumen roofing system.',
@@ -353,7 +353,7 @@ export const commercialProjects = [
     title: 'Campus Hardscape Restoration',
     location: 'Alabama State University — 2026',
     image: '/masonry-blocks-progress.png',
-    objectPosition: 'object-center',
+    objectPosition: 'center',
     description:
       'Courtyard masonry rebuild on an active institutional campus, including block work, rebar, and phased site protection.',
     scope: ['Phased site protection', 'CMU layout and install', 'Rebar and structural tie-ins', 'Finish coordination'],
