@@ -17,7 +17,6 @@ export default function Navbar({ companyName }) {
     { href: '/', label: 'Home' },
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
   ]
 
   const projectLinks = [

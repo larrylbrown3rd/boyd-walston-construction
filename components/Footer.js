@@ -47,7 +47,6 @@ export default function Footer() {
               <li><Link href="/projects/commercial" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Commercial Projects</Link></li>
               <li><Link href="/projects/civil" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Civil Projects</Link></li>
               <li><Link href="/about" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">About</Link></li>
-              <li><Link href="/contact" className="font-lato font-light text-sm text-[#9B9B9B] hover:text-brand-gold transition-colors">Contact</Link></li>
             </ul>
           </div>
 

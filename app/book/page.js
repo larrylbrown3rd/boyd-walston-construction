@@ -46,7 +46,7 @@ export default function Book() {
                 Call Us Now
               </a>
               <a
-                href="/contact"
+                href="/quote"
                 className="border border-[#111111] text-[#111111] font-inter text-sm px-7 py-3.5 rounded-lg hover:bg-[#111111] hover:text-white transition-colors"
               >
                 Send A Message
