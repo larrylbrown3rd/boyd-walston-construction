@@ -37,13 +37,9 @@ export default function GovernmentProjects() {
           />
         </div>
         <div className="relative max-w-6xl mx-auto z-10">
-          <p className="text-eyebrow text-sm mb-4">Government</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Government Projects
+            Government Contracting
           </h1>
-          <p className="text-lead-dark">
-            Contracting, waste collection, and portable restroom services for municipal and institutional clients.
-          </p>
         </div>
       </section>
 

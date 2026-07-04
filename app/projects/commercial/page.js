@@ -17,10 +17,18 @@ const ProjectCarousel = dynamic(
 
 const commercialTransformations = [
   {
+    eyebrow: 'Commercial Roofing',
+    title: 'Georgiana Opera House Roof',
+    description: 'Metal roof removal through new decking to a finished modified bitumen roof system at a historic downtown venue.',
+    beforeSrc: '/georgiana-opera-roof-progress.png',
+    afterSrc: '/georgiana-opera-roof-complete.png',
+    beforePosition: 'object-center',
+    afterPosition: 'object-center',
+  },
+  {
     eyebrow: 'Exterior Painting',
     title: 'Exterior Painting',
-    description: 'Full exterior repaint with boom lift access for second-story windows, facade prep, and a finished look from street level.',
-    beforeSrc: '/commercial-exterior-painting-before.png',
+    beforeSrc: '/exterior-renovation-progress.png',
     afterSrc: '/commercial-exterior-painting-after.png',
     beforePosition: 'object-center',
     afterPosition: 'object-center',

@@ -29,13 +29,9 @@ export default function CivilProjects() {
           />
         </div>
         <div className="relative max-w-6xl mx-auto z-10">
-          <p className="text-eyebrow text-sm mb-4">Civil</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
-            Civil Projects
+            Construction
           </h1>
-          <p className="text-lead-dark">
-            Site prep, excavation, roofing, and civil work for commercial and institutional projects across Alabama.
-          </p>
         </div>
       </section>
 

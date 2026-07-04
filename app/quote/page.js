@@ -12,8 +12,8 @@ export default function Quote() {
       <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-8">
         <div className="absolute inset-0">
           <Image
-            src="/frame-construction.jpg"
-            alt="Boyd Walston Construction"
+            src="/aerial-construction.png"
+            alt="Boyd Walston Construction project site"
             fill
             priority
             className="object-cover object-center opacity-40"

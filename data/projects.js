@@ -118,7 +118,32 @@ export const featuredResidentialProjects = residentialProjects.filter(
   (project) => ![2, 3, 5, 18].includes(project.id)
 )
 
+const georgianaOperaHouseProject = {
+  id: 26,
+  category: 'Commercial Roofing',
+  title: 'Georgiana Opera House Roof',
+  location: 'Georgiana, AL — 2026',
+  image: '/georgiana-opera-roof-complete.png',
+  description:
+    'Complete roof replacement at the historic Georgiana Opera House, including removal of the old metal roofing system, installation of all new decking, and a new modified bitumen roofing system.',
+  scope: ['Metal roof removal', 'New decking installation', 'Modified bitumen roofing system'],
+  investment: 'Contact us for a project estimate',
+}
+
+const prattvilleForestryMulchingProject = {
+  id: 37,
+  category: 'Commercial',
+  title: 'Forestry Mulching',
+  location: 'Prattville Square Shopping Center — 2026',
+  image: '/forestry-mulching-prattville-square.png',
+  description:
+    'Commercial land clearing and forestry mulching at Prattville Square Shopping Center with skid steer equipment to remove brush, small trees, and overgrowth along the property line.',
+  scope: ['Forestry mulching', 'Brush and tree clearing', 'Site line maintenance', 'Equipment coordination'],
+  investment: 'Contact us for a project estimate',
+}
+
 export const featuredCommercialProjects = [
+  georgianaOperaHouseProject,
   {
     id: 10,
     category: 'Commercial',
@@ -127,7 +152,7 @@ export const featuredCommercialProjects = [
     image: '/commercial-patio-complete.png',
     description:
       'Full commercial outdoor break area with concrete patio, picnic seating, black planters, lighting, and site amenities.',
-    scope: ['Concrete patio pour', 'Site furnishings and seating', 'Planters and landscaping', 'Lighting and charging stations'],
+    scope: ['Excavation & Grading', 'Concrete patio pour', 'Site furnishings and seating', 'Planters and landscaping', 'Lighting and charging stations'],
     investment: 'Contact us for a project estimate',
   },
 ]
@@ -144,7 +169,33 @@ const excavationAndGradingProject = {
   investment: 'Contact us for a project estimate',
 }
 
+const civilSiteExcavationProject = {
+  id: 35,
+  category: 'Civil',
+  title: 'Hyundai Motor Manufacturing Alabama — Excavation',
+  location: HMMA_LOCATION,
+  image: '/commercial-concrete-pour.png',
+  description:
+    'Large-scale commercial excavation with coordinated equipment, earthwork, and site prep for Hyundai Motor Manufacturing of Alabama.',
+  scope: ['Site excavation preparing for concrete pour', 'Earthwork and grading', 'Equipment coordination', 'Site safety'],
+  investment: 'Contact us for a project estimate',
+}
+
+const civilSiteGradingProject = {
+  id: 36,
+  category: 'Civil',
+  title: 'Site Grading — Asphalt Paving Prep',
+  location: 'Enterprise Car Rental — 2026',
+  image: '/site-grading.png',
+  description:
+    'Site grading and prep for asphalt paving with skid steer equipment, grade checking, and subgrade preparation.',
+  scope: ['Site grading and prep for asphalt paving'],
+  investment: 'Contact us for a project estimate',
+}
+
 export const civilProjects = [
+  civilSiteExcavationProject,
+  civilSiteGradingProject,
   {
     id: 30,
     category: 'Civil',
@@ -170,7 +221,7 @@ export const civilProjects = [
   excavationAndGradingProject,
 ]
 
-export const featuredCivilProjects = [excavationAndGradingProject]
+export const featuredCivilProjects = [civilSiteExcavationProject, civilSiteGradingProject]
 
 export const projectsOverview = [
   {
@@ -206,6 +257,8 @@ export const projectsOverview = [
 ]
 
 export const commercialProjects = [
+  georgianaOperaHouseProject,
+  prattvilleForestryMulchingProject,
   {
     id: 19,
     category: 'Commercial',
@@ -356,22 +409,23 @@ export const residentialGalleryPhotos = [
 ]
 
 export const commercialGalleryPhotos = [
+  { src: '/georgiana-opera-roof-progress.png', alt: 'Georgiana Opera House roof before', title: 'Georgiana Opera House Roof — Before' },
+  { src: '/georgiana-opera-roof-complete.png', alt: 'Georgiana Opera House roof after', title: 'Georgiana Opera House Roof — After' },
+  { src: '/georgiana-opera-roof-demo.png', alt: 'Georgiana Opera House metal roof removal', title: 'Georgiana Opera House Roof' },
   { src: '/commercial-patio-complete.png', alt: 'Commercial patio complete', title: 'Outdoor Patio & Amenities' },
-  { src: '/commercial-exterior-painting-before.png', alt: 'Commercial exterior painting in progress', title: 'Exterior Painting' },
-  { src: '/commercial-exterior-painting-after.png', alt: 'Commercial exterior painting complete', title: 'Exterior Painting' },
+  { src: '/forestry-mulching-prattville-square.png', alt: 'Forestry mulching at Prattville Square Shopping Center', title: 'Forestry Mulching — Prattville Square Shopping Center' },
   { src: '/exterior-lift-work.png', alt: 'Exterior lift work', title: 'Exterior Lift Work' },
-  { src: '/exterior-renovation-progress.png', alt: 'Building renovation in progress', title: 'Building Renovation' },
   { src: '/lockhart-hall-plaza.png', alt: 'College masonry work', title: 'College Masonry Work' },
   { src: '/campus-masonry-work.png', alt: 'College masonry work', title: 'College Masonry Work' },
   { src: '/masonry-blocks-progress.png', alt: 'College masonry work', title: 'College Masonry Work' },
 ]
 
 export const civilGalleryPhotos = [
+  { src: '/commercial-concrete-pour.png', alt: 'Hyundai Motor Manufacturing Alabama excavation', title: 'Hyundai Motor Manufacturing Alabama — Excavation' },
+  { src: '/site-grading.png', alt: 'Site grading and prep for asphalt paving', title: 'Site Grading — Asphalt Paving Prep' },
   { src: '/excavation-and-grading.png', alt: 'Excavation and grading with excavator', title: 'Excavation and Grading' },
   { src: '/tuskegee-civil-excavation.png', alt: 'Excavation at Tuskegee University', title: 'Tuskegee University — Site Excavation' },
   { src: '/tuskegee-civil-site-prep.png', alt: 'Site prep at Tuskegee University', title: 'Tuskegee University — Site Prep' },
-  { src: '/commercial-concrete-pour.png', alt: 'Hyundai Motor Manufacturing Alabama excavation', title: 'Hyundai Motor Manufacturing Alabama — Excavation' },
   { src: '/commercial-site-excavation.png', alt: 'Site excavation', title: 'Site Excavation' },
-  { src: '/site-grading.png', alt: 'Enterprise Car Rental grading', title: 'Enterprise Car Rental — Grading' },
   { src: '/site-demolition.png', alt: 'Site demolition', title: 'Site Demolition' },
 ]

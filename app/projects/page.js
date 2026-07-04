@@ -26,9 +26,6 @@ export default function Projects() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Projects
           </h1>
-          <p className="text-lead-dark">
-            Residential, commercial, civil, and government work across central Alabama.
-          </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <a href="/projects/residential" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
               Residential
@@ -38,9 +35,6 @@ export default function Projects() {
             </a>
             <a href="/projects/civil" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
               Civil
-            </a>
-            <a href="/projects/government" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
-              Government
             </a>
           </div>
         </div>

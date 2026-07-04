@@ -1,13 +1,25 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import JobberForm from '@/components/JobberForm'
+import ResponsePromise from '@/components/ResponsePromise'
 
 export default function Book() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar companyName="Boyd Walston Construction" />
 
-      <section className="bg-[#111111] text-white py-24 px-8">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-8">
+        <div className="absolute inset-0">
+          <Image
+            src="/frame-construction.jpg"
+            alt="Boyd Walston Construction"
+            fill
+            priority
+            className="object-cover object-center opacity-40"
+          />
+        </div>
+        <div className="relative max-w-6xl mx-auto z-10">
           <p className="text-eyebrow text-sm mb-4">
             Schedule A Walkthrough
           </p>
@@ -15,55 +27,28 @@ export default function Book() {
             Book A Site Visit
           </h1>
           <p className="text-lead-dark">
-            Ready to move forward? Book a free walkthrough
-            directly onto our calendar. We will come to
-            your site and give you a detailed quote.
+            Ready to move forward? Request a free walkthrough and we will
+            come to your site with a detailed quote.
           </p>
         </div>
       </section>
 
       <section className="py-24 px-8">
-        <div className="max-w-4xl mx-auto">
-
-          {/* Calendly embed placeholder */}
-          <div className="border border-[#E8E8E8] p-16 text-center mb-16">
-            <p className="text-eyebrow text-sm mb-4">
-              Live Calendar
-            </p>
-            <h2 className="text-display text-5xl text-[#111111] mb-4">
-              Booking Widget Coming Soon
-            </h2>
-            <p className="font-lato font-light text-sm text-[#9B9B9B] mb-8 max-w-md mx-auto">
-              We are setting up our scheduling system.
-              In the meantime please call or email us
-              directly to schedule your walkthrough.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:5550000000"
-                className="font-inter text-sm text-white px-7 py-3.5 rounded-lg hover:bg-[#2C2C2C] transition-colors"
-              >
-                Call Us Now
-              </a>
-              <a
-                href="/quote"
-                className="border border-[#111111] text-[#111111] font-inter text-sm px-7 py-3.5 rounded-lg hover:bg-[#111111] hover:text-white transition-colors"
-              >
-                Send A Message
-              </a>
-            </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-16">
+            <ResponsePromise />
+            <JobberForm />
           </div>
 
-          {/* What to expect */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <p className="text-display text-6xl md:text-7xl text-[#111111] mb-3">01</p>
               <h3 className="text-display text-2xl md:text-3xl text-[#111111] mb-2">
-                Book Your Slot
+                Submit Your Request
               </h3>
               <p className="font-lato font-light text-sm text-[#9B9B9B]">
-                Pick a time that works for you from
-                our available slots.
+                Share your project details and preferred timing
+                through our request form.
               </p>
             </div>
             <div className="text-center">
@@ -87,7 +72,6 @@ export default function Book() {
               </p>
             </div>
           </div>
-
         </div>
       </section>
 
