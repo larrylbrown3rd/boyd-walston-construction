@@ -35,6 +35,7 @@ export default function ScrollReveal({
       variants={variants}
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
+      style={{ pointerEvents: isInView ? 'auto' : 'none' }}
     >
       {children}
     </motion.div>

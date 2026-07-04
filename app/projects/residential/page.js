@@ -1,6 +1,5 @@
 'use client'
 
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -8,12 +7,8 @@ import ScrollReveal from '@/components/ScrollReveal'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import ProjectPhotoGallery from '@/components/ProjectPhotoGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
+import ProjectCarousel from '@/components/ProjectCarousel'
 import { featuredResidentialProjects, residentialGalleryPhotos } from '@/data/projects'
-
-const ProjectCarousel = dynamic(
-  () => import('@/components/ProjectCarousel'),
-  { ssr: false }
-)
 
 const residentialTransformations = [
   {

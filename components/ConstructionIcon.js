@@ -30,6 +30,12 @@ const icons = {
       <path strokeLinecap="round" d="M9 20v-5h6v5M9 12h.01M15 12h.01" />
     </>
   ),
+  chevronLeft: (
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+  ),
+  chevronRight: (
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+  ),
   link: (
     <path
       strokeLinecap="round"

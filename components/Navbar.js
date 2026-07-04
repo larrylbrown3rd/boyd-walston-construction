@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import ConstructionIcon from './ConstructionIcon'
 
 export default function Navbar({ companyName }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +10,7 @@ export default function Navbar({ companyName }) {
     'font-barlow font-semibold text-base text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300'
 
   const projectsLinkClass =
-    'font-barlow font-semibold text-base text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300 flex items-center gap-1'
+    'font-barlow font-semibold text-base text-[#9B9B9B] hover:text-[#111111] transition-colors duration-300'
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -55,7 +54,6 @@ export default function Navbar({ companyName }) {
           <li className="relative group list-none">
             <a href="/projects" className={projectsLinkClass}>
               Projects
-              <ConstructionIcon name="building" className="w-3.5 h-3.5" />
             </a>
 
             <div className="absolute top-full left-0 pt-2 w-48 z-50 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-200">
@@ -113,12 +111,6 @@ export default function Navbar({ companyName }) {
               className={`${projectsLinkClass} bg-transparent border-0 cursor-pointer p-0`}
             >
               Projects
-              <ConstructionIcon
-                name="building"
-                className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                  mobileProjectsOpen ? 'rotate-180' : ''
-                }`}
-              />
             </button>
             {mobileProjectsOpen && (
               <ul className="mt-3 ml-4 flex flex-col gap-3 list-none">

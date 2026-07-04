@@ -4,7 +4,6 @@ import {
   Barlow_Condensed,
   Lato,
 } from "next/font/google";
-import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
 import "./globals.css";
@@ -47,7 +46,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} font-lato min-h-full flex flex-col bg-white text-[#111111]`}
       >
-        <CustomCursor />
         <PageTransition>{children}</PageTransition>
         <StickyCTA />
       </body>

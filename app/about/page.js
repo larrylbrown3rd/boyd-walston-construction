@@ -7,6 +7,22 @@ import ScrollReveal from '@/components/ScrollReveal'
 import SocialLinks from '@/components/SocialLinks'
 import ConstructionIcon from '@/components/ConstructionIcon'
 
+const BOYD_PROPERTY_SOLUTIONS_ARTICLE =
+  'https://www.faulkner.edu/news/devoski-boyds-entrepreneurial-journey-inspired-by-legacy-and-driven-by-education/'
+
+function BoydPropertySolutionsLink() {
+  return (
+    <a
+      href={BOYD_PROPERTY_SOLUTIONS_ARTICLE}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-[#111111] underline underline-offset-2 decoration-[#111111] hover:text-brand-gold-dark hover:decoration-brand-gold-dark transition-colors cursor-pointer relative z-10"
+    >
+      Boyd&apos;s Property Solutions
+    </a>
+  )
+}
+
 export default function About() {
   return (
     <main className="min-h-screen bg-white">
@@ -35,27 +51,11 @@ export default function About() {
             <div className="space-y-6 text-body-muted mb-16">
               <p>
                 At the beginning of 2026, Boyd Walston Construction was launched through the rebranding of{' '}
-                <a
-                  href="https://www.faulkner.edu/news/devoski-boyds-entrepreneurial-journey-inspired-by-legacy-and-driven-by-education/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#111111] border-b border-[#111111] hover:text-brand-gold-dark hover:border-brand-gold-dark transition-colors"
-                >
-                  Boyd&apos;s Property Solutions
-                </a>
+                <BoydPropertySolutionsLink />
                 , marking the next chapter in a business that has grown steadily since its founding in 2018.
               </p>
               <p>
-                While attending college, Devoski Boyd started{' '}
-                <a
-                  href="https://www.faulkner.edu/news/devoski-boyds-entrepreneurial-journey-inspired-by-legacy-and-driven-by-education/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#111111] border-b border-[#111111] hover:text-brand-gold-dark hover:border-brand-gold-dark transition-colors"
-                >
-                  Boyd&apos;s Property Solutions
-                </a>
-                {' '}as a pressure washing and pool cleaning business to earn extra income during his undergraduate years. What began as a side business quickly became something more. As he built relationships with customers, they began asking if he could help with additional projects around their homes and businesses. One opportunity led to another, and those &ldquo;odd jobs&rdquo; gradually evolved into repairs, remodeling, renovations, additions, commercial build-outs, construction management, and owner representation.
+                While attending college, Devoski Boyd started <BoydPropertySolutionsLink /> as a pressure washing and pool cleaning business to earn extra income during his undergraduate years. What began as a side business quickly became something more. As he built relationships with customers, they began asking if he could help with additional projects around their homes and businesses. One opportunity led to another, and those &ldquo;odd jobs&rdquo; gradually evolved into repairs, remodeling, renovations, additions, commercial build-outs, construction management, and owner representation.
               </p>
               <p>
                 The decision to rebrand as Boyd Walston Construction reflects not only the company&apos;s growth but also its long-term vision. It honors Devoski&apos;s family&apos;s construction heritage, paying tribute to his great-grandfather, who founded Walston &amp; Son&apos;s Plumbing Company in Black Creek, North Carolina, in 1960. Today, Boyd Walston Construction proudly carries that legacy forward while serving homeowners, businesses, developers, and communities throughout Alabama.

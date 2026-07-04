@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Button from '@/components/Button'
 import ConstructionIcon from '@/components/ConstructionIcon'
 
+const modalTransition = { duration: 0.15, ease: 'easeOut' }
+
 export default function ProjectCarousel({ projects = [] }) {
   const [active, setActive] = useState(0)
   const [direction, setDirection] = useState(1)
@@ -14,6 +16,14 @@ export default function ProjectCarousel({ projects = [] }) {
   useEffect(() => {
     setActive(0)
     setDirection(1)
+  }, [projects])
+
+  useEffect(() => {
+    projects.forEach((project) => {
+      if (!project.image) return
+      const img = new window.Image()
+      img.src = project.image
+    })
   }, [projects])
 
   useEffect(() => {
@@ -72,7 +82,7 @@ export default function ProjectCarousel({ projects = [] }) {
                 src={project.image}
                 alt={project.title}
                 fill
-                quality={100}
+                quality={85}
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 style={project.objectPosition ? { objectPosition: project.objectPosition.replace(/^object-/, '') } : undefined}
               />
@@ -140,7 +150,7 @@ export default function ProjectCarousel({ projects = [] }) {
                 aria-label="Previous project"
                 className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
               >
-                <ConstructionIcon name="wrench" className="w-4 h-4" />
+                <ConstructionIcon name="chevronLeft" className="w-4 h-4" />
               </button>
               <button
                 type="button"
@@ -148,7 +158,7 @@ export default function ProjectCarousel({ projects = [] }) {
                 aria-label="Next project"
                 className="w-12 h-12 border border-[#E8E8E8] rounded-lg flex items-center justify-center text-[#111111] hover:border-[#111111] hover:bg-[#111111] hover:text-white transition-all duration-300"
               >
-                <ConstructionIcon name="hammer" className="w-4 h-4" />
+                <ConstructionIcon name="chevronRight" className="w-4 h-4" />
               </button>
             </div>
           </>
@@ -161,6 +171,7 @@ export default function ProjectCarousel({ projects = [] }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={modalTransition}
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
           >
             <button
@@ -170,9 +181,10 @@ export default function ProjectCarousel({ projects = [] }) {
               onClick={() => setSelected(null)}
             />
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={modalTransition}
               className="relative bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-[#E8E8E8]"
             >
               <div className="relative h-64 md:h-80 bg-[#F0EFED]">
@@ -180,6 +192,7 @@ export default function ProjectCarousel({ projects = [] }) {
                   src={selected.image}
                   alt={selected.title}
                   fill
+                  priority
                   className="object-cover"
                   style={selected.objectPosition ? { objectPosition: selected.objectPosition.replace(/^object-/, '') } : undefined}
                 />

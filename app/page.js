@@ -3,7 +3,6 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import FeaturedProjects from '@/components/FeaturedProjects'
-import ServicesPreview from '@/components/ServicesPreview'
 import Footer from '@/components/Footer'
 import JobberForm from '@/components/JobberForm'
 import ResponsePromise from '@/components/ResponsePromise'
@@ -14,7 +13,6 @@ export default function Home() {
       <Navbar companyName="Boyd Walston Construction" />
       <Hero />
       <FeaturedProjects compact />
-      <ServicesPreview />
 
       <section className="section-pad bg-white border-y border-[#E8E8E8]">
         <div className="max-w-3xl mx-auto">

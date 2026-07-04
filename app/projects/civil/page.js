@@ -1,18 +1,13 @@
 'use client'
 
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import ProjectPhotoGallery from '@/components/ProjectPhotoGallery'
 import ProjectsCTA from '@/components/ProjectsCTA'
+import ProjectCarousel from '@/components/ProjectCarousel'
 import { featuredCivilProjects, civilGalleryPhotos } from '@/data/projects'
-
-const ProjectCarousel = dynamic(
-  () => import('@/components/ProjectCarousel'),
-  { ssr: false }
-)
 
 export default function CivilProjects() {
   return (

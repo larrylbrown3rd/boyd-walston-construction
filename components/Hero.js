@@ -60,8 +60,10 @@ export default function Hero() {
             <span className="text-brand-gold">One Standard Of Excellence</span>
           </h1>
 
-          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] mb-10 whitespace-nowrap">
-            Building A Future
+          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] mb-10">
+            Honoring A Legacy
+            <br />
+            Build The Future
           </p>
 
           <div className="flex flex-wrap gap-4">

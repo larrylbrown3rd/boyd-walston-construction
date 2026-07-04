@@ -306,12 +306,12 @@ export const commercialProjects = [
   {
     id: 4,
     category: 'Commercial',
-    title: 'Commercial Framing',
+    title: 'Commercial Painting',
     location: HMMA_LOCATION,
     image: '/commercial-framing.png',
     description:
-      'Structural framing for a commercial build with crew on site, lumber staging, and coordinated field execution.',
-    scope: ['Framing layout', 'Wall and roof framing', 'Structural coordination', 'Jobsite safety and staging'],
+      'Large-scale commercial exterior painting with boom lift access, surface prep, and a finished facade from street level.',
+    scope: ['Exterior prep', 'Boom lift setup and safety', 'Spray and brush painting', 'Site cleanup'],
     investment: 'Contact us for a project estimate',
   },
   {

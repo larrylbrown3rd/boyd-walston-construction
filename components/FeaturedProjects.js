@@ -17,9 +17,6 @@ export default function FeaturedProjects({ compact = false }) {
               <h2 className={`text-display text-white ${compact ? 'text-4xl md:text-5xl' : 'text-5xl md:text-6xl'}`}>
                 Craftsmanship You Can See
               </h2>
-              <p className="font-lato text-base font-normal text-white/85 mt-4 max-w-lg leading-[1.75]">
-                Real projects across residential renovations, commercial build-outs, and institutional work.
-              </p>
             </div>
             <a
               href="/projects"
