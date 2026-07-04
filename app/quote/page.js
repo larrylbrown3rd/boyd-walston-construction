@@ -1,15 +1,8 @@
-'use client'
-
-import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import JobberForm from '@/components/JobberForm'
 import ResponsePromise from '@/components/ResponsePromise'
-
-const ParticleTunnel = dynamic(
-  () => import('@/components/ParticleTunnel'),
-  { ssr: false }
-)
 
 export default function Quote() {
   return (
@@ -17,9 +10,16 @@ export default function Quote() {
       <Navbar companyName="Boyd Walston Construction" />
 
       <section className="relative overflow-hidden bg-[#111111] text-white py-24 px-8">
-        <ParticleTunnel />
-        <div className="absolute inset-0 bg-[#111111]/70" style={{ zIndex: 1 }} />
-        <div className="relative max-w-6xl mx-auto" style={{ zIndex: 2 }}>
+        <div className="absolute inset-0">
+          <Image
+            src="/frame-construction.jpg"
+            alt="Boyd Walston Construction"
+            fill
+            priority
+            className="object-cover object-center opacity-40"
+          />
+        </div>
+        <div className="relative max-w-6xl mx-auto z-10">
           <p className="text-eyebrow text-sm mb-4">
             Free Consultation
           </p>
