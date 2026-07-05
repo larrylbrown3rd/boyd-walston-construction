@@ -78,9 +78,6 @@ export default function ResidentialProjects() {
             <br />
             Remodel
           </h1>
-          <p className="text-lead-dark">
-            Whether you&apos;re updating a single room or transforming your entire home, we deliver quality construction built to last.
-          </p>
         </div>
       </section>
 

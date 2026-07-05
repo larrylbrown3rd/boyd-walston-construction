@@ -58,9 +58,6 @@ export default function CommercialProjects() {
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Commercial Projects
           </h1>
-          <p className="text-lead-dark">
-            Build-outs, exterior work, concrete, and facility improvements for businesses across central Alabama.
-          </p>
         </div>
       </section>
 
