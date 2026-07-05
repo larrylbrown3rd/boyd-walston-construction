@@ -24,9 +24,21 @@ export default function CivilProjects() {
           />
         </div>
         <div className="relative max-w-6xl mx-auto z-10">
+          <p className="text-eyebrow text-sm mb-4">Our Work</p>
           <h1 className="text-display text-6xl md:text-7xl text-white mb-6">
             Construction
           </h1>
+          <div className="flex flex-wrap gap-4 mt-8">
+            <a href="/projects/residential" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
+              Residential
+            </a>
+            <a href="/projects/commercial" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
+              Commercial
+            </a>
+            <a href="/projects/civil" className="font-inter text-sm text-white border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
+              Civil
+            </a>
+          </div>
         </div>
       </section>
 
