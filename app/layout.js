@@ -4,6 +4,7 @@ import {
   Barlow_Condensed,
   Lato,
 } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
 import "./globals.css";
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
       >
         <PageTransition>{children}</PageTransition>
         <StickyCTA />
+        <Analytics />
       </body>
     </html>
   );
