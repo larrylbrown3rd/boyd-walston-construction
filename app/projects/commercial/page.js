@@ -64,7 +64,6 @@ export default function CommercialProjects() {
       <section className="section-pad bg-[#F8F7F5] border-b border-[#E8E8E8]">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-eyebrow-dark text-sm mb-4">What We Do</p>
             <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-12">
               Commercial Services
             </h2>
