@@ -61,36 +61,6 @@ export default function CommercialProjects() {
         </div>
       </section>
 
-      <section className="section-pad bg-[#F8F7F5] border-b border-[#E8E8E8]">
-        <div className="max-w-6xl mx-auto">
-          <ScrollReveal>
-            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-12">
-              Commercial Services
-            </h2>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { title: 'Tenant Build-Out', description: 'Custom interior construction for retail, office, and commercial spaces tailored to your business needs.' },
-              { title: 'Facility Maintenance', description: 'Ongoing maintenance and repair services to keep your commercial property in top condition.' },
-              { title: 'Roofing', description: 'Commercial roofing installation, repair, and replacement for flat and pitched roof systems.' },
-              { title: 'Amenity Builds', description: 'Break rooms, patios, common areas, and outdoor amenities that enhance your workplace.' },
-              { title: 'Owner Rep Services', description: 'Professional representation and project oversight to protect your interests throughout construction.' },
-            ].map((service, i) => (
-              <ScrollReveal key={service.title} delay={i * 0.08}>
-                <div className="bg-white border border-[#E8E8E8] p-8 h-full">
-                  <h3 className="text-display text-2xl text-[#111111] mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="font-lato text-sm text-[#4A4A4A] leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section-pad">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
