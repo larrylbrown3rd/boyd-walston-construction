@@ -31,36 +31,6 @@ export default function CivilProjects() {
         </div>
       </section>
 
-      <section className="section-pad bg-[#F8F7F5] border-b border-[#E8E8E8]">
-        <div className="max-w-6xl mx-auto">
-          <ScrollReveal>
-            <h2 className="text-display text-4xl md:text-5xl text-[#111111] mb-12">
-              Civil Services
-            </h2>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { title: 'Site Prep', description: 'Site preparation and subgrade work to get your project ready for construction.' },
-              { title: 'Excavation', description: 'Site excavation, earthwork, grading, and grade control with coordinated equipment.' },
-              { title: 'Concrete & Utilities', description: 'Concrete work and utility coordination for commercial and institutional site development.' },
-              { title: 'Land Clearing', description: 'Clearing and preparation of land for new construction and site development.' },
-              { title: 'Demolition', description: 'Structure demolition and site clearing to prepare for new build-out.' },
-            ].map((service, i) => (
-              <ScrollReveal key={service.title} delay={i * 0.08}>
-                <div className="bg-white border border-[#E8E8E8] p-8 h-full">
-                  <h3 className="text-display text-2xl text-[#111111] mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="font-lato text-sm text-[#4A4A4A] leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section-pad">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
