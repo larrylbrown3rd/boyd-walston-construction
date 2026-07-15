@@ -14,7 +14,7 @@ export default function Logo({ className = '', size = 'md' }) {
     <Link href="/" className={`inline-flex items-center shrink-0 ${className}`}>
       <span className={`relative ${dimension} overflow-hidden rounded-full bg-[#111111]`}>
         <Image
-          src="/bwc-logo.jpg"
+          src="/bwc-logo.png"
           alt="Boyd Walston Construction"
           fill
           className="object-cover object-center"
