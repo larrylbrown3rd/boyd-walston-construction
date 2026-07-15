@@ -30,13 +30,13 @@ export default function ProjectsPage() {
           </h1>
           <div className="flex flex-wrap gap-4 mt-8">
             <a href="/projects/residential" className="font-button text-sm text-white border border-white/30 px-5 py-2.5 min-h-[44px] inline-flex items-center rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
-              Residential Projects
+              Residential
             </a>
             <a href="/projects/commercial" className="font-button text-sm text-white border border-white/30 px-5 py-2.5 min-h-[44px] inline-flex items-center rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
-              Commercial Projects
+              Commercial
             </a>
             <a href="/projects/civil" className="font-button text-sm text-white border border-white/30 px-5 py-2.5 min-h-[44px] inline-flex items-center rounded-lg hover:bg-white hover:text-[#111111] transition-colors">
-              Civil Projects
+              Civil
             </a>
           </div>
         </div>

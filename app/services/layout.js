@@ -8,7 +8,6 @@ export default function ServicesLayout({ children }) {
     <>
       <PageStructuredData
         pathname="/services"
-        includeFaq
         includeServices
       />
       {children}

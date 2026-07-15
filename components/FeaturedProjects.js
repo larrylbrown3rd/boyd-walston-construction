@@ -22,7 +22,7 @@ export default function FeaturedProjects({ compact = false }) {
               href="/projects"
               className="inline-flex items-center gap-2 font-button text-sm text-brand-gold hover:text-brand-gold-light transition-colors shrink-0 group min-h-[44px]"
             >
-              Browse Project Portfolio
+              View all projects
               <ConstructionIcon name="ruler" className="w-4 h-4 group-hover:scale-110 transition-transform" />
             </a>
           </div>

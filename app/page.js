@@ -4,7 +4,7 @@ import PageStructuredData from '@/components/PageStructuredData'
 export default function Home() {
   return (
     <>
-      <PageStructuredData pathname="/" includeFaq includeBreadcrumbs={false} />
+      <PageStructuredData pathname="/" includeBreadcrumbs={false} />
       <HomePage />
     </>
   )
