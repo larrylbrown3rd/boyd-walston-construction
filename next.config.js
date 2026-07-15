@@ -11,6 +11,11 @@ const nextConfig = {
         destination: '/quote',
         permanent: true,
       },
+      {
+        source: '/projects/government',
+        destination: '/projects',
+        permanent: true,
+      },
     ]
   },
 }
