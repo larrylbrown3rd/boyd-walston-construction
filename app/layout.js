@@ -7,7 +7,6 @@ import {
 } from "next/font/google";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
-import StructuredData from "@/components/StructuredData";
 import { createMetadata } from "@/lib/seo";
 import "./globals.css";
 
@@ -52,7 +51,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} ${plusJakartaSans.variable} font-lato min-h-full flex flex-col bg-white text-[#111111]`}
       >
-        <StructuredData includeFaq />
         <PageTransition>{children}</PageTransition>
         <StickyCTA />
       </body>

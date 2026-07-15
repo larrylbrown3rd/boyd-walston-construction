@@ -29,7 +29,10 @@ export default function Navbar() {
     'block px-5 py-3 font-barlow font-semibold text-sm text-[#9B9B9B] hover:text-[#111111] hover:bg-[#F8F7F5] transition-colors border-b border-[#E8E8E8] last:border-b-0'
 
   const quoteButtonClass =
-    'font-button text-sm bg-[#111111] text-white px-6 py-2.5 rounded-lg hover:bg-brand-gold-dark transition-colors duration-300'
+    'font-button text-sm bg-[#111111] text-white px-6 py-2.5 min-h-[44px] inline-flex items-center rounded-lg hover:bg-brand-gold-dark transition-colors duration-300'
+
+  const phoneLinkClass =
+    'hidden md:inline-flex items-center justify-center font-button text-sm text-[#111111] min-h-[44px] px-4 py-2.5 rounded-lg border border-[#E8E8E8] hover:border-brand-gold hover:text-brand-gold-dark transition-colors duration-300'
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E8E8E8] px-6 md:px-10 py-4">
@@ -71,12 +74,15 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center justify-end gap-4 justify-self-end">
+        <div className="flex items-center justify-end gap-3 justify-self-end">
+          <a href="tel:3346093504" className={phoneLinkClass}>
+            334-609-3504
+          </a>
           <a
             href="/quote"
-            className={`hidden md:inline-block ${quoteButtonClass}`}
+            className={`hidden md:inline-flex items-center ${quoteButtonClass}`}
           >
-            Get A Quote
+            Get A Free Quote
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -128,8 +134,13 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href="/quote" className={`inline-block ${quoteButtonClass}`}>
-              Get A Quote
+            <a href="tel:3346093504" className={`inline-flex items-center min-h-[44px] ${linkClass}`}>
+              Call 334-609-3504
+            </a>
+          </li>
+          <li>
+            <a href="/quote" className={`inline-flex items-center ${quoteButtonClass}`}>
+              Get A Free Quote
             </a>
           </li>
         </ul>

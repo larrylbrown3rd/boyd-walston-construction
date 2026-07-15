@@ -14,8 +14,9 @@ export default function ProjectPhotoGallery({ photos, columns = 3 }) {
           <div className="group relative aspect-[4/3] overflow-hidden bg-[#2C2C2C]">
             <Image
               src={photo.src}
-              alt={photo.alt}
+              alt={photo.alt || photo.title}
               fill
+              sizes="(max-width: 768px) 50vw, 25vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               style={photo.objectPosition ? { objectPosition: photo.objectPosition.replace(/^object-/, '') } : undefined}
             />

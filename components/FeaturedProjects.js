@@ -20,9 +20,9 @@ export default function FeaturedProjects({ compact = false }) {
             </div>
             <a
               href="/projects"
-              className="inline-flex items-center gap-2 font-inter text-sm text-brand-gold hover:text-brand-gold-light transition-colors shrink-0 group"
+              className="inline-flex items-center gap-2 font-button text-sm text-brand-gold hover:text-brand-gold-light transition-colors shrink-0 group min-h-[44px]"
             >
-              View all projects
+              Browse Project Portfolio
               <ConstructionIcon name="ruler" className="w-4 h-4 group-hover:scale-110 transition-transform" />
             </a>
           </div>
@@ -39,6 +39,7 @@ export default function FeaturedProjects({ compact = false }) {
                   src={photo.src}
                   alt={photo.alt}
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover object-center transition-transform duration-700 group-hover:scale-110"
                   style={photo.objectPosition ? { objectPosition: photo.objectPosition.replace('object-', '') } : undefined}
                 />

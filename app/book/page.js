@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ProjectsCTA from '@/components/ProjectsCTA'
 import JobberForm from '@/components/JobberForm'
 import ResponsePromise from '@/components/ResponsePromise'
 
@@ -75,6 +76,7 @@ export default function Book() {
         </div>
       </section>
 
+      <ProjectsCTA />
       <Footer />
     </main>
   )

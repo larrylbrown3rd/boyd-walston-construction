@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ProjectsCTA from '@/components/ProjectsCTA'
 import ScrollReveal from '@/components/ScrollReveal'
 import SocialLinks from '@/components/SocialLinks'
 import ConstructionIcon from '@/components/ConstructionIcon'
@@ -109,6 +110,7 @@ export default function About() {
         </div>
       </section>
 
+      <ProjectsCTA />
       <Footer />
     </main>
   )

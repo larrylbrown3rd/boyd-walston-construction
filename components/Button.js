@@ -25,7 +25,7 @@ export default function Button({
       href={href}
       className={[
         'inline-flex items-center justify-center',
-        'font-button text-sm',
+        'font-button text-sm min-h-[44px] inline-flex items-center justify-center',
         'px-7 py-3.5 rounded-lg',
         'transition-all duration-200 ease-out',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/60 focus-visible:ring-offset-2',

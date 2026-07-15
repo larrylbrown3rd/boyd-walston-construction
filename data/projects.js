@@ -415,9 +415,9 @@ export const commercialGalleryPhotos = [
   { src: '/commercial-patio-complete.png', alt: 'Commercial patio complete', title: 'Outdoor Patio & Amenities' },
   { src: '/forestry-mulching-prattville-square.png', alt: 'Forestry mulching at Prattville Square Shopping Center', title: 'Forestry Mulching — Prattville Square Shopping Center' },
   { src: '/exterior-lift-work.png', alt: 'Exterior lift work', title: 'Exterior Lift Work' },
-  { src: '/lockhart-hall-plaza.png', alt: 'College masonry work', title: 'College Masonry Work' },
-  { src: '/campus-masonry-work.png', alt: 'College masonry work', title: 'College Masonry Work' },
-  { src: '/masonry-blocks-progress.png', alt: 'College masonry work', title: 'College Masonry Work' },
+  { src: '/lockhart-hall-plaza.png', alt: 'Completed memorial plaza masonry at Lockhart Hall', title: 'Memorial Plaza Masonry' },
+  { src: '/campus-masonry-work.png', alt: 'Campus masonry block work between historic university buildings', title: 'Campus Masonry Work' },
+  { src: '/masonry-blocks-progress.png', alt: 'Courtyard masonry rebuild with CMU blocks and rebar on campus', title: 'Campus Hardscape Restoration' },
 ]
 
 export const civilGalleryPhotos = [

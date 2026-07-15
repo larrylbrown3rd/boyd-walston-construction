@@ -41,7 +41,7 @@ export default function PhotoSlideshowBackground() {
             >
               <Image
                 src={photo.src}
-                alt=""
+                alt={photo.alt}
                 fill
                 priority={i === 0}
                 sizes="100vw"
