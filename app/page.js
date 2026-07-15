@@ -2,7 +2,14 @@
 
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import TrustStrip from '@/components/TrustStrip'
+import ServicesPreview from '@/components/ServicesPreview'
 import FeaturedProjects from '@/components/FeaturedProjects'
+import SocialProofStats from '@/components/SocialProofStats'
+import HowItWorks from '@/components/HowItWorks'
+import Testimonials from '@/components/Testimonials'
+import RiskReversal from '@/components/RiskReversal'
+import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import JobberForm from '@/components/JobberForm'
 import ResponsePromise from '@/components/ResponsePromise'
@@ -12,7 +19,13 @@ export default function Home() {
     <main className="min-h-screen bg-white flex flex-col">
       <Navbar companyName="Boyd Walston Construction" />
       <Hero />
+      <TrustStrip />
+      <ServicesPreview />
       <FeaturedProjects compact />
+      <SocialProofStats />
+      <HowItWorks />
+      <Testimonials />
+      <RiskReversal />
 
       <section className="section-pad bg-white border-y border-[#E8E8E8]">
         <div className="max-w-3xl mx-auto">
@@ -28,6 +41,7 @@ export default function Home() {
         </div>
       </section>
 
+      <FAQ sectionClassName="bg-[#F8F7F5]" />
       <Footer />
     </main>
   )

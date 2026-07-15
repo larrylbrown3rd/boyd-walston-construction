@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 import Button from '@/components/Button'
+import TrustStrip from '@/components/TrustStrip'
+import FAQ from '@/components/FAQ'
 
 const services = [
   {
@@ -62,6 +64,8 @@ export default function Services() {
         </div>
       </section>
 
+      <TrustStrip />
+
       <section className="py-24 px-6 md:px-10">
         <div className="max-w-6xl mx-auto space-y-20">
           {services.map((service, index) => (
@@ -109,6 +113,7 @@ export default function Services() {
         </div>
       </section>
 
+      <FAQ sectionClassName="bg-[#F8F7F5]" />
       <Footer />
     </main>
   )

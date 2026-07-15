@@ -6,6 +6,8 @@ import {
 } from "next/font/google";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
+import StructuredData from "@/components/StructuredData";
+import { createMetadata } from "@/lib/seo";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -32,10 +34,7 @@ const lato = Lato({
   variable: "--font-lato",
 });
 
-export const metadata = {
-  title: "Boyd Walston Construction",
-  description: "Building what matters most — quality renovations and commercial construction delivered on time and built to last.",
-};
+export const metadata = createMetadata("/");
 
 export default function RootLayout({ children }) {
   return (
@@ -46,6 +45,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} font-lato min-h-full flex flex-col bg-white text-[#111111]`}
       >
+        <StructuredData includeFaq />
         <PageTransition>{children}</PageTransition>
         <StickyCTA />
       </body>

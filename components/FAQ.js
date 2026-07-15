@@ -3,32 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const faqs = [
-  {
-    q: 'How much does a renovation or build-out cost?',
-    a: 'Project costs vary based on scope, materials, and finishes. We provide free detailed estimates after an initial site visit so you know what to expect before work begins.',
-  },
-  {
-    q: 'How long does a typical project take?',
-    a: 'Renovations range from 2-8 weeks depending on scope. Commercial build-outs typically take 4-12 weeks. We provide a detailed timeline before any project begins.',
-  },
-  {
-    q: 'Do you handle permits and inspections?',
-    a: 'Yes — we handle all permits, inspections, and paperwork required for your project. You never have to deal with city or county offices. We take care of everything.',
-  },
-  {
-    q: 'What areas do you serve?',
-    a: 'We serve Pike Road, Montgomery, and surrounding central Alabama communities. Contact us to confirm your location and project scope.',
-  },
-  {
-    q: 'How do I get started?',
-    a: 'The easiest way is to submit a quote request on our site — we will follow up within 48 hours. You can also use our Smart Estimate tool or contact us directly.',
-  },
-  {
-    q: 'Are you licensed and insured?',
-    a: 'Yes — Boyd Walston Construction is fully licensed in the state of Alabama and carries comprehensive general liability and workers compensation insurance. We can provide certificates of insurance upon request.',
-  },
-]
+import { faqs } from '@/lib/seo'
 
 export default function FAQ({ sectionClassName = 'bg-white', embedded = false }) {
   const [open, setOpen] = useState(null)

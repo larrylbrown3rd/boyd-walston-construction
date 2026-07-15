@@ -36,9 +36,17 @@ export default function StickyCTA() {
               Licensed & insured
             </p>
           </div>
-          <Button href="/quote" variant="gold" className="!px-5 !py-2.5 !text-xs shrink-0">
-            Get A Free Quote
-          </Button>
+          <div className="flex items-center gap-3 shrink-0">
+            <a
+              href="tel:3346093504"
+              className="hidden sm:inline-flex items-center justify-center font-inter font-medium text-xs px-4 py-2.5 rounded-lg border border-white/20 text-white hover:border-brand-gold hover:text-brand-gold transition-colors"
+            >
+              334-609-3504
+            </a>
+            <Button href="/quote" variant="gold" className="!px-5 !py-2.5 !text-xs shrink-0">
+              Get A Free Quote
+            </Button>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

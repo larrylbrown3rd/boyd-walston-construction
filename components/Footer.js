@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Button from '@/components/Button'
+import Logo from '@/components/Logo'
 import SocialLinks from '@/components/SocialLinks'
 
 export default function Footer() {
@@ -32,6 +33,7 @@ export default function Footer() {
       <div className="py-16 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
+            <Logo imageClassName="h-16 w-auto mb-6" />
             <span className="accent-bar mb-4" />
             <SocialLinks className="[&_a]:text-white [&_a]:border-white/20 [&_a]:hover:border-brand-gold [&_a]:hover:text-brand-gold mb-6" />
           </div>

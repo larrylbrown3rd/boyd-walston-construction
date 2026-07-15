@@ -60,15 +60,22 @@ export default function Hero() {
             <span className="text-brand-gold">One Standard Of Excellence</span>
           </h1>
 
-          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] mb-10">
+          <p className="font-lato text-lg md:text-xl font-normal text-white/90 leading-[1.75] mb-4">
             Honoring A Legacy
             <br />
-            Build The Future
+            Building A Future
+          </p>
+
+          <p className="font-barlow text-xs md:text-sm font-semibold tracking-[0.18em] uppercase text-brand-gold mb-10">
+            Licensed General Contractor · Pike Road, Montgomery &amp; Central Alabama
           </p>
 
           <div className="flex flex-wrap gap-4">
             <Button href="/quote" variant="gold">
-              Get A Quote
+              Get A Free Quote
+            </Button>
+            <Button href="tel:3346093504" variant="outline">
+              Call 334-609-3504
             </Button>
             <Button href="/projects" variant="outline">
               View Projects

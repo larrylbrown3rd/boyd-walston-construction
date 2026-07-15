@@ -3,6 +3,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import JobberForm from '@/components/JobberForm'
 import ResponsePromise from '@/components/ResponsePromise'
+import RiskReversal from '@/components/RiskReversal'
+import TrustStrip from '@/components/TrustStrip'
 
 export default function Quote() {
   return (
@@ -33,6 +35,8 @@ export default function Quote() {
         </div>
       </section>
 
+      <TrustStrip />
+
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl mx-auto">
@@ -42,6 +46,7 @@ export default function Quote() {
         </div>
       </section>
 
+      <RiskReversal />
       <Footer />
     </main>
   )

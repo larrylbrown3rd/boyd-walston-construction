@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import Logo from '@/components/Logo'
 
-export default function Navbar({ companyName }) {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false)
 
@@ -33,12 +34,7 @@ export default function Navbar({ companyName }) {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E8E8E8] px-6 md:px-10 py-4">
       <nav className="max-w-6xl mx-auto grid grid-cols-[1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center gap-4">
-        <a
-          href="/"
-          className="text-display text-xl tracking-wider text-[#111111] justify-self-start"
-        >
-          {companyName}
-        </a>
+        <Logo className="justify-self-start" />
 
         <ul className="hidden md:flex items-center justify-center gap-8 list-none">
           <li>
