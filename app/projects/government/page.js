@@ -63,7 +63,7 @@ export default function GovernmentProjects() {
             <div className="mt-12 text-center">
               <a
                 href="/quote"
-                className="inline-flex items-center gap-2 font-inter text-sm text-[#111111] border border-[#111111] px-7 py-3.5 rounded-lg hover:bg-[#111111] hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 font-button text-sm text-[#111111] border border-[#111111] px-7 py-3.5 rounded-lg hover:bg-[#111111] hover:text-white transition-colors"
               >
                 Request A Quote
                 <ConstructionIcon name="hammer" className="w-4 h-4" />

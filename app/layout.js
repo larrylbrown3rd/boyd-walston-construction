@@ -3,6 +3,7 @@ import {
   Inter,
   Barlow_Condensed,
   Lato,
+  Plus_Jakarta_Sans,
 } from "next/font/google";
 import PageTransition from "@/components/PageTransition";
 import StickyCTA from "@/components/StickyCTA";
@@ -34,16 +35,22 @@ const lato = Lato({
   variable: "--font-lato",
 });
 
+const plusJakartaSans = Plus_Jakarta_Sans({
+  weight: ["500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+});
+
 export const metadata = createMetadata("/");
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} ${plusJakartaSans.variable} h-full antialiased`}
     >
       <body
-        className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} font-lato min-h-full flex flex-col bg-white text-[#111111]`}
+        className={`${bebasNeue.variable} ${inter.variable} ${barlowCondensed.variable} ${lato.variable} ${plusJakartaSans.variable} font-lato min-h-full flex flex-col bg-white text-[#111111]`}
       >
         <StructuredData includeFaq />
         <PageTransition>{children}</PageTransition>

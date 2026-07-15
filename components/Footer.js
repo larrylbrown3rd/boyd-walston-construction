@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <a
               href="tel:3346093504"
-              className="inline-flex items-center justify-center font-inter font-medium text-sm px-6 py-3 rounded-lg border border-white/20 text-white hover:border-brand-gold hover:text-brand-gold transition-colors"
+              className="inline-flex items-center justify-center font-button text-sm px-6 py-3 rounded-lg border border-white/20 text-white hover:border-brand-gold hover:text-brand-gold transition-colors"
             >
               334-609-3504
             </a>

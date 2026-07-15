@@ -21,7 +21,7 @@ export default function ProjectsCTA() {
         </p>
         <a
           href="/quote"
-          className="inline-block bg-white text-[#111111] font-inter font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-[#F0EFED] transition-colors duration-300"
+          className="inline-block bg-white text-[#111111] font-button text-sm px-7 py-3.5 rounded-lg hover:bg-[#F0EFED] transition-colors duration-300"
         >
           Get A Free Quote
         </a>

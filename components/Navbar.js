@@ -29,7 +29,7 @@ export default function Navbar() {
     'block px-5 py-3 font-barlow font-semibold text-sm text-[#9B9B9B] hover:text-[#111111] hover:bg-[#F8F7F5] transition-colors border-b border-[#E8E8E8] last:border-b-0'
 
   const quoteButtonClass =
-    'font-inter font-medium text-sm bg-[#111111] text-white px-6 py-2.5 rounded-lg hover:bg-brand-gold-dark transition-colors duration-300'
+    'font-button text-sm bg-[#111111] text-white px-6 py-2.5 rounded-lg hover:bg-brand-gold-dark transition-colors duration-300'
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E8E8E8] px-6 md:px-10 py-4">

@@ -14,6 +14,7 @@ const config = {
         inter: ['var(--font-inter)', 'sans-serif'],
         barlow: ['var(--font-barlow)', 'sans-serif'],
         lato: ['var(--font-lato)', 'sans-serif'],
+        jakarta: ['var(--font-jakarta)', 'sans-serif'],
       },
     },
   },

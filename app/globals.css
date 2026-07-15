@@ -6,6 +6,7 @@
   --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-barlow: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
   --font-lato: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  --font-jakarta: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -90,6 +91,12 @@
 
   .text-body-muted {
     @apply font-lato text-base font-normal text-[#4A4A4A] leading-[1.75];
+  }
+
+  .font-button {
+    font-family: var(--font-jakarta), sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
   }
 }
 
